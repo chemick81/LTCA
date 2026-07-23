@@ -9,6 +9,7 @@ import type {
   DragDropBlockData,
   InteractiveSlideshowBlockData,
   AiDialogueBlockData,
+  EmbedBlockData,
 } from '@/features/lesson/types';
 import { ContentBlockView } from '@/features/lesson/components/ContentBlockView';
 import { VideoBlockView } from '@/features/lesson/components/VideoBlockView';
@@ -19,6 +20,7 @@ import { HotspotImageBlockView } from '@/features/lesson/components/HotspotImage
 import { DragDropBlockView } from '@/features/lesson/components/DragDropBlockView';
 import { InteractiveSlideshowBlockView } from '@/features/lesson/components/InteractiveSlideshowBlockView';
 import { AiDialogueBlockView } from '@/features/lesson/components/AiDialogueBlockView';
+import { EmbedBlockView } from '@/features/lesson/components/EmbedBlockView';
 
 // Le renderer détecte le `type` du bloc et délègue au composant dédié.
 // Jamais de page codée en dur pour une leçon — voir LTCA-brief-projet.md.
@@ -42,6 +44,8 @@ export function BlockRenderer({ block }: { block: LessonBlockRow }) {
       return <InteractiveSlideshowBlockView data={block.content as InteractiveSlideshowBlockData} />;
     case 'ai_dialogue':
       return <AiDialogueBlockView data={block.content as AiDialogueBlockData} />;
+    case 'embed':
+      return <EmbedBlockView data={block.content as EmbedBlockData} />;
     default:
       return (
         <p className="text-sm text-destructive">Type de bloc inconnu : {block.type}</p>

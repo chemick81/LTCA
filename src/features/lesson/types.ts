@@ -199,6 +199,16 @@ export interface AiDialogueBlockData {
   backgroundImage?: string;
 }
 
+// ---------- Embed générique (Genially ou autre iframe) ----------
+// Remplace au cas par cas les blocs interactifs Tier 2/3 par un vrai module
+// Genially déjà réalisé, plutôt qu'une réimplémentation maison approximative.
+export interface EmbedBlockData {
+  url: string;
+  title?: string;
+  /** Ratio largeur/hauteur en pourcentage pour le responsive (56.25 = 16:9). Défaut 56.25. */
+  aspectRatioPercent?: number;
+}
+
 // ---------- Union discriminée ----------
 
 export type LessonBlockContent =
@@ -210,7 +220,8 @@ export type LessonBlockContent =
   | { type: 'hotspot_image'; data: HotspotImageBlockData }
   | { type: 'drag_drop'; data: DragDropBlockData }
   | { type: 'interactive_slideshow'; data: InteractiveSlideshowBlockData }
-  | { type: 'ai_dialogue'; data: AiDialogueBlockData };
+  | { type: 'ai_dialogue'; data: AiDialogueBlockData }
+  | { type: 'embed'; data: EmbedBlockData };
 
 export interface TypedLessonBlock extends Omit<LessonBlockRow, 'content' | 'type'> {
   type: LessonBlockType;

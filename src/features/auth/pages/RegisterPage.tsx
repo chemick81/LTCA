@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { toast } from 'sonner';
 import { AuthLayout } from '@/features/auth/components/AuthLayout';
+import { GoogleButton } from '@/features/auth/components/GoogleButton';
 import { registerSchema, type RegisterFormValues } from '@/features/auth/schemas';
 import { authService } from '@/features/auth/services/authService';
 import { Button } from '@/components/ui/button';
@@ -34,6 +35,12 @@ export function RegisterPage() {
 
   return (
     <AuthLayout title="Créer un compte" subtitle="Rejoignez la méthode EPB">
+      <GoogleButton />
+      <div className="my-4 flex items-center gap-3">
+        <div className="h-px flex-1 bg-border" />
+        <span className="text-xs text-muted-foreground">ou</span>
+        <div className="h-px flex-1 bg-border" />
+      </div>
       <form className="space-y-4" onSubmit={handleSubmit(onSubmit)}>
         <div className="space-y-1.5">
           <Label htmlFor="fullName">Nom complet</Label>

@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { toast } from 'sonner';
 import { AuthLayout } from '@/features/auth/components/AuthLayout';
+import { GoogleButton } from '@/features/auth/components/GoogleButton';
 import { loginSchema, type LoginFormValues } from '@/features/auth/schemas';
 import { authService } from '@/features/auth/services/authService';
 import { Button } from '@/components/ui/button';
@@ -33,6 +34,12 @@ export function LoginPage() {
 
   return (
     <AuthLayout title="Connexion" subtitle="Accédez à votre espace de formation">
+      <GoogleButton />
+      <div className="my-4 flex items-center gap-3">
+        <div className="h-px flex-1 bg-border" />
+        <span className="text-xs text-muted-foreground">ou</span>
+        <div className="h-px flex-1 bg-border" />
+      </div>
       <form className="space-y-4" onSubmit={handleSubmit(onSubmit)}>
         <div className="space-y-1.5">
           <Label htmlFor="email">Email</Label>

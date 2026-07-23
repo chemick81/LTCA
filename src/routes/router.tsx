@@ -15,6 +15,8 @@ import { ProfilePage } from '@/features/profile/pages/ProfilePage';
 import { AdminLayout } from '@/features/admin/components/AdminLayout';
 import { AdminCoursesPage } from '@/features/admin/pages/AdminCoursesPage';
 import { AdminAnnouncementsPage } from '@/features/admin/pages/AdminAnnouncementsPage';
+import { AdminCourseDetailPage } from '@/features/admin/pages/AdminCourseDetailPage';
+import { AdminLessonEditorPage } from '@/features/admin/pages/AdminLessonEditorPage';
 import { NotFoundPage } from '@/app/pages/NotFoundPage';
 
 export const router = createBrowserRouter([
@@ -46,6 +48,8 @@ export const router = createBrowserRouter([
                   { path: 'announcements', element: <AdminAnnouncementsPage /> },
                 ],
               },
+              { path: '/admin/courses/:courseId', element: <AdminCourseDetailPage /> },
+              { path: '/admin/lessons/:lessonId', element: <AdminLessonEditorPage /> },
             ],
           },
         ],

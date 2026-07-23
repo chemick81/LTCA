@@ -12,7 +12,8 @@ export type LessonBlockType =
   | 'hotspot_image'
   | 'drag_drop'
   | 'interactive_slideshow'
-  | 'ai_dialogue';
+  | 'ai_dialogue'
+  | 'embed';
 
 interface Timestamps {
   created_at: string;

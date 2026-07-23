@@ -1,7 +1,8 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { toast } from 'sonner';
-import { Plus, Trash2 } from 'lucide-react';
+import { Plus, Trash2, FolderOpen } from 'lucide-react';
 import { adminService } from '@/features/admin/services/adminService';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -95,6 +96,12 @@ export function AdminCoursesPage() {
                     <p className="text-xs text-muted-foreground">/{course.slug}</p>
                   </div>
                   <div className="flex items-center gap-2">
+                    <Button asChild variant="outline" size="sm">
+                      <Link to={`/admin/courses/${course.id}`}>
+                        <FolderOpen className="mr-2 h-4 w-4" />
+                        Gérer le contenu
+                      </Link>
+                    </Button>
                     <Button
                       variant="outline"
                       size="sm"
