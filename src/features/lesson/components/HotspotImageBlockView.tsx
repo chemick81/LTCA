@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import type { HotspotImageBlockData } from '@/features/lesson/types';
+import { sanitizeHtml } from '@/utils/sanitizeHtml';
 import { cn } from '@/lib/utils';
 
 export function HotspotImageBlockView({ data }: { data: HotspotImageBlockData }) {
@@ -16,18 +17,27 @@ export function HotspotImageBlockView({ data }: { data: HotspotImageBlockData })
             type="button"
             onClick={() => setActiveId(hotspot.id === activeId ? null : hotspot.id)}
             className={cn(
-              'absolute h-5 w-5 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-primary bg-primary/60 transition-transform hover:scale-125',
-              hotspot.id === activeId && 'scale-125 bg-primary',
+              'absolute rounded-md border-2 border-primary bg-primary/30 transition-colors hover:bg-primary/50',
+              hotspot.id === activeId && 'bg-primary/50',
             )}
-            style={{ left: `${hotspot.xPercent}%`, top: `${hotspot.yPercent}%` }}
-            title={hotspot.title}
+            style={{
+              left: `${hotspot.x}%`,
+              top: `${hotspot.y}%`,
+              width: `${hotspot.width}%`,
+              height: `${hotspot.height}%`,
+              borderColor: hotspot.color,
+            }}
+            title={hotspot.label}
           />
         ))}
       </div>
       {active && (
         <div className="rounded-md border border-border p-3">
-          <p className="text-sm font-medium text-foreground">{active.title}</p>
-          <p className="text-sm text-muted-foreground">{active.content}</p>
+          <p className="text-sm font-medium text-foreground">{active.label}</p>
+          <div
+            className="prose prose-invert prose-sm max-w-none text-muted-foreground"
+            dangerouslySetInnerHTML={{ __html: sanitizeHtml(active.content) }}
+          />
         </div>
       )}
     </div>

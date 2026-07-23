@@ -2,41 +2,122 @@ import type { LessonBlockRow, LessonBlockType } from '@/types/database.types';
 
 // ---------- Tier 1 ----------
 
+// Bloc `content` : deux variantes possibles dans l'export réel.
+// 1) HTML simple en pleine largeur : { html: string }
+// 2) Grille de cellules texte/image : { rows: [{ cells: [...] }] }
 export interface ContentCell {
-  html: string;
-  imageUrl?: string;
+  id: string;
+  type: 'text' | 'image';
+  content: string; // HTML si type=text, URL si type=image
+  objectFit?: string;
+}
+
+export interface ContentRow {
+  id: string;
+  cells: ContentCell[];
 }
 
 export interface ContentBlockData {
-  rows: { cells: ContentCell[] }[];
+  html?: string;
+  rows?: ContentRow[];
+}
+
+export interface VideoSubtitle {
+  url: string;
+  label: string;
+  language: string;
+  isDefault?: boolean;
 }
 
 export interface VideoCuepoint {
-  timeSeconds: number;
+  time: number;
   label: string;
 }
 
 export interface VideoBlockData {
   mediaUrl: string;
-  subtitlesUrl?: string;
+  duration?: number;
+  autostart?: boolean;
+  showControls?: boolean;
+  subtitles?: VideoSubtitle[];
   cuepoints?: VideoCuepoint[];
 }
 
-export interface QuizBlockData {
-  quizId: string; // référence vers table `quizzes`
-  passThresholdPercent?: number;
+// Quiz auto-suffisant (pas de table quiz_questions/quiz_answers séparée —
+// le contenu réel de l'export embarque tout dans le bloc).
+export interface QuizOption {
+  id: string;
+  text: string;
+  is_correct: boolean;
 }
 
+export interface QuizBlank {
+  id: string;
+  position: number;
+  accepted_answers: string[];
+}
+
+export interface QuizQuestionMultipleChoice {
+  id: string;
+  type: 'multiple_choice';
+  question: string;
+  options: QuizOption[];
+  explanation?: string;
+}
+
+export interface QuizQuestionFillBlank {
+  id: string;
+  type: 'fill_blank';
+  question: string;
+  text_with_blanks: string; // contient [blank1], [blank2]...
+  blanks: QuizBlank[];
+  explanation?: string;
+}
+
+export interface QuizQuestionShortAnswer {
+  id: string;
+  type: 'short_answer';
+  question: string;
+  max_length?: number;
+  explanation?: string;
+  // ai_grading présent dans l'export mais non exploité en V1 (pas de correction IA en direct).
+}
+
+export type QuizQuestion = QuizQuestionMultipleChoice | QuizQuestionFillBlank | QuizQuestionShortAnswer;
+
+export interface QuizBlockData {
+  questions: QuizQuestion[];
+}
+
+export interface FeedbackQuestionStarRating {
+  id: string;
+  type: 'star_rating';
+  question: string;
+  maxValue?: number;
+  required?: boolean;
+}
+
+export interface FeedbackQuestionFreeText {
+  id: string;
+  type: 'free_text';
+  question: string;
+  placeholder?: string;
+  maxLength?: number;
+  required?: boolean;
+}
+
+export type FeedbackQuestion = FeedbackQuestionStarRating | FeedbackQuestionFreeText;
+
 export interface FeedbackBlockData {
-  starRating?: boolean;
-  freeText?: boolean;
-  prompt?: string;
+  questions: FeedbackQuestion[];
 }
 
 export interface FlashcardItem {
   id: string;
   front: string;
   back: string;
+  frontBgImage?: string;
+  backBgColor?: string;
 }
 
 export interface FlashcardBlockData {
@@ -47,10 +128,13 @@ export interface FlashcardBlockData {
 
 export interface HotspotItem {
   id: string;
-  xPercent: number;
-  yPercent: number;
-  title: string;
+  x: number;
+  y: number;
+  width: number;
+  height: number;
+  label: string;
   content: string;
+  color?: string;
 }
 
 export interface HotspotImageBlockData {
@@ -58,49 +142,61 @@ export interface HotspotImageBlockData {
   hotspots: HotspotItem[];
 }
 
-export interface DragItem {
+export interface DragDropItem {
   id: string;
-  label: string;
+  content: string; // HTML
+  correctTargets: string[]; // ids des dropTargets où cet item est valide
 }
 
-export interface DropTarget {
+export interface DragDropTarget {
   id: string;
   label: string;
-  xPercent: number;
-  yPercent: number;
-  acceptsItemId: string;
+  x: number;
+  y: number;
+  width: number;
+  height: number;
 }
 
 export interface DragDropBlockData {
-  backgroundImageUrl?: string;
-  dragItems: DragItem[];
-  dropTargets: DropTarget[];
+  backgroundImage?: string;
+  dragItems: DragDropItem[];
+  dropTargets: DragDropTarget[];
 }
 
-// ---------- Tier 3 (affichage lecture seule V1) ----------
-
-export interface SlideshowElement {
-  id: string;
-  xPercent: number;
-  yPercent: number;
-  widthPercent?: number;
-  type: 'text' | 'image';
-  content: string;
-}
-
+// ---------- Tier 3 — V1 = carte récapitulative en lecture seule ----------
+// Ces deux blocs sont, dans l'export réel, des mini-moteurs (canvas d'éléments
+// positionnés avec variables/interactions pour interactive_slideshow ; dialogue
+// IA générative multi-tours avec grading pour ai_dialogue). Reproduire leur
+// fidélité complète est hors scope V1 — on affiche un résumé fidèle au contenu
+// pédagogique (texte, images, objectifs) sans le moteur d'interactions.
+// TODO V2 : moteur de canvas complet + dialogue IA en direct.
 export interface InteractiveSlideshowBlockData {
-  slides: { elements: SlideshowElement[] }[];
-  // TODO V2: moteur de navigation/interactions/scoring entre slides
+  settings?: { width?: number; height?: number };
+  slides: Array<{
+    backgroundImage?: string;
+    backgroundColor?: string;
+    elements: Array<{
+      id: string;
+      type: string;
+      textContent?: string;
+      visible?: boolean;
+    }>;
+  }>;
 }
 
-export interface AiDialogueTurn {
-  speaker: string;
-  text: string;
+export interface AiDialogueCharacter {
+  id: string;
+  name: string;
+  role?: string;
+  baseImage?: string;
 }
 
 export interface AiDialogueBlockData {
-  turns: AiDialogueTurn[];
-  // TODO V2: branchement conditionnel, appels LLM en direct
+  setting?: string;
+  initialMessage?: string;
+  learningOutcomes?: string[];
+  characters: AiDialogueCharacter[];
+  backgroundImage?: string;
 }
 
 // ---------- Union discriminée ----------

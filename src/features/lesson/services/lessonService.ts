@@ -1,9 +1,5 @@
 import { supabase } from '@/lib/supabase';
-import type { ProgressStatus, QuizQuestionRow, QuizAnswerRow, LessonRow, LessonBlockRow } from '@/types/database.types';
-
-export interface QuizQuestionWithAnswers extends QuizQuestionRow {
-  quiz_answers: QuizAnswerRow[];
-}
+import type { ProgressStatus, LessonRow, LessonBlockRow } from '@/types/database.types';
 
 export const lessonService = {
   async getLessonWithBlocks(lessonId: string) {
@@ -22,16 +18,6 @@ export const lessonService = {
     if (blocksError) throw blocksError;
 
     return { lesson: lesson as LessonRow, blocks: blocks as LessonBlockRow[] };
-  },
-
-  async getQuizWithQuestions(quizId: string) {
-    const { data: questions, error } = await supabase
-      .from('quiz_questions')
-      .select('*, quiz_answers(*)')
-      .eq('quiz_id', quizId)
-      .order('position', { ascending: true });
-    if (error) throw error;
-    return questions as unknown as QuizQuestionWithAnswers[];
   },
 
   async upsertProgress(userId: string, lessonId: string, status: ProgressStatus, progressPercent: number) {

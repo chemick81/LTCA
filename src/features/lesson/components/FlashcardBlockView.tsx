@@ -3,6 +3,7 @@ import { ChevronLeft, ChevronRight, RotateCw } from 'lucide-react';
 import type { FlashcardBlockData } from '@/features/lesson/types';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
+import { sanitizeHtml } from '@/utils/sanitizeHtml';
 
 export function FlashcardBlockView({ data }: { data: FlashcardBlockData }) {
   const [index, setIndex] = useState(0);
@@ -22,11 +23,15 @@ export function FlashcardBlockView({ data }: { data: FlashcardBlockData }) {
         type="button"
         onClick={() => setIsFlipped((f) => !f)}
         className={cn(
-          'flex h-56 w-full max-w-md items-center justify-center rounded-lg border border-border p-6 text-center transition-colors',
+          'flex h-56 w-full max-w-md items-center justify-center rounded-lg border border-border bg-cover bg-center p-6 text-center transition-colors',
           isFlipped ? 'bg-primary/10' : 'bg-muted',
         )}
+        style={!isFlipped && card.frontBgImage ? { backgroundImage: `url(${card.frontBgImage})` } : undefined}
       >
-        <p className="text-base text-foreground">{isFlipped ? card.back : card.front}</p>
+        <div
+          className="prose prose-invert prose-sm max-w-none text-foreground"
+          dangerouslySetInnerHTML={{ __html: sanitizeHtml(isFlipped ? card.back : card.front) }}
+        />
       </button>
 
       <div className="flex items-center gap-4">

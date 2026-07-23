@@ -1,44 +1,56 @@
 import { useState } from 'react';
 import { DndContext, useDraggable, useDroppable, type DragEndEvent } from '@dnd-kit/core';
 import type { DragDropBlockData } from '@/features/lesson/types';
+import { sanitizeHtml } from '@/utils/sanitizeHtml';
 import { cn } from '@/lib/utils';
 
-function DraggableItem({ id, label, isPlaced }: { id: string; label: string; isPlaced: boolean }) {
+function DraggableItem({ id, content, isPlaced }: { id: string; content: string; isPlaced: boolean }) {
   const { attributes, listeners, setNodeRef, transform } = useDraggable({ id });
   if (isPlaced) return null;
 
   return (
-    <button
+    <div
       ref={setNodeRef}
       {...listeners}
       {...attributes}
       style={transform ? { transform: `translate3d(${transform.x}px, ${transform.y}px, 0)` } : undefined}
-      className="cursor-grab rounded-md border border-primary bg-primary/10 px-3 py-1.5 text-sm text-foreground active:cursor-grabbing"
-    >
-      {label}
-    </button>
+      className="prose prose-invert prose-sm max-w-none cursor-grab select-none rounded-md border border-primary bg-primary/10 px-3 py-1.5 text-foreground active:cursor-grabbing"
+      dangerouslySetInnerHTML={{ __html: sanitizeHtml(content) }}
+    />
   );
 }
 
 function DroppableTarget({
   target,
-  placedLabel,
+  placedContent,
 }: {
   target: DragDropBlockData['dropTargets'][number];
-  placedLabel: string | null;
+  placedContent: string | null;
 }) {
   const { setNodeRef, isOver } = useDroppable({ id: target.id });
   return (
     <div
       ref={setNodeRef}
       className={cn(
-        'absolute flex h-16 w-32 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-md border-2 border-dashed border-border bg-background/60 text-center text-xs text-muted-foreground',
+        'absolute flex items-center justify-center rounded-md border-2 border-dashed border-border bg-background/60 p-2 text-center text-xs text-muted-foreground',
         isOver && 'border-primary bg-primary/10',
-        placedLabel && 'border-success bg-success/10 text-foreground',
+        placedContent && 'border-success bg-success/10 text-foreground',
       )}
-      style={{ left: `${target.xPercent}%`, top: `${target.yPercent}%` }}
+      style={{
+        left: `${target.x}%`,
+        top: `${target.y}%`,
+        width: `${target.width}%`,
+        height: `${target.height}%`,
+      }}
     >
-      {placedLabel ?? target.label}
+      {placedContent ? (
+        <div
+          className="prose prose-invert prose-sm max-w-none"
+          dangerouslySetInnerHTML={{ __html: sanitizeHtml(placedContent) }}
+        />
+      ) : (
+        target.label
+      )}
     </div>
   );
 }
@@ -49,9 +61,9 @@ export function DragDropBlockView({ data }: { data: DragDropBlockData }) {
   function handleDragEnd(event: DragEndEvent) {
     const { active, over } = event;
     if (!over) return;
-    const target = data.dropTargets.find((t) => t.id === over.id);
-    if (!target || target.acceptsItemId !== active.id) return;
-    setPlacements((prev) => ({ ...prev, [target.id]: String(active.id) }));
+    const item = data.dragItems.find((i) => i.id === active.id);
+    if (!item || !item.correctTargets.includes(String(over.id))) return;
+    setPlacements((prev) => ({ ...prev, [String(over.id)]: String(active.id) }));
   }
 
   const placedItemIds = new Set(Object.values(placements));
@@ -60,20 +72,16 @@ export function DragDropBlockView({ data }: { data: DragDropBlockData }) {
     <DndContext onDragEnd={handleDragEnd}>
       <div className="space-y-4">
         <div
-          className="relative h-72 w-full rounded-md border border-border bg-muted"
-          style={
-            data.backgroundImageUrl
-              ? { backgroundImage: `url(${data.backgroundImageUrl})`, backgroundSize: 'cover' }
-              : undefined
-          }
+          className="relative h-72 w-full rounded-md border border-border bg-muted bg-cover bg-center"
+          style={data.backgroundImage ? { backgroundImage: `url(${data.backgroundImage})` } : undefined}
         >
           {data.dropTargets.map((target) => (
             <DroppableTarget
               key={target.id}
               target={target}
-              placedLabel={
+              placedContent={
                 placements[target.id]
-                  ? data.dragItems.find((i) => i.id === placements[target.id])?.label ?? null
+                  ? (data.dragItems.find((i) => i.id === placements[target.id])?.content ?? null)
                   : null
               }
             />
@@ -81,7 +89,7 @@ export function DragDropBlockView({ data }: { data: DragDropBlockData }) {
         </div>
         <div className="flex flex-wrap gap-2">
           {data.dragItems.map((item) => (
-            <DraggableItem key={item.id} id={item.id} label={item.label} isPlaced={placedItemIds.has(item.id)} />
+            <DraggableItem key={item.id} id={item.id} content={item.content} isPlaced={placedItemIds.has(item.id)} />
           ))}
         </div>
       </div>

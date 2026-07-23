@@ -9,8 +9,8 @@ import { cn } from '@/lib/utils';
 
 export function FeedbackBlockView({ data, blockId }: { data: FeedbackBlockData; blockId: string }) {
   const { session } = useAuth();
-  const [rating, setRating] = useState<number | null>(null);
-  const [freeText, setFreeText] = useState('');
+  const [ratings, setRatings] = useState<Record<string, number>>({});
+  const [texts, setTexts] = useState<Record<string, string>>({});
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -18,11 +18,15 @@ export function FeedbackBlockView({ data, blockId }: { data: FeedbackBlockData; 
     if (!session) return;
     setIsSubmitting(true);
     try {
+      // V1 : un seul enregistrement par bloc — on agrège la première note et
+      // le premier texte libre trouvés (schéma feedback_responses simple).
+      const firstRatingQuestion = data.questions.find((q) => q.type === 'star_rating');
+      const firstTextQuestion = data.questions.find((q) => q.type === 'free_text');
       await lessonService.submitFeedback(
         session.user.id,
         blockId,
-        data.starRating ? rating : null,
-        data.freeText ? freeText : null,
+        firstRatingQuestion ? (ratings[firstRatingQuestion.id] ?? null) : null,
+        firstTextQuestion ? (texts[firstTextQuestion.id] ?? null) : null,
       );
       setIsSubmitted(true);
       toast.success('Merci pour votre retour !');
@@ -38,34 +42,35 @@ export function FeedbackBlockView({ data, blockId }: { data: FeedbackBlockData; 
   }
 
   return (
-    <div className="space-y-4 rounded-md border border-border p-4">
-      {data.prompt && <p className="text-sm text-foreground">{data.prompt}</p>}
-
-      {data.starRating && (
-        <div className="flex gap-1">
-          {[1, 2, 3, 4, 5].map((star) => (
-            <button key={star} type="button" onClick={() => setRating(star)}>
-              <Star
-                className={cn(
-                  'h-6 w-6 transition-colors',
-                  rating && star <= rating ? 'fill-primary text-primary' : 'text-muted-foreground',
-                )}
-              />
-            </button>
-          ))}
+    <div className="space-y-5 rounded-md border border-border p-4">
+      {data.questions.map((q) => (
+        <div key={q.id} className="space-y-2">
+          <p className="text-sm text-foreground">{q.question}</p>
+          {q.type === 'star_rating' ? (
+            <div className="flex gap-1">
+              {Array.from({ length: q.maxValue ?? 5 }, (_, i) => i + 1).map((star) => (
+                <button key={star} type="button" onClick={() => setRatings((prev) => ({ ...prev, [q.id]: star }))}>
+                  <Star
+                    className={cn(
+                      'h-6 w-6 transition-colors',
+                      ratings[q.id] && star <= ratings[q.id]! ? 'fill-primary text-primary' : 'text-muted-foreground',
+                    )}
+                  />
+                </button>
+              ))}
+            </div>
+          ) : (
+            <textarea
+              value={texts[q.id] ?? ''}
+              onChange={(e) => setTexts((prev) => ({ ...prev, [q.id]: e.target.value }))}
+              placeholder={q.placeholder}
+              maxLength={q.maxLength}
+              rows={3}
+              className="w-full rounded-md border border-border bg-muted px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
+            />
+          )}
         </div>
-      )}
-
-      {data.freeText && (
-        <textarea
-          value={freeText}
-          onChange={(e) => setFreeText(e.target.value)}
-          placeholder="Votre avis..."
-          rows={3}
-          className="w-full rounded-md border border-border bg-muted px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
-        />
-      )}
-
+      ))}
       <Button size="sm" onClick={handleSubmit} disabled={isSubmitting}>
         {isSubmitting ? 'Envoi...' : 'Envoyer'}
       </Button>
