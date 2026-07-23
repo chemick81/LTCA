@@ -71,10 +71,12 @@ export function DragDropBlockView({ data }: { data: DragDropBlockData }) {
   return (
     <DndContext onDragEnd={handleDragEnd}>
       <div className="space-y-4">
-        <div
-          className="relative h-72 w-full rounded-md border border-border bg-muted bg-cover bg-center"
-          style={data.backgroundImage ? { backgroundImage: `url(${data.backgroundImage})` } : undefined}
-        >
+        <div className="relative w-full overflow-hidden rounded-md border border-border bg-muted">
+          {data.backgroundImage ? (
+            <img src={data.backgroundImage} alt="" className="block w-full" />
+          ) : (
+            <div className="h-72 w-full" />
+          )}
           {data.dropTargets.map((target) => (
             <DroppableTarget
               key={target.id}
