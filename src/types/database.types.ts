@@ -129,7 +129,12 @@ export interface SettingRow extends Timestamps {
 // écarter fait silencieusement retomber l'inférence sur `never` partout.
 type NullableKeys<Row> = { [K in keyof Row]: null extends Row[K] ? K : never }[keyof Row];
 
-type TableDef<Row, InsertOmitKeys extends keyof Row = 'id' | 'created_at' | 'updated_at'> = {
+type BaseRow = { id: string; created_at: string; updated_at: string };
+
+type TableDef<
+  Row extends BaseRow,
+  InsertOmitKeys extends keyof Row = 'id' | 'created_at' | 'updated_at',
+> = {
   Row: Row;
   Insert: Partial<Pick<Row, InsertOmitKeys | NullableKeys<Row>>> &
     Omit<Row, InsertOmitKeys | NullableKeys<Row>>;
