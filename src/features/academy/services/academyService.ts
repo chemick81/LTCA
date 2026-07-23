@@ -1,5 +1,5 @@
 import { supabase } from '@/lib/supabase';
-import type { ModuleRow, LessonRow } from '@/types/database.types';
+import type { ModuleRow, LessonRow, CourseRow } from '@/types/database.types';
 
 export interface ModuleWithLessons extends ModuleRow {
   lessons: LessonRow[];
@@ -13,7 +13,7 @@ export const academyService = {
       .eq('published', true)
       .order('position', { ascending: true });
     if (error) throw error;
-    return data;
+    return data as CourseRow[];
   },
 
   async getCourseWithModulesAndLessons(courseId: string) {

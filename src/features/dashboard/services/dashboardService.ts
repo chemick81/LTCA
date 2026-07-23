@@ -1,5 +1,5 @@
 import { supabase } from '@/lib/supabase';
-import type { ProgressRow } from '@/types/database.types';
+import type { ProgressRow, AnnouncementRow, ProgressStatus } from '@/types/database.types';
 
 interface InProgressLessonItem extends ProgressRow {
   lessons: { id: string; title: string; module_id: string } | null;
@@ -13,7 +13,7 @@ export const dashboardService = {
       .order('published_at', { ascending: false })
       .limit(limit);
     if (error) throw error;
-    return data;
+    return data as AnnouncementRow[];
   },
 
   async getInProgressLessons(userId: string) {
@@ -31,8 +31,9 @@ export const dashboardService = {
   async getOverallProgress(userId: string) {
     const { data, error } = await supabase.from('progress').select('status').eq('user_id', userId);
     if (error) throw error;
-    const total = data.length;
-    const completed = data.filter((p) => p.status === 'completed').length;
+    const rows = data as { status: ProgressStatus }[];
+    const total = rows.length;
+    const completed = rows.filter((p) => p.status === 'completed').length;
     return { total, completed, percent: total > 0 ? Math.round((completed / total) * 100) : 0 };
   },
 };
