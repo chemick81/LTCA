@@ -1,0 +1,486 @@
+{
+  "version": "1.0",
+  "exportedAt": "2026-07-20T17:51:43.751Z",
+  "sourceAccountId": "94ehqc4g9ti6gnd",
+  "course": {
+    "id": "vxapbf5trwgmzzg",
+    "title": "Méthode EPB : Trading Contrarien sur Nasdaq Futures",
+    "file": "course.json"
+  },
+  "lessons": [
+    {
+      "id": "6kj3mxkih3skpms",
+      "order": 1,
+      "file": "lessons/6kj3mxkih3skpms.json"
+    },
+    {
+      "id": "fap1o9goeiwhb1s",
+      "order": 2,
+      "file": "lessons/fap1o9goeiwhb1s.json"
+    },
+    {
+      "id": "1nyg3yx4kswscew",
+      "order": 3,
+      "file": "lessons/1nyg3yx4kswscew.json"
+    },
+    {
+      "id": "75d0ouhakpv7job",
+      "order": 4,
+      "file": "lessons/75d0ouhakpv7job.json"
+    },
+    {
+      "id": "x953qxkeuni2hbc",
+      "order": 5,
+      "file": "lessons/x953qxkeuni2hbc.json"
+    },
+    {
+      "id": "jsn1h9gy8pwp28d",
+      "order": 6,
+      "file": "lessons/jsn1h9gy8pwp28d.json"
+    },
+    {
+      "id": "0gi3271hhoc4209",
+      "order": 7,
+      "file": "lessons/0gi3271hhoc4209.json"
+    },
+    {
+      "id": "tp0p5myriz1781t",
+      "order": 8,
+      "file": "lessons/tp0p5myriz1781t.json"
+    }
+  ],
+  "media": [
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/onrxr7w8mb1hnfr/ai_generated_1778953844677_104jxjdsmw.webp",
+      "hash": "7bd7c4d0657c4a5eaa1de6560fd3e76d",
+      "file": "media/7bd7c4d0657c4a5eaa1de6560fd3e76d.webp",
+      "mimeType": "image/webp",
+      "size": 246866
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/x7j4gb1t43k881s/talking_video_1778954291310_zkhopoh47m.mp4",
+      "hash": "c5cdb01da87cacb09e025ce3882519f5",
+      "file": "media/c5cdb01da87cacb09e025ce3882519f5.mp4",
+      "mimeType": "video/mp4",
+      "size": 10768761
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/w8o9pgrkvpk6b4v/subtitles_1778954291170_zzkrueygdr.vtt",
+      "hash": "280902307ced985e82f0484fe01a6a24",
+      "file": "media/280902307ced985e82f0484fe01a6a24.vtt",
+      "mimeType": "text/vtt",
+      "size": 694
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/x0enyg9x5ikxwrn/ai_generated_1778953846359_9x4xzlozjl.webp",
+      "hash": "a1b2574bc2a18a054b3be311583d813c",
+      "file": "media/a1b2574bc2a18a054b3be311583d813c.webp",
+      "mimeType": "image/webp",
+      "size": 235320
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/4exdwe9iqcqyhfg/ai_generated_1778953844203_yrl9je10io.webp",
+      "hash": "0fcdf86cd1830bff5b4f30ae8a4e96db",
+      "file": "media/0fcdf86cd1830bff5b4f30ae8a4e96db.webp",
+      "mimeType": "image/webp",
+      "size": 240674
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/drlmlj17h8s4nic/ai_generated_1778953855268_6a52yrlfad.webp",
+      "hash": "e4ecc4ef7747b3b2e6319c6ddc095f6d",
+      "file": "media/e4ecc4ef7747b3b2e6319c6ddc095f6d.webp",
+      "mimeType": "image/webp",
+      "size": 113588
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/ualug4lbdi8gjij/ai_generated_1778953860470_vl22fhp64a.webp",
+      "hash": "2ec490ea20175fe9642508b3d06f93b6",
+      "file": "media/2ec490ea20175fe9642508b3d06f93b6.webp",
+      "mimeType": "image/webp",
+      "size": 44484
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/21xppf0dg99nxty/ai_generated_1778953943132_r48osro36y.webp",
+      "hash": "965b51e77d9f95b03e90a38e84a1488b",
+      "file": "media/965b51e77d9f95b03e90a38e84a1488b.webp",
+      "mimeType": "image/webp",
+      "size": 53852
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/zmm7ly42xijeb6q/ai_generated_1778953943802_eqenr7zlz6.webp",
+      "hash": "05ffc9eee29af1af745ae88318e46edd",
+      "file": "media/05ffc9eee29af1af745ae88318e46edd.webp",
+      "mimeType": "image/webp",
+      "size": 49264
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/sjyexogb5rkc7l9/ai_generated_1778953943952_sr7c5q7jnz.webp",
+      "hash": "8d376307a6d4b0b460715e8fdc553dfc",
+      "file": "media/8d376307a6d4b0b460715e8fdc553dfc.webp",
+      "mimeType": "image/webp",
+      "size": 49964
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/9atiunm7qsv0m5k/ai_generated_1778953942973_31wkqvdik3.webp",
+      "hash": "7159d837c2ceddfe66e3c695b49661fe",
+      "file": "media/7159d837c2ceddfe66e3c695b49661fe.webp",
+      "mimeType": "image/webp",
+      "size": 51430
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/e85md83jbo81ze3/ai_generated_1778953944280_dq2on97p7h.webp",
+      "hash": "9ab9188db4ba855482cc04ebcba60070",
+      "file": "media/9ab9188db4ba855482cc04ebcba60070.webp",
+      "mimeType": "image/webp",
+      "size": 47500
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/4rblyzjl8btup36/ai_generated_1778953943292_rynqlnz37u.webp",
+      "hash": "be63645ccd319b8c011eb39f01fdab50",
+      "file": "media/be63645ccd319b8c011eb39f01fdab50.webp",
+      "mimeType": "image/webp",
+      "size": 53266
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/lstttyvbxsb2l5w/ai_generated_1778953943632_2ytetdvs28.webp",
+      "hash": "9e563eaf855b6c8b8a3c42ca0d208d1d",
+      "file": "media/9e563eaf855b6c8b8a3c42ca0d208d1d.webp",
+      "mimeType": "image/webp",
+      "size": 49424
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/zl9izlex7aoio1b/ai_generated_1778953944585_20sm2fggpo.webp",
+      "hash": "558c05745fa9c34a4b4be9ac0064d49d",
+      "file": "media/558c05745fa9c34a4b4be9ac0064d49d.webp",
+      "mimeType": "image/webp",
+      "size": 45396
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/qklz7mbbdokh8vu/ai_generated_1778954099609_msosflna4e.webp",
+      "hash": "aefe813fc5fd2ce3786bc083771cfd84",
+      "file": "media/aefe813fc5fd2ce3786bc083771cfd84.webp",
+      "mimeType": "image/webp",
+      "size": 45790
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/oliiudtg074uf9l/ai_generated_1778954112526_40628asa8e.webp",
+      "hash": "2f6ef52bfc7d306aebaa8232d6a012da",
+      "file": "media/2f6ef52bfc7d306aebaa8232d6a012da.webp",
+      "mimeType": "image/webp",
+      "size": 30748
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/3xdhemzrcgnf9xd/ai_generated_1778954124770_zr6scqxu0b.webp",
+      "hash": "f10d26dd3ba2835963bc07a0aab7250b",
+      "file": "media/f10d26dd3ba2835963bc07a0aab7250b.webp",
+      "mimeType": "image/webp",
+      "size": 61516
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/1rhnmv1we4jnmns/ai_generated_1778954136304_09ayb3g9b2.webp",
+      "hash": "b37c6da1eae3ad5425124056ee8d6eb7",
+      "file": "media/b37c6da1eae3ad5425124056ee8d6eb7.webp",
+      "mimeType": "image/webp",
+      "size": 34748
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/g3ewq5lpimdcbti/ai_generated_1778954148216_pn5x2x7qdu.webp",
+      "hash": "7df1518f810fa32b3aa953acbdaba73f",
+      "file": "media/7df1518f810fa32b3aa953acbdaba73f.webp",
+      "mimeType": "image/webp",
+      "size": 32124
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/klvgrjt6c52bzvd/talking_video_1778962523415_jcqxn962sl.mp4",
+      "hash": "aab984f6890b12e17f738ddc9651e539",
+      "file": "media/aab984f6890b12e17f738ddc9651e539.mp4",
+      "mimeType": "video/mp4",
+      "size": 9392044
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/84aijropdioxwcw/subtitles_1778962523282_43blku7vtm.vtt",
+      "hash": "88c2c8d1a400401e459572f004d8457b",
+      "file": "media/88c2c8d1a400401e459572f004d8457b.vtt",
+      "mimeType": "text/vtt",
+      "size": 772
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/bhl3ohnql0xje7k/ai_generated_1778962015871_raa9mmcc85.webp",
+      "hash": "fdff19ce39bb73d5349d5eb95d81e603",
+      "file": "media/fdff19ce39bb73d5349d5eb95d81e603.webp",
+      "mimeType": "image/webp",
+      "size": 336670
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/sthghczawf57o96/ai_generated_1778962014782_dc14oyxnkj.webp",
+      "hash": "7851e01ad3a1bcb6e86907b2fe2e686e",
+      "file": "media/7851e01ad3a1bcb6e86907b2fe2e686e.webp",
+      "mimeType": "image/webp",
+      "size": 112974
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/idb8ye7a5lebxrf/ai_generated_1778962014770_396dncffav.webp",
+      "hash": "fc04fa05d1f1f9d67c21effb453c2cbb",
+      "file": "media/fc04fa05d1f1f9d67c21effb453c2cbb.webp",
+      "mimeType": "image/webp",
+      "size": 89560
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/4rte7uq6a1ntgi7/ai_generated_1778962029856_3ccztony0e.webp",
+      "hash": "51dabf54217333212b9213ca51b19d32",
+      "file": "media/51dabf54217333212b9213ca51b19d32.webp",
+      "mimeType": "image/webp",
+      "size": 109838
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/9bf1ij9z10djzfg/ai_generated_1778962055156_fplftws080.webp",
+      "hash": "2c06529afa0f8f82ec2fb1c51165fbf6",
+      "file": "media/2c06529afa0f8f82ec2fb1c51165fbf6.webp",
+      "mimeType": "image/webp",
+      "size": 108442
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/yaeidkmrew9m5ip/ai_generated_1778962105338_kp9ajglmrj.webp",
+      "hash": "73a4da72cb763ff189b0ee8aabcbfa85",
+      "file": "media/73a4da72cb763ff189b0ee8aabcbfa85.webp",
+      "mimeType": "image/webp",
+      "size": 108828
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/explyycylh5ddag/ai_generated_1778962117327_20u1ntbfoc.webp",
+      "hash": "585b192ea17746e9fa9c9c6f71ba5539",
+      "file": "media/585b192ea17746e9fa9c9c6f71ba5539.webp",
+      "mimeType": "image/webp",
+      "size": 108144
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/quolnj20d57rpd7/ai_generated_1778962042509_445hcgt55t.webp",
+      "hash": "77d7c0a692e54d74394d27265a52197a",
+      "file": "media/77d7c0a692e54d74394d27265a52197a.webp",
+      "mimeType": "image/webp",
+      "size": 108660
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/tzb1iummd3qsed2/ai_generated_1778962068418_hr68o4od4q.webp",
+      "hash": "4d075f2a92d97c1876de4da792aa9afb",
+      "file": "media/4d075f2a92d97c1876de4da792aa9afb.webp",
+      "mimeType": "image/webp",
+      "size": 108198
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/lcmp8p9qv915qth/ai_generated_1778962092596_pl9h474h8w.webp",
+      "hash": "c9c1f8c3ce0eddec998ec4ba53fa522c",
+      "file": "media/c9c1f8c3ce0eddec998ec4ba53fa522c.webp",
+      "mimeType": "image/webp",
+      "size": 108726
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/4q70vsqj0pabene/ai_generated_1778962081778_h6q2ydl5x8.webp",
+      "hash": "8bba4a24946a0fa98610e6b7d02f959d",
+      "file": "media/8bba4a24946a0fa98610e6b7d02f959d.webp",
+      "mimeType": "image/webp",
+      "size": 109040
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/w2360203bk1c9a1/ai_generated_1778962203818_48svh9cykc.webp",
+      "hash": "4dd9cfd96a727070e17b8f87021b11be",
+      "file": "media/4dd9cfd96a727070e17b8f87021b11be.webp",
+      "mimeType": "image/webp",
+      "size": 26216
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/cuk2o9xb4ddnihi/ai_generated_1778962214491_4ra2mpl1g9.webp",
+      "hash": "b60f78a015768f3379efb5b6dd805f44",
+      "file": "media/b60f78a015768f3379efb5b6dd805f44.webp",
+      "mimeType": "image/webp",
+      "size": 35736
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/ahorb1i46gpjikv/ai_generated_1778962226914_a6gsh3n1di.webp",
+      "hash": "630dfd1978b881e107b6c7c1d057d319",
+      "file": "media/630dfd1978b881e107b6c7c1d057d319.webp",
+      "mimeType": "image/webp",
+      "size": 41014
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/2vha7hjggvadiwr/ai_generated_1778962239619_7zhm51grel.webp",
+      "hash": "6a36e280bf2e1ac0bfc6ca18f5aa9362",
+      "file": "media/6a36e280bf2e1ac0bfc6ca18f5aa9362.webp",
+      "mimeType": "image/webp",
+      "size": 35538
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/z56x8n8e3ybcicp/ai_generated_1778962252360_cg37n65zui.webp",
+      "hash": "eebf4b824fc7e26ea0bfdbd9368ddb4f",
+      "file": "media/eebf4b824fc7e26ea0bfdbd9368ddb4f.webp",
+      "mimeType": "image/webp",
+      "size": 25504
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/1hwljvxhfeexxux/ai_generated_1778963528625_25zqorbhhw.webp",
+      "hash": "fc9c56ce59fbe220a5afbaae915705a1",
+      "file": "media/fc9c56ce59fbe220a5afbaae915705a1.webp",
+      "mimeType": "image/webp",
+      "size": 100478
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/z7rcnvqj6dey7i3/ai_generated_1778963528478_nfkullzyyb.webp",
+      "hash": "9b145441e29d0403f706324dbd4a2b8c",
+      "file": "media/9b145441e29d0403f706324dbd4a2b8c.webp",
+      "mimeType": "image/webp",
+      "size": 19722
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/mqa5nry0srh9lpm/ai_generated_1778963535239_yvdc6eqgzi.webp",
+      "hash": "8edd0d5257e0abb94a15b6f58e123ff5",
+      "file": "media/8edd0d5257e0abb94a15b6f58e123ff5.webp",
+      "mimeType": "image/webp",
+      "size": 244684
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/fv9pulpglfpft73/ai_generated_1778963543041_kao0iy6114.webp",
+      "hash": "5563bb842eefaba09f914b3d379e4734",
+      "file": "media/5563bb842eefaba09f914b3d379e4734.webp",
+      "mimeType": "image/webp",
+      "size": 92496
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/kp13qo36ix6tz6w/ai_generated_1778963570613_yfkvp97o7f.webp",
+      "hash": "0ac8fa32f29d1263c0458b4460b24ebf",
+      "file": "media/0ac8fa32f29d1263c0458b4460b24ebf.webp",
+      "mimeType": "image/webp",
+      "size": 90216
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/58tp9v38s0aeu18/ai_generated_1778963629517_syjsdvb6n1.webp",
+      "hash": "12c38bd15edce6212b9507add2ff0ac7",
+      "file": "media/12c38bd15edce6212b9507add2ff0ac7.webp",
+      "mimeType": "image/webp",
+      "size": 90514
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/zmewlgw4jtl2enq/ai_generated_1778963644241_1qgusexk8s.webp",
+      "hash": "c51c6929c64d21ab75aa21d3b8b0e423",
+      "file": "media/c51c6929c64d21ab75aa21d3b8b0e423.webp",
+      "mimeType": "image/webp",
+      "size": 90900
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/v5cf40mione05le/ai_generated_1778963557311_dl4qedrstx.webp",
+      "hash": "3c63cf7c4b8eb0818317db7c684e902c",
+      "file": "media/3c63cf7c4b8eb0818317db7c684e902c.webp",
+      "mimeType": "image/webp",
+      "size": 91390
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/l7twyefo5hozets/ai_generated_1778963585367_dbl9afqv9b.webp",
+      "hash": "07ecc1ab920bfc35c61f4aaf374966cc",
+      "file": "media/07ecc1ab920bfc35c61f4aaf374966cc.webp",
+      "mimeType": "image/webp",
+      "size": 89534
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/y7srr8e5afjnlth/ai_generated_1778963612605_cw025qg46n.webp",
+      "hash": "1bfdbc3de22fb0e5c068c58c2d48395b",
+      "file": "media/1bfdbc3de22fb0e5c068c58c2d48395b.webp",
+      "mimeType": "image/webp",
+      "size": 90598
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/37b0xxqps21jbe1/ai_generated_1778963598677_pp4yltbzzc.webp",
+      "hash": "4593339a03f70c650e40f3956cae7afc",
+      "file": "media/4593339a03f70c650e40f3956cae7afc.webp",
+      "mimeType": "image/webp",
+      "size": 91466
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/f0ic5milq4ip7ca/boss_contrarien_academy_discord_e7shopiaag.webp",
+      "hash": "2caa414d7bc17c0611a6cbffe6aafc4d",
+      "file": "media/2caa414d7bc17c0611a6cbffe6aafc4d.webp",
+      "mimeType": "image/webp",
+      "size": 105768
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/ga7u3xvrbltzjjl/ai_generated_1778963724100_8g66omwil9.webp",
+      "hash": "26039b553d1325d13f8a15afbb389af0",
+      "file": "media/26039b553d1325d13f8a15afbb389af0.webp",
+      "mimeType": "image/webp",
+      "size": 40516
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/mvm0a29sf0br18c/ai_generated_1778963726615_3vnbb6ewcy.webp",
+      "hash": "e58ffd4d0cacec98d3af46bd0f6d65f6",
+      "file": "media/e58ffd4d0cacec98d3af46bd0f6d65f6.webp",
+      "mimeType": "image/webp",
+      "size": 97390
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/t8a5mpcys76szd6/ai_generated_1778963726712_mxnkpo9ut2.webp",
+      "hash": "935acac9b60d9d271701008f79f0a77c",
+      "file": "media/935acac9b60d9d271701008f79f0a77c.webp",
+      "mimeType": "image/webp",
+      "size": 106252
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/uqygmw5aq5v76yk/ai_generated_1778963739186_ry6kzajtci.webp",
+      "hash": "c66a2b3d367adba65ef6c8e787105bff",
+      "file": "media/c66a2b3d367adba65ef6c8e787105bff.webp",
+      "mimeType": "image/webp",
+      "size": 70540
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/oe60hhu5ug63rpz/ai_generated_1778963765447_hj7c05fyxq.webp",
+      "hash": "0e123797fc01d6583cbf0d7dc508ab97",
+      "file": "media/0e123797fc01d6583cbf0d7dc508ab97.webp",
+      "mimeType": "image/webp",
+      "size": 71540
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/4uwimcllfo8iz4q/ai_generated_1778963818182_soaxeesi5n.webp",
+      "hash": "2c5dcb533d87d9127ac7cefca7d7768b",
+      "file": "media/2c5dcb533d87d9127ac7cefca7d7768b.webp",
+      "mimeType": "image/webp",
+      "size": 71078
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/m2sbw3hh5yn5ggd/ai_generated_1778963830264_vbtcqlm0i4.webp",
+      "hash": "7b3a8cf49442b04fa8015dbf52062262",
+      "file": "media/7b3a8cf49442b04fa8015dbf52062262.webp",
+      "mimeType": "image/webp",
+      "size": 71672
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/mpmd5g4hlh0o05q/ai_generated_1778963752017_ozplbtxtj7.webp",
+      "hash": "781b2e52425eead88e9ca648035974b8",
+      "file": "media/781b2e52425eead88e9ca648035974b8.webp",
+      "mimeType": "image/webp",
+      "size": 71768
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/y6nsb99jc35x9pr/ai_generated_1778963778103_y3e6b4c9ff.webp",
+      "hash": "031eb05d370bb6a3a3d6dfac44646039",
+      "file": "media/031eb05d370bb6a3a3d6dfac44646039.webp",
+      "mimeType": "image/webp",
+      "size": 71476
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/u7hni2f62wwtenh/ai_generated_1778963804867_1yk2lmwb68.webp",
+      "hash": "dad748f109919db0c0d571c52d0ffe1c",
+      "file": "media/dad748f109919db0c0d571c52d0ffe1c.webp",
+      "mimeType": "image/webp",
+      "size": 71450
+    },
+    {
+      "originalUrl": "/api/media/file/pbc_694363012/yt537d2zoralda5/ai_generated_1778963793125_8nkeu0cuqw.webp",
+      "hash": "2bc68502c49419f87d48fc53c4f5d137",
+      "file": "media/2bc68502c49419f87d48fc53c4f5d137.webp",
+      "mimeType": "image/webp",
+      "size": 71510
+    }
+  ],
+  "coverImage": {
+    "file": "cover/cover.png",
+    "mimeType": "image/png"
+  },
+  "externalVideos": []
+}

@@ -1,0 +1,1376 @@
+{
+  "title": "Leçon 1 : Marc et le Mythe du Prix « Trop Cher » (La Vraie Logique Contrarienne)",
+  "order": 1,
+  "performance_outcome": "<ul><li>Différencier une véritable opportunité contrarienne d'une anticipation basée sur l'émotion ou l'intuition.</li><li>Analyser les erreurs passées de Marc pour identifier les dangers psychologiques et financiers du trading émotionnel.</li><li>Expliquer la logique d'oscillation des marchés et le concept d'excès créant une tension.</li><li>Identifier les trois piliers (Extension, Poussée, Blocage) qui composent la méthode EPB.</li></ul>",
+  "content_json": [
+    {
+      "background": {
+        "color": "#0f172a"
+      },
+      "data": {
+        "html": "<h1 style=\"color:#ffffff; text-align: center;\">Leçon 1 : Le Mythe du Prix « Trop Cher »</h1><p style=\"color:#cbd5e1; text-align: center; font-size: 1.2em; max-width: 800px; margin: 0 auto;\">Découvrez la vraie logique contrarienne et apprenez à dompter l'illusion de l'intuition face aux mouvements extrêmes du marché.</p>"
+      },
+      "id": "b2031d5d-fdfe-4b94-bb6a-2b6335297537",
+      "name": "Introduction",
+      "padding": {
+        "bottom": 64,
+        "left": 0,
+        "right": 0,
+        "top": 64
+      },
+      "type": "content",
+      "width": "full"
+    },
+    {
+      "data": {
+        "rows": [
+          {
+            "cells": [
+              {
+                "content": "<h3>L'illusion de la bonne affaire</h3><p>Rencontrez Marc. Marc est un trader indépendant sur le Nasdaq Futures. Il maîtrise la théorie, connaît ses figures graphiques sur le bout des doigts, et pourtant, son capital fond comme neige au soleil.</p><p>Son péché mignon ? L'intuition émotionnelle. Face à un marché qui dévisse de 80 points en ligne droite, son cerveau lui crie : <em>« C'est impossible que ça baisse plus, c'est devenu trop peu cher, ça va forcément remonter ! »</em> Il clique sur <strong>Achat</strong> en pleine chute libre... et le marché continue de s'effondrer. Pour compenser, il moyenne à la baisse, augmentant son risque et son stress.</p><p>C'est ce qu'on appelle essayer d'attraper un couteau qui tombe. Et c'est la cause numéro un de la ruine des traders particuliers.</p>",
+                "id": "c1",
+                "type": "text"
+              },
+              {
+                "content": "/api/media/file/pbc_694363012/onrxr7w8mb1hnfr/ai_generated_1778953844677_104jxjdsmw.webp",
+                "id": "c2",
+                "objectFit": "contain",
+                "type": "image"
+              }
+            ],
+            "id": "r1"
+          }
+        ]
+      },
+      "id": "404feddb-dcf6-4b53-af63-54f8876b67cc",
+      "type": "content"
+    },
+    {
+      "data": {
+        "autostart": false,
+        "cuepoints": [],
+        "duration": 30.76,
+        "mediaUrl": "/api/media/file/pbc_694363012/x7j4gb1t43k881s/talking_video_1778954291310_zkhopoh47m.mp4",
+        "showControls": true,
+        "showCuepointsOnTimeline": true,
+        "source": "local",
+        "subtitles": [
+          {
+            "isDefault": true,
+            "label": "English",
+            "language": "en",
+            "url": "/api/media/file/pbc_694363012/w8o9pgrkvpk6b4v/subtitles_1778954291170_zzkrueygdr.vtt"
+          }
+        ]
+      },
+      "id": "cd647372-c0ec-45ef-883b-74b4de7407f3",
+      "name": "Le problème de Marc",
+      "type": "video"
+    },
+    {
+      "data": {
+        "rows": [
+          {
+            "cells": [
+              {
+                "content": "<h3>La Vraie Logique Contrarienne (L'Élastique)</h3><p>Une véritable approche contrarienne (trader à l'inverse du mouvement dominant) ne consiste <strong>jamais</strong> à deviner un point bas par magie. Elle repose sur la physique du marché : l'oscillation et la tension.</p><p>Imaginez le marché comme un élastique. Quand le prix baisse lentement, l'élastique se détend doucement sans créer de tension. Mais s'il y a un excès de panique, une chute violente et anormale, l'élastique est étiré à l'extrême. C'est cette <strong>tension</strong> qui crée l'opportunité d'un rebond rapide.</p><p>Cependant, une erreur classique est de penser que la tension seule suffit. Tant que la force qui tire l'élastique (les vendeurs) ne lâche pas prise, l'élastique peut casser (votre capital avec). Il faut une méthode pour identifier quand cette force s'épuise réellement.</p>",
+                "id": "c3",
+                "type": "text"
+              }
+            ],
+            "id": "r2"
+          }
+        ]
+      },
+      "id": "cf913920-3f63-4730-8c07-018f1d0718ad",
+      "name": "Logique Contrarienne",
+      "type": "content"
+    },
+    {
+      "data": {
+        "backgroundImage": "/api/media/file/pbc_694363012/x0enyg9x5ikxwrn/ai_generated_1778953846359_9x4xzlozjl.webp",
+        "dragItems": [
+          {
+            "content": "<p>Acheter car « ça a trop baissé »</p>",
+            "correctTargets": [
+              "t1"
+            ],
+            "id": "i1"
+          },
+          {
+            "content": "<p>Attendre que les vendeurs soient bloqués au carnet d'ordres</p>",
+            "correctTargets": [
+              "t2"
+            ],
+            "id": "i2"
+          },
+          {
+            "content": "<p>Moyenner à la baisse pour rattraper une position perdante</p>",
+            "correctTargets": [
+              "t1"
+            ],
+            "id": "i3"
+          },
+          {
+            "content": "<p>Mesurer l'ampleur mathématique d'une extension de prix</p>",
+            "correctTargets": [
+              "t2"
+            ],
+            "id": "i4"
+          }
+        ],
+        "dropTargets": [
+          {
+            "height": 70,
+            "id": "t1",
+            "label": "Anticipation Émotionnelle",
+            "labelPosition": "top",
+            "width": 40,
+            "x": 28,
+            "y": 50
+          },
+          {
+            "height": 70,
+            "id": "t2",
+            "label": "Véritable Logique Contrarienne",
+            "labelPosition": "top",
+            "width": 40,
+            "x": 72,
+            "y": 50
+          }
+        ],
+        "feedbackMode": "immediate",
+        "itemLayout": "stacked",
+        "shuffleItems": true
+      },
+      "id": "d7d561a7-d87d-4845-a052-73b1c19c9ac0",
+      "name": "Intuition vs. Méthode",
+      "type": "drag_drop"
+    },
+    {
+      "data": {
+        "rows": [
+          {
+            "cells": [
+              {
+                "content": "<h3>La Solution de Marc : La Méthode EPB</h3><p>Pour contrer ses biais psychologiques, Marc s'appuie désormais sur la méthode <strong>EPB</strong>. Ce n'est pas un indicateur magique, c'est une checklist visuelle et mécanique en trois piliers qui exige un alignement parfait avant de cliquer.</p><p>Explorez l'analogie ci-dessous pour comprendre la dynamique des trois piliers successifs qui constituent le seul environnement où Marc s'autorise désormais à intervenir.</p>",
+                "id": "c4",
+                "type": "text"
+              }
+            ],
+            "id": "r3"
+          }
+        ]
+      },
+      "id": "98c5562d-77dc-4f7e-a10d-dfa2fd0512f4",
+      "padding": {
+        "bottom": 0
+      },
+      "type": "content"
+    },
+    {
+      "data": {
+        "hotspots": [
+          {
+            "color": "#3b82f6",
+            "content": "<p><strong>La cascade (Tension) :</strong> Le prix doit avoir chuté de manière excessive (ex: 60 points sur le Nasdaq). C'est le prérequis absolu. Sans cette extension brutale, il n'y a pas d'effet élastique possible. C'est l'alerte qui dit à Marc de se préparer.</p>",
+            "filled": true,
+            "height": 8,
+            "id": "h1",
+            "label": "1. L'Extension (E)",
+            "opacity": 50,
+            "shape": "rectangle",
+            "showLabel": true,
+            "visible": true,
+            "width": 8,
+            "x": 20,
+            "y": 30
+          },
+          {
+            "color": "#f59e0b",
+            "content": "<p><strong>Le tourbillon (Panique) :</strong> C'est l'accélération finale. Au carnet d'ordres, on observe une agressivité soudaine et désespérée des vendeurs (le dernier 'push' de panique). L'élastique est tendu à son point de rupture.</p>",
+            "filled": true,
+            "height": 8,
+            "id": "h2",
+            "label": "2. La Poussée (P)",
+            "opacity": 50,
+            "shape": "rectangle",
+            "showLabel": true,
+            "visible": true,
+            "width": 8,
+            "x": 50,
+            "y": 60
+          },
+          {
+            "color": "#10b981",
+            "content": "<p><strong>Le barrage (Absorption) :</strong> C'est le déclencheur. Malgré la poussée agressive des vendeurs, le prix refuse de descendre plus bas. Les acheteurs absorbent tout comme un mur de briques. C'est <strong>uniquement ici</strong> que le trade devient valide et que Marc a le droit de cliquer.</p>",
+            "filled": true,
+            "height": 8,
+            "id": "h3",
+            "label": "3. Le Blocage (B)",
+            "opacity": 50,
+            "shape": "rectangle",
+            "showLabel": true,
+            "visible": true,
+            "width": 8,
+            "x": 80,
+            "y": 50
+          }
+        ],
+        "imageUrl": "/api/media/file/pbc_694363012/4exdwe9iqcqyhfg/ai_generated_1778953844203_yrl9je10io.webp",
+        "mode": "discovery"
+      },
+      "id": "74cd8407-2b52-4c8b-b967-81880478bc3e",
+      "name": "Les 3 Piliers",
+      "padding": {
+        "top": 0
+      },
+      "type": "hotspot_image"
+    },
+    {
+      "background": {
+        "color": "#475569"
+      },
+      "data": {
+        "html": "<h2 style=\"color:#ffffff; text-align:center;\">Désamorcer le Piège Émotionnel</h2><p style=\"color:#e2e8f0; text-align:center; max-width: 700px; margin: 0 auto;\">La théorie est simple, mais la pratique psychologique l'est moins. Voyons comment réagir en temps réel quand le marché vous hurle d'acheter.</p>"
+      },
+      "id": "42366290-ee8a-4921-ba4f-a71e19c33693",
+      "padding": {
+        "bottom": 48,
+        "left": 0,
+        "right": 0,
+        "top": 48
+      },
+      "type": "content",
+      "width": "full"
+    },
+    {
+      "data": {
+        "backgroundImage": "/api/media/file/pbc_694363012/drlmlj17h8s4nic/ai_generated_1778953855268_6a52yrlfad.webp",
+        "characterPose": "standing",
+        "characters": [
+          {
+            "baseImage": "/api/media/file/pbc_694363012/ualug4lbdi8gjij/ai_generated_1778953860470_vl22fhp64a.webp",
+            "emotionImages": {
+              "angry": "/api/media/file/pbc_694363012/21xppf0dg99nxty/ai_generated_1778953943132_r48osro36y.webp",
+              "confused": "/api/media/file/pbc_694363012/zmm7ly42xijeb6q/ai_generated_1778953943802_eqenr7zlz6.webp",
+              "excited": "/api/media/file/pbc_694363012/sjyexogb5rkc7l9/ai_generated_1778953943952_sr7c5q7jnz.webp",
+              "happy": "/api/media/file/pbc_694363012/9atiunm7qsv0m5k/ai_generated_1778953942973_31wkqvdik3.webp",
+              "neutral": "/api/media/file/pbc_694363012/e85md83jbo81ze3/ai_generated_1778953944280_dq2on97p7h.webp",
+              "sad": "/api/media/file/pbc_694363012/4rblyzjl8btup36/ai_generated_1778953943292_rynqlnz37u.webp",
+              "surprised": "/api/media/file/pbc_694363012/lstttyvbxsb2l5w/ai_generated_1778953943632_2ytetdvs28.webp",
+              "thinking": "/api/media/file/pbc_694363012/zl9izlex7aoio1b/ai_generated_1778953944585_20sm2fggpo.webp"
+            },
+            "id": "marc",
+            "name": "Marc",
+            "role": "Trader impulsif mais désireux d'apprendre. Il vient de perdre de l'argent en achetant un marché qui chutait simplement parce qu'il sentait que 'c'était trop bas'. Il se justifie en disant que les probabilités de rebond étaient fortes après 80 points de baisse. Il est défensif au début et croit que le marché lui doit un rebond. Ne cédera que si le coach (l'apprenant) lui démontre factuellement pourquoi une chute (Extension) sans preuve d'arrêt (Blocage) est un suicide financier.",
+            "speechBubbleTailX": 50,
+            "speechBubbleTailY": 22,
+            "speechBubbleX": 70,
+            "speechBubbleY": 8,
+            "width": 28,
+            "x": 50,
+            "y": 100
+          },
+          {
+            "id": "learner",
+            "isLearner": true,
+            "name": "Vous",
+            "role": "Coach en psychologie de trading"
+          }
+        ],
+        "initialMessage": "Marc vient de clôturer une session avec une grosse perte. Il a acheté le Nasdaq en pleine chute libre par pure intuition, sans attendre aucun signal EPB. Écoutez ses justifications, recadrez son approche émotionnelle, et rappelez-lui l'importance d'attendre le « Blocage » (l'absorption).",
+        "learningOutcomes": [
+          "Identifier le biais émotionnel de Marc",
+          "Expliquer que l'extension seule ne suffit pas",
+          "Recentrer sur l'importance d'attendre une preuve factuelle d'arrêt (Blocage)"
+        ],
+        "maxTurns": 6,
+        "passingThreshold": 70,
+        "presentation": "scene",
+        "setting": "Session de débriefing après un trade désastreux"
+      },
+      "id": "0c334506-0d16-4833-812e-400c8590d253",
+      "name": "Coaching de Marc",
+      "type": "ai_dialogue"
+    },
+    {
+      "data": {
+        "rows": [
+          {
+            "cells": [
+              {
+                "content": "<h3>La Discipline de l'Attente</h3><p>Comme vous venez de l'expliquer à Marc, cliquer par anticipation est un pari d'argent, pas du trading. Le trader professionnel attend que les autres paniquent, puis il attend la preuve que la panique s'écrase sur un mur (le blocage).</p><p>Mettons-nous en situation. Vous allez observer un marché en pleine chute. Saurez-vous réfréner votre envie de cliquer jusqu'à l'alignement complet de la méthode EPB ?</p>",
+                "id": "c5",
+                "type": "text"
+              }
+            ],
+            "id": "r4"
+          }
+        ]
+      },
+      "id": "79faa660-a84a-40f2-b074-1e64c958c1a0",
+      "padding": {
+        "bottom": 0
+      },
+      "type": "content"
+    },
+    {
+      "data": {
+        "settings": {
+          "cornerRadius": 8,
+          "height": 450,
+          "maxScore": 4,
+          "navigationMode": "guided",
+          "passingScore": 75,
+          "scoreVariableId": "caa45f94-367a-48d8-baef-81ea5138de41",
+          "showNavigation": false,
+          "showSlideIndicator": true,
+          "transitionDuration": 300,
+          "transitionType": "fade",
+          "width": 800
+        },
+        "slides": [
+          {
+            "backgroundColor": "#0f172a",
+            "backgroundImage": "/api/media/file/pbc_694363012/qklz7mbbdokh8vu/ai_generated_1778954099609_msosflna4e.webp",
+            "elements": [
+              {
+                "defaultValue": 0,
+                "id": "caa45f94-367a-48d8-baef-81ea5138de41",
+                "interactions": [],
+                "name": "score",
+                "position": {
+                  "height": 20,
+                  "width": 20,
+                  "x": 0,
+                  "y": 0
+                },
+                "type": "variable",
+                "variableType": "number",
+                "visible": false,
+                "zIndex": 0
+              },
+              {
+                "borderRadius": 12,
+                "fillColor": "#0f172a",
+                "fillOpacity": 0.9,
+                "id": "944ffd19-6100-41a2-8032-5e0fbf32f457",
+                "interactions": [],
+                "name": "Control Bar Background",
+                "position": {
+                  "height": 110,
+                  "width": 720,
+                  "x": 40,
+                  "y": 320
+                },
+                "shapeType": "rectangle",
+                "strokeColor": "#334155",
+                "strokeWidth": 1,
+                "type": "shape",
+                "visible": true,
+                "zIndex": 1
+              },
+              {
+                "fillColor": "transparent",
+                "fillOpacity": 0,
+                "fontSize": 14,
+                "id": "c5559ed5-f9e4-4337-9eac-ecf47c008676",
+                "interactions": [],
+                "name": "Control Bar Text",
+                "padding": 0,
+                "position": {
+                  "height": 90,
+                  "width": 380,
+                  "x": 60,
+                  "y": 330
+                },
+                "shapeType": "rectangle",
+                "strokeWidth": 0,
+                "textAlign": "left",
+                "textColor": "#ffffff",
+                "textContent": "<strong>Étape 1 : Chute initiale</strong><br>Le marché vient de chuter rapidement de 40 points.<br><br><em>Acheter maintenant ?</em>",
+                "type": "shape",
+                "verticalAlign": "top",
+                "visible": true,
+                "zIndex": 2
+              },
+              {
+                "borderRadius": 6,
+                "color": "#334155",
+                "fontSize": 14,
+                "id": "36aec0c3-1271-471f-9636-ea948fc42e40",
+                "interactions": [
+                  {
+                    "actions": [
+                      {
+                        "animation": "fade",
+                        "animationDuration": 200,
+                        "id": "a5a5694b-9263-4cff-b112-4399cec7548e",
+                        "targetElementId": "553bc897-5428-4356-8bde-523a765c77f8",
+                        "type": "show_element"
+                      },
+                      {
+                        "animation": "fade",
+                        "animationDuration": 200,
+                        "id": "ca77b4c6-d8bc-4559-b652-a8fd7194d4e9",
+                        "targetElementId": "c3f8f83a-c57d-48ec-8b33-7646d2457a3d",
+                        "type": "show_element"
+                      }
+                    ],
+                    "trigger": "click"
+                  }
+                ],
+                "name": "Action Buy",
+                "padding": 12,
+                "position": {
+                  "height": 45,
+                  "width": 130,
+                  "x": 460,
+                  "y": 350
+                },
+                "textAlign": "center",
+                "textColor": "#ffffff",
+                "textContent": "Oui, acheter",
+                "type": "button",
+                "variant": "solid",
+                "verticalAlign": "middle",
+                "visible": true,
+                "zIndex": 3
+              },
+              {
+                "borderRadius": 6,
+                "color": "#334155",
+                "fontSize": 14,
+                "id": "e1be90ce-be99-4fe6-9937-9644cbe4ff48",
+                "interactions": [
+                  {
+                    "actions": [
+                      {
+                        "id": "560e5a5b-8713-42e7-8ff5-645390484202",
+                        "targetElementId": "caa45f94-367a-48d8-baef-81ea5138de41",
+                        "type": "increment_variable",
+                        "variableValue": 1
+                      },
+                      {
+                        "id": "b60d0f96-54d0-44d0-af09-fe30a62fce70",
+                        "targetSlideId": "2c36235b-6b1b-4aab-bae1-36024e39f397",
+                        "type": "go_to_slide"
+                      }
+                    ],
+                    "trigger": "click"
+                  }
+                ],
+                "name": "Action Wait",
+                "padding": 12,
+                "position": {
+                  "height": 45,
+                  "width": 130,
+                  "x": 610,
+                  "y": 350
+                },
+                "textAlign": "center",
+                "textColor": "#ffffff",
+                "textContent": "Non, attendre",
+                "type": "button",
+                "variant": "solid",
+                "verticalAlign": "middle",
+                "visible": true,
+                "zIndex": 3
+              },
+              {
+                "borderRadius": 12,
+                "fillColor": "#450a0a",
+                "fillOpacity": 0.95,
+                "fontSize": 15,
+                "id": "553bc897-5428-4356-8bde-523a765c77f8",
+                "interactions": [],
+                "name": "Fail Overlay",
+                "padding": 24,
+                "position": {
+                  "height": 180,
+                  "width": 500,
+                  "x": 150,
+                  "y": 100
+                },
+                "shapeType": "rectangle",
+                "strokeColor": "#ef4444",
+                "strokeWidth": 2,
+                "textAlign": "center",
+                "textColor": "#ffffff",
+                "textContent": "<strong>Action prématurée !</strong><br><br>Il est très dangereux d'attraper un couteau qui tombe. La chute initiale n'est pas un signal d'achat valable. La patience est essentielle en trading au carnet (DOM).",
+                "type": "shape",
+                "verticalAlign": "top",
+                "visible": false,
+                "zIndex": 10
+              },
+              {
+                "borderRadius": 6,
+                "color": "#b91c1c",
+                "fontSize": 14,
+                "id": "c3f8f83a-c57d-48ec-8b33-7646d2457a3d",
+                "interactions": [
+                  {
+                    "actions": [
+                      {
+                        "animation": "fade",
+                        "animationDuration": 200,
+                        "id": "55f1f6de-5e74-4359-861e-d65d25551ef2",
+                        "targetElementId": "553bc897-5428-4356-8bde-523a765c77f8",
+                        "type": "hide_element"
+                      },
+                      {
+                        "animation": "fade",
+                        "animationDuration": 200,
+                        "id": "a863849b-9df4-4130-a22f-a96fb5889f6c",
+                        "targetElementId": "c3f8f83a-c57d-48ec-8b33-7646d2457a3d",
+                        "type": "hide_element"
+                      }
+                    ],
+                    "trigger": "click"
+                  }
+                ],
+                "name": "Retry Button",
+                "padding": 8,
+                "position": {
+                  "height": 45,
+                  "width": 150,
+                  "x": 325,
+                  "y": 215
+                },
+                "textAlign": "center",
+                "textColor": "#ffffff",
+                "textContent": "Compris",
+                "type": "button",
+                "variant": "solid",
+                "verticalAlign": "middle",
+                "visible": false,
+                "zIndex": 11
+              }
+            ],
+            "id": "c11203ac-c003-43ee-b2af-358ab8720a87",
+            "name": "Phase 1 - Chute"
+          },
+          {
+            "backgroundColor": "#0f172a",
+            "backgroundImage": "/api/media/file/pbc_694363012/oliiudtg074uf9l/ai_generated_1778954112526_40628asa8e.webp",
+            "elements": [
+              {
+                "borderRadius": 12,
+                "fillColor": "#0f172a",
+                "fillOpacity": 0.9,
+                "id": "e162caae-ec19-40ef-9182-cec716c06b8a",
+                "interactions": [],
+                "name": "Control Bar Background",
+                "position": {
+                  "height": 110,
+                  "width": 720,
+                  "x": 40,
+                  "y": 320
+                },
+                "shapeType": "rectangle",
+                "strokeColor": "#334155",
+                "strokeWidth": 1,
+                "type": "shape",
+                "visible": true,
+                "zIndex": 1
+              },
+              {
+                "fillColor": "transparent",
+                "fillOpacity": 0,
+                "fontSize": 14,
+                "id": "efb60dd9-6494-4403-b3aa-b8afae9e9134",
+                "interactions": [],
+                "name": "Control Bar Text",
+                "padding": 0,
+                "position": {
+                  "height": 90,
+                  "width": 380,
+                  "x": 60,
+                  "y": 330
+                },
+                "shapeType": "rectangle",
+                "strokeWidth": 0,
+                "textAlign": "left",
+                "textColor": "#ffffff",
+                "textContent": "<strong>Étape 2 : Extension</strong><br>La baisse atteint 65 points. Le mouvement s'étire au-delà du rationnel.<br><br><em>Acheter maintenant ?</em>",
+                "type": "shape",
+                "verticalAlign": "top",
+                "visible": true,
+                "zIndex": 2
+              },
+              {
+                "borderRadius": 6,
+                "color": "#334155",
+                "fontSize": 14,
+                "id": "1e0e690b-43f0-463a-a096-1400a116beaa",
+                "interactions": [
+                  {
+                    "actions": [
+                      {
+                        "animation": "fade",
+                        "animationDuration": 200,
+                        "id": "6262be30-830a-4e46-8db7-1a7288b8208b",
+                        "targetElementId": "c577f37e-cdd7-49f5-954e-0f52013eed88",
+                        "type": "show_element"
+                      },
+                      {
+                        "animation": "fade",
+                        "animationDuration": 200,
+                        "id": "577cdb45-7099-4568-b99e-58a6b8ceee75",
+                        "targetElementId": "8ca643f3-0ac1-46b3-8429-f6d2d0475cf4",
+                        "type": "show_element"
+                      }
+                    ],
+                    "trigger": "click"
+                  }
+                ],
+                "name": "Action Buy",
+                "padding": 12,
+                "position": {
+                  "height": 45,
+                  "width": 130,
+                  "x": 460,
+                  "y": 350
+                },
+                "textAlign": "center",
+                "textColor": "#ffffff",
+                "textContent": "Oui, acheter",
+                "type": "button",
+                "variant": "solid",
+                "verticalAlign": "middle",
+                "visible": true,
+                "zIndex": 3
+              },
+              {
+                "borderRadius": 6,
+                "color": "#334155",
+                "fontSize": 14,
+                "id": "21aa1858-3286-4b05-ab4c-632e27c7f206",
+                "interactions": [
+                  {
+                    "actions": [
+                      {
+                        "id": "1dc30c07-3841-42fb-92e6-87135908f5f2",
+                        "targetElementId": "caa45f94-367a-48d8-baef-81ea5138de41",
+                        "type": "increment_variable",
+                        "variableValue": 1
+                      },
+                      {
+                        "id": "b26f737e-243a-45d6-a993-67ae1a90dc33",
+                        "targetSlideId": "4c0e735d-27b0-4210-bed0-38a914660e21",
+                        "type": "go_to_slide"
+                      }
+                    ],
+                    "trigger": "click"
+                  }
+                ],
+                "name": "Action Wait",
+                "padding": 12,
+                "position": {
+                  "height": 45,
+                  "width": 130,
+                  "x": 610,
+                  "y": 350
+                },
+                "textAlign": "center",
+                "textColor": "#ffffff",
+                "textContent": "Non, attendre",
+                "type": "button",
+                "variant": "solid",
+                "verticalAlign": "middle",
+                "visible": true,
+                "zIndex": 3
+              },
+              {
+                "borderRadius": 12,
+                "fillColor": "#450a0a",
+                "fillOpacity": 0.95,
+                "fontSize": 15,
+                "id": "c577f37e-cdd7-49f5-954e-0f52013eed88",
+                "interactions": [],
+                "name": "Fail Overlay",
+                "padding": 24,
+                "position": {
+                  "height": 180,
+                  "width": 500,
+                  "x": 150,
+                  "y": 100
+                },
+                "shapeType": "rectangle",
+                "strokeColor": "#ef4444",
+                "strokeWidth": 2,
+                "textAlign": "center",
+                "textColor": "#ffffff",
+                "textContent": "<strong>Toujours trop tôt !</strong><br><br>Cette phase est l'<em>Extension</em> (le 'E' de EPB). Le marché étire son mouvement baissier pour piéger les acheteurs précoces, mais la véritable panique finale manque encore.",
+                "type": "shape",
+                "verticalAlign": "top",
+                "visible": false,
+                "zIndex": 10
+              },
+              {
+                "borderRadius": 6,
+                "color": "#b91c1c",
+                "fontSize": 14,
+                "id": "8ca643f3-0ac1-46b3-8429-f6d2d0475cf4",
+                "interactions": [
+                  {
+                    "actions": [
+                      {
+                        "animation": "fade",
+                        "animationDuration": 200,
+                        "id": "2f4d1287-75b2-489d-bc9d-e80fa74e0852",
+                        "targetElementId": "c577f37e-cdd7-49f5-954e-0f52013eed88",
+                        "type": "hide_element"
+                      },
+                      {
+                        "animation": "fade",
+                        "animationDuration": 200,
+                        "id": "9254078d-3a1b-422f-8252-79f1c12db553",
+                        "targetElementId": "8ca643f3-0ac1-46b3-8429-f6d2d0475cf4",
+                        "type": "hide_element"
+                      }
+                    ],
+                    "trigger": "click"
+                  }
+                ],
+                "name": "Retry Button",
+                "padding": 8,
+                "position": {
+                  "height": 45,
+                  "width": 150,
+                  "x": 325,
+                  "y": 215
+                },
+                "textAlign": "center",
+                "textColor": "#ffffff",
+                "textContent": "Compris",
+                "type": "button",
+                "variant": "solid",
+                "verticalAlign": "middle",
+                "visible": false,
+                "zIndex": 11
+              }
+            ],
+            "id": "2c36235b-6b1b-4aab-bae1-36024e39f397",
+            "name": "Phase 2 - Extension"
+          },
+          {
+            "backgroundColor": "#0f172a",
+            "backgroundImage": "/api/media/file/pbc_694363012/3xdhemzrcgnf9xd/ai_generated_1778954124770_zr6scqxu0b.webp",
+            "elements": [
+              {
+                "borderRadius": 12,
+                "fillColor": "#0f172a",
+                "fillOpacity": 0.9,
+                "id": "5129aa6a-287f-4cd5-a091-944716c68067",
+                "interactions": [],
+                "name": "Control Bar Background",
+                "position": {
+                  "height": 110,
+                  "width": 720,
+                  "x": 40,
+                  "y": 320
+                },
+                "shapeType": "rectangle",
+                "strokeColor": "#334155",
+                "strokeWidth": 1,
+                "type": "shape",
+                "visible": true,
+                "zIndex": 1
+              },
+              {
+                "fillColor": "transparent",
+                "fillOpacity": 0,
+                "fontSize": 14,
+                "id": "4cdbfb31-2d48-49bb-ad46-48a66fa533a6",
+                "interactions": [],
+                "name": "Control Bar Text",
+                "padding": 0,
+                "position": {
+                  "height": 90,
+                  "width": 380,
+                  "x": 60,
+                  "y": 330
+                },
+                "shapeType": "rectangle",
+                "strokeWidth": 0,
+                "textAlign": "left",
+                "textColor": "#ffffff",
+                "textContent": "<strong>Étape 3 : Poussée</strong><br>Pic de volume vendeur extrême détecté ! La panique s'installe dans le carnet d'ordres.<br><br><em>Acheter maintenant ?</em>",
+                "type": "shape",
+                "verticalAlign": "top",
+                "visible": true,
+                "zIndex": 2
+              },
+              {
+                "borderRadius": 6,
+                "color": "#334155",
+                "fontSize": 14,
+                "id": "c6fd3f77-792c-4332-9a28-3e9cba5d1a93",
+                "interactions": [
+                  {
+                    "actions": [
+                      {
+                        "animation": "fade",
+                        "animationDuration": 200,
+                        "id": "9d52c54d-cf9d-495f-9c90-1b1142f7da7d",
+                        "targetElementId": "2703130c-d4a8-4aba-a796-b6fa49e3e041",
+                        "type": "show_element"
+                      },
+                      {
+                        "animation": "fade",
+                        "animationDuration": 200,
+                        "id": "9ef38b9e-17c0-46bd-aaa4-5854bd76b7ec",
+                        "targetElementId": "f18caaab-2ad8-47d0-8c8c-944ca0af291b",
+                        "type": "show_element"
+                      }
+                    ],
+                    "trigger": "click"
+                  }
+                ],
+                "name": "Action Buy",
+                "padding": 12,
+                "position": {
+                  "height": 45,
+                  "width": 130,
+                  "x": 460,
+                  "y": 350
+                },
+                "textAlign": "center",
+                "textColor": "#ffffff",
+                "textContent": "Oui, acheter",
+                "type": "button",
+                "variant": "solid",
+                "verticalAlign": "middle",
+                "visible": true,
+                "zIndex": 3
+              },
+              {
+                "borderRadius": 6,
+                "color": "#334155",
+                "fontSize": 14,
+                "id": "9ab0d329-8a8a-4836-992d-ba6147a47393",
+                "interactions": [
+                  {
+                    "actions": [
+                      {
+                        "id": "a884ceab-e51b-48dd-b9da-f9440a5afcb6",
+                        "targetElementId": "caa45f94-367a-48d8-baef-81ea5138de41",
+                        "type": "increment_variable",
+                        "variableValue": 1
+                      },
+                      {
+                        "id": "08e3856a-d797-49d4-bf3e-e6a25ec0e1ea",
+                        "targetSlideId": "84683afd-d622-4de0-be47-92edf40ee7ba",
+                        "type": "go_to_slide"
+                      }
+                    ],
+                    "trigger": "click"
+                  }
+                ],
+                "name": "Action Wait",
+                "padding": 12,
+                "position": {
+                  "height": 45,
+                  "width": 130,
+                  "x": 610,
+                  "y": 350
+                },
+                "textAlign": "center",
+                "textColor": "#ffffff",
+                "textContent": "Non, attendre",
+                "type": "button",
+                "variant": "solid",
+                "verticalAlign": "middle",
+                "visible": true,
+                "zIndex": 3
+              },
+              {
+                "borderRadius": 12,
+                "fillColor": "#450a0a",
+                "fillOpacity": 0.95,
+                "fontSize": 15,
+                "id": "2703130c-d4a8-4aba-a796-b6fa49e3e041",
+                "interactions": [],
+                "name": "Fail Overlay",
+                "padding": 24,
+                "position": {
+                  "height": 180,
+                  "width": 500,
+                  "x": 150,
+                  "y": 100
+                },
+                "shapeType": "rectangle",
+                "strokeColor": "#ef4444",
+                "strokeWidth": 2,
+                "textAlign": "center",
+                "textColor": "#ffffff",
+                "textContent": "<strong>Attention au timing !</strong><br><br>C'est la <em>Poussée</em> (le 'P'). Le volume élevé montre la panique, mais le prix bouge peut-être encore vers le bas. Vous devez attendre la preuve absolue que le mouvement s'est arrêté.",
+                "type": "shape",
+                "verticalAlign": "top",
+                "visible": false,
+                "zIndex": 10
+              },
+              {
+                "borderRadius": 6,
+                "color": "#b91c1c",
+                "fontSize": 14,
+                "id": "f18caaab-2ad8-47d0-8c8c-944ca0af291b",
+                "interactions": [
+                  {
+                    "actions": [
+                      {
+                        "animation": "fade",
+                        "animationDuration": 200,
+                        "id": "4a9d98a8-5478-4a2e-9e0a-001bbe6d1587",
+                        "targetElementId": "2703130c-d4a8-4aba-a796-b6fa49e3e041",
+                        "type": "hide_element"
+                      },
+                      {
+                        "animation": "fade",
+                        "animationDuration": 200,
+                        "id": "3a3f5081-0459-4f49-a6e8-913a378e0a5b",
+                        "targetElementId": "f18caaab-2ad8-47d0-8c8c-944ca0af291b",
+                        "type": "hide_element"
+                      }
+                    ],
+                    "trigger": "click"
+                  }
+                ],
+                "name": "Retry Button",
+                "padding": 8,
+                "position": {
+                  "height": 45,
+                  "width": 150,
+                  "x": 325,
+                  "y": 215
+                },
+                "textAlign": "center",
+                "textColor": "#ffffff",
+                "textContent": "Compris",
+                "type": "button",
+                "variant": "solid",
+                "verticalAlign": "middle",
+                "visible": false,
+                "zIndex": 11
+              }
+            ],
+            "id": "4c0e735d-27b0-4210-bed0-38a914660e21",
+            "name": "Phase 3 - Poussée"
+          },
+          {
+            "backgroundColor": "#0f172a",
+            "backgroundImage": "/api/media/file/pbc_694363012/1rhnmv1we4jnmns/ai_generated_1778954136304_09ayb3g9b2.webp",
+            "elements": [
+              {
+                "borderRadius": 12,
+                "fillColor": "#0f172a",
+                "fillOpacity": 0.9,
+                "id": "fb597a96-140a-46ad-828e-d3f109f106d0",
+                "interactions": [],
+                "name": "Control Bar Background",
+                "position": {
+                  "height": 110,
+                  "width": 720,
+                  "x": 40,
+                  "y": 320
+                },
+                "shapeType": "rectangle",
+                "strokeColor": "#334155",
+                "strokeWidth": 1,
+                "type": "shape",
+                "visible": true,
+                "zIndex": 1
+              },
+              {
+                "fillColor": "transparent",
+                "fillOpacity": 0,
+                "fontSize": 14,
+                "id": "da306d40-272a-452e-954c-0f6326d1a30c",
+                "interactions": [],
+                "name": "Control Bar Text",
+                "padding": 0,
+                "position": {
+                  "height": 90,
+                  "width": 380,
+                  "x": 60,
+                  "y": 330
+                },
+                "shapeType": "rectangle",
+                "strokeWidth": 0,
+                "textAlign": "left",
+                "textColor": "#ffffff",
+                "textContent": "<strong>Étape 4 : Blocage</strong><br>Le prix est complètement figé au plus bas, malgré la continuité du fort volume vendeur (absorption confirmée).<br><br><em>Que faites-vous ?</em>",
+                "type": "shape",
+                "verticalAlign": "top",
+                "visible": true,
+                "zIndex": 2
+              },
+              {
+                "borderRadius": 6,
+                "color": "#334155",
+                "fontSize": 14,
+                "id": "9c48440e-22e8-408a-a9ea-84f415102947",
+                "interactions": [
+                  {
+                    "actions": [
+                      {
+                        "id": "a742fb4c-d75e-4700-9a3e-13052536d913",
+                        "targetElementId": "caa45f94-367a-48d8-baef-81ea5138de41",
+                        "type": "increment_variable",
+                        "variableValue": 1
+                      },
+                      {
+                        "id": "82c8b24f-76d7-4faa-9fd5-e486b9ddff9e",
+                        "targetSlideId": "a4a89869-d541-44b0-822e-bd025b09053d",
+                        "type": "go_to_slide"
+                      }
+                    ],
+                    "trigger": "click"
+                  }
+                ],
+                "name": "Action Buy",
+                "padding": 12,
+                "position": {
+                  "height": 45,
+                  "width": 130,
+                  "x": 460,
+                  "y": 350
+                },
+                "textAlign": "center",
+                "textColor": "#ffffff",
+                "textContent": "Acheter",
+                "type": "button",
+                "variant": "solid",
+                "verticalAlign": "middle",
+                "visible": true,
+                "zIndex": 3
+              },
+              {
+                "borderRadius": 6,
+                "color": "#334155",
+                "fontSize": 14,
+                "id": "ab837e0d-16c0-4014-b546-8807513163be",
+                "interactions": [
+                  {
+                    "actions": [
+                      {
+                        "animation": "fade",
+                        "animationDuration": 200,
+                        "id": "8874a8d9-2a39-4198-bb57-a859dd68451f",
+                        "targetElementId": "32c51a0f-e147-443f-ae18-c106a44a5a75",
+                        "type": "show_element"
+                      },
+                      {
+                        "animation": "fade",
+                        "animationDuration": 200,
+                        "id": "84cbac0e-c3f0-4a7c-ab81-1d414f53166d",
+                        "targetElementId": "f49c3c1c-5210-4c45-8f15-a80024693b24",
+                        "type": "show_element"
+                      }
+                    ],
+                    "trigger": "click"
+                  }
+                ],
+                "name": "Action Wait",
+                "padding": 12,
+                "position": {
+                  "height": 45,
+                  "width": 130,
+                  "x": 610,
+                  "y": 350
+                },
+                "textAlign": "center",
+                "textColor": "#ffffff",
+                "textContent": "Attendre",
+                "type": "button",
+                "variant": "solid",
+                "verticalAlign": "middle",
+                "visible": true,
+                "zIndex": 3
+              },
+              {
+                "borderRadius": 12,
+                "fillColor": "#450a0a",
+                "fillOpacity": 0.95,
+                "fontSize": 15,
+                "id": "32c51a0f-e147-443f-ae18-c106a44a5a75",
+                "interactions": [],
+                "name": "Fail Overlay",
+                "padding": 24,
+                "position": {
+                  "height": 180,
+                  "width": 500,
+                  "x": 150,
+                  "y": 100
+                },
+                "shapeType": "rectangle",
+                "strokeColor": "#ef4444",
+                "strokeWidth": 2,
+                "textAlign": "center",
+                "textColor": "#ffffff",
+                "textContent": "<strong>Opportunité manquée !</strong><br><br>C'est le <em>Blocage</em> (le 'B'). L'absorption totale des vendeurs par les acheteurs est confirmée. Ne soyez pas paralysé, c'est le signal d'entrée idéal !",
+                "type": "shape",
+                "verticalAlign": "top",
+                "visible": false,
+                "zIndex": 10
+              },
+              {
+                "borderRadius": 6,
+                "color": "#b91c1c",
+                "fontSize": 14,
+                "id": "f49c3c1c-5210-4c45-8f15-a80024693b24",
+                "interactions": [
+                  {
+                    "actions": [
+                      {
+                        "animation": "fade",
+                        "animationDuration": 200,
+                        "id": "95e5a313-0f3b-440d-934d-d9fb0ad73e7a",
+                        "targetElementId": "32c51a0f-e147-443f-ae18-c106a44a5a75",
+                        "type": "hide_element"
+                      },
+                      {
+                        "animation": "fade",
+                        "animationDuration": 200,
+                        "id": "2b3b9eaf-f1b7-48c4-92ec-b3646469a222",
+                        "targetElementId": "f49c3c1c-5210-4c45-8f15-a80024693b24",
+                        "type": "hide_element"
+                      }
+                    ],
+                    "trigger": "click"
+                  }
+                ],
+                "name": "Retry Button",
+                "padding": 8,
+                "position": {
+                  "height": 45,
+                  "width": 150,
+                  "x": 325,
+                  "y": 215
+                },
+                "textAlign": "center",
+                "textColor": "#ffffff",
+                "textContent": "Compris",
+                "type": "button",
+                "variant": "solid",
+                "verticalAlign": "middle",
+                "visible": false,
+                "zIndex": 11
+              }
+            ],
+            "id": "84683afd-d622-4de0-be47-92edf40ee7ba",
+            "name": "Phase 4 - Blocage"
+          },
+          {
+            "backgroundColor": "#0f172a",
+            "backgroundImage": "/api/media/file/pbc_694363012/g3ewq5lpimdcbti/ai_generated_1778954148216_pn5x2x7qdu.webp",
+            "elements": [
+              {
+                "borderRadius": 12,
+                "fillColor": "#0f172a",
+                "fillOpacity": 0.95,
+                "fontSize": 15,
+                "id": "f5212825-56cb-448a-bdba-7a2ac0d96be7",
+                "interactions": [],
+                "name": "Summary Panel",
+                "padding": 24,
+                "position": {
+                  "height": 330,
+                  "width": 600,
+                  "x": 100,
+                  "y": 50
+                },
+                "shapeType": "rectangle",
+                "strokeColor": "#22c55e",
+                "strokeWidth": 2,
+                "textAlign": "left",
+                "textColor": "#ffffff",
+                "textContent": "<strong>Excellent ! Configuration EPB validée.</strong><br><br>Vous avez su rester patient et attendre l'alignement des 3 phases clés :<br><br>• <strong>E - Extension :</strong> L'étirement du mouvement au-delà du rationnel, conçu pour piéger les acheteurs précoces.<br>• <strong>P - Poussée :</strong> Le pic de panique caractérisé par un volume vendeur extrême.<br>• <strong>B - Blocage :</strong> L'arrêt net du prix malgré ce fort volume. Les gros portefeuilles absorbent la liquidité, signalant le retournement immédiat.<br><br><em>C'est la maîtrise de cette séquence et la patience au carnet d'ordres qui séparent les professionnels des amateurs.</em>",
+                "type": "shape",
+                "verticalAlign": "top",
+                "visible": true,
+                "zIndex": 1
+              },
+              {
+                "borderRadius": 6,
+                "color": "#22c55e",
+                "fontSize": 14,
+                "id": "e5094b50-6386-4c91-8766-ce4aa8a04fb8",
+                "interactions": [
+                  {
+                    "actions": [
+                      {
+                        "id": "5c12679d-a39f-4a7c-a081-073f3e5018f5",
+                        "type": "complete_slideshow"
+                      }
+                    ],
+                    "trigger": "click"
+                  }
+                ],
+                "name": "End Simulation Button",
+                "padding": 8,
+                "position": {
+                  "height": 45,
+                  "width": 150,
+                  "x": 325,
+                  "y": 310
+                },
+                "textAlign": "center",
+                "textColor": "#ffffff",
+                "textContent": "Terminer",
+                "type": "button",
+                "variant": "solid",
+                "verticalAlign": "middle",
+                "visible": true,
+                "zIndex": 2
+              }
+            ],
+            "id": "a4a89869-d541-44b0-822e-bd025b09053d",
+            "name": "Résultats et Synthèse"
+          }
+        ]
+      },
+      "id": "1d785510-4917-4703-aeff-686ef205780a",
+      "name": "Simulation de Patience",
+      "type": "interactive_slideshow"
+    },
+    {
+      "data": {
+        "rows": [
+          {
+            "cells": [
+              {
+                "content": "<h3>Vérification des Acquis</h3><p>Avant de terminer cette première leçon de préparation psychologique et théorique, vérifions si vous avez bien intégré la différence entre l'impulsion de Marc et la rigueur de l'EPB.</p>",
+                "id": "c6",
+                "type": "text"
+              }
+            ],
+            "id": "r5"
+          }
+        ]
+      },
+      "id": "bf01575d-ea1a-433b-a824-a02dcaad1688",
+      "padding": {
+        "bottom": 0
+      },
+      "type": "content"
+    },
+    {
+      "data": {
+        "questions": [
+          {
+            "explanation": "La vraie logique contrarienne exige des preuves tangibles (un blocage des vendeurs) plutôt qu'un sentiment de prix 'trop bas' qui relève du pari pur et simple.",
+            "id": "q1",
+            "options": [
+              {
+                "id": "a",
+                "is_correct": false,
+                "text": "L'anticipation émotionnelle se base sur des indicateurs lents, l'opportunité se base sur des indicateurs rapides."
+              },
+              {
+                "id": "b",
+                "is_correct": true,
+                "text": "L'anticipation émotionnelle parie sur un prix 'trop bas', l'opportunité attend une preuve factuelle d'absorption."
+              },
+              {
+                "id": "c",
+                "is_correct": false,
+                "text": "L'anticipation émotionnelle nécessite de moyenner à la baisse, l'opportunité contrarienne moyenne à la hausse."
+              },
+              {
+                "id": "d",
+                "is_correct": false,
+                "text": "L'anticipation émotionnelle attend un blocage complet, alors que l'opportunité nécessite d'agir dès la poussée."
+              }
+            ],
+            "question": "Quelle est la principale différence entre une anticipation émotionnelle et une véritable opportunité contrarienne ?",
+            "type": "multiple_choice"
+          },
+          {
+            "blanks": [
+              {
+                "accepted_answers": [
+                  "extension",
+                  "Extension"
+                ],
+                "id": "blank1",
+                "position": 0
+              },
+              {
+                "accepted_answers": [
+                  "poussée",
+                  "poussee",
+                  "Poussée"
+                ],
+                "id": "blank2",
+                "position": 1
+              },
+              {
+                "accepted_answers": [
+                  "blocage",
+                  "Blocage"
+                ],
+                "id": "blank3",
+                "position": 2
+              }
+            ],
+            "explanation": "EPB : Extension (chute), Poussée (panique), Blocage (arrêt/mur).",
+            "id": "q2",
+            "question": "Complétez les trois piliers de la méthode que Marc doit désormais appliquer :",
+            "text_with_blanks": "La méthode se compose de l'[blank1] (le mouvement brutal qui crée la tension), suivi de la [blank2] (l'accélération agressive de panique), et enfin du [blank3] (la preuve d'arrêt par l'absorption).",
+            "type": "fill_blank"
+          },
+          {
+            "ai_grading": {
+              "mode": "rubric",
+              "passing_score": 70,
+              "rubric": "Doit mentionner : l'absence de preuve d'arrêt, le risque que la chute continue, la notion d'élastique qui peut casser sans l'apparition du blocage/absorption."
+            },
+            "explanation": "Tant que le marché ne montre pas de signes de blocage, la pression vendeuse est toujours active. Acheter sur une simple extension revient à essayer d'attraper un couteau qui tombe : la chute peut parfaitement continuer et détruire votre capital.",
+            "id": "q3",
+            "max_length": 250,
+            "question": "Pourquoi une Extension seule (une chute de 60 points par exemple) ne justifie-t-elle jamais, à elle seule, de prendre une position à l'achat ?",
+            "type": "short_answer"
+          }
+        ],
+        "settings": {
+          "passing_score": 70,
+          "show_feedback_mode": "immediate"
+        },
+        "version": 2
+      },
+      "id": "6a4ab431-2b89-48d1-960f-260d4db74575",
+      "name": "Validation",
+      "type": "quiz"
+    },
+    {
+      "data": {
+        "displayMode": "all",
+        "feedbackTiming": "end",
+        "questions": [
+          {
+            "id": "f1",
+            "maxValue": 5,
+            "question": "Dans quelle mesure vous reconnaissez-vous dans le biais de Marc (vouloir acheter parce que 'c'est trop bas') ?",
+            "required": true,
+            "type": "star_rating"
+          },
+          {
+            "id": "f2",
+            "maxLength": 500,
+            "placeholder": "Ex: Je m'engage à arrêter de moyenner à la baisse sans attendre le signal...",
+            "question": "Avant de passer à la Leçon 2, notez ici l'action spécifique que vous allez arrêter de faire en trading à partir d'aujourd'hui :",
+            "required": false,
+            "type": "free_text"
+          }
+        ]
+      },
+      "id": "c80daab5-5a73-4dee-9682-85d527cfa393",
+      "name": "Réflexion Personnelle",
+      "type": "feedback"
+    }
+  ],
+  "require_sequential": false
+}

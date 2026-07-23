@@ -1,0 +1,1310 @@
+{
+  "title": "Leçon 2 : Règle 1 (E) - L'Extension ou l'Art de la Patience",
+  "order": 2,
+  "performance_outcome": "<ul><li>Évaluer un mouvement de prix en direct pour confirmer une Extension valide (≥ 60 points ou ≥ 40 points).</li><li>Différencier les exigences d'extension en session principale (haute liquidité) par rapport aux périodes de basse liquidité.</li><li>Démontrer pourquoi une extension seule ne justifie jamais une prise de position.</li><li>Analyser un graphique pour distinguer un véritable mouvement excessif d'un simple 'lent drift' (glissement progressif).</li></ul>",
+  "content_json": [
+    {
+      "data": {
+        "autostart": false,
+        "cuepoints": [],
+        "duration": 36.68,
+        "mediaUrl": "/api/media/file/pbc_694363012/klvgrjt6c52bzvd/talking_video_1778962523415_jcqxn962sl.mp4",
+        "showControls": true,
+        "showCuepointsOnTimeline": true,
+        "source": "local",
+        "subtitles": [
+          {
+            "isDefault": true,
+            "label": "English",
+            "language": "en",
+            "url": "/api/media/file/pbc_694363012/84aijropdioxwcw/subtitles_1778962523282_43blku7vtm.vtt"
+          }
+        ]
+      },
+      "id": "b96bbdc0-a8c9-42ba-bc81-3233bed3efe4",
+      "name": "Introduction",
+      "type": "video"
+    },
+    {
+      "background": {
+        "color": "#0f172a"
+      },
+      "data": {
+        "html": "<h2 style=\"color:#ffffff; text-align:center;\">Chapitre 1 — Mesurer la Tension de l'Élastique</h2><p style=\"color:#cbd5e1; text-align:center; max-width:800px; margin:0 auto;\">Pour éviter d'acheter au hasard, il faut définir ce qu'est un <em>véritable</em> excès. Fini les impressions, place aux chiffres.</p>"
+      },
+      "id": "1704982b-77cc-48ce-9ace-91961cca3e52",
+      "name": "Chapitre 1 : L'Extension",
+      "padding": {
+        "bottom": 64,
+        "left": 0,
+        "right": 0,
+        "top": 64
+      },
+      "type": "content",
+      "width": "full"
+    },
+    {
+      "data": {
+        "rows": [
+          {
+            "cells": [
+              {
+                "content": "<h3>La règle mathématique du premier pilier (E)</h3><p>Une <strong>Extension</strong> représente la tension maximale de l'élastique avant qu'il ne rebondisse. Sur le Nasdaq, un marché particulièrement volatil, nous ne considérons un mouvement comme 'excessif' que s'il respecte un quota de points strict en ligne quasi-droite.</p><p>Une erreur classique chez les débutants est de chercher des extensions fixes toute la journée. Or, l'amplitude d'un excès dépend directement de la <strong>liquidité</strong> (le nombre d'acteurs présents) :</p><ul><li><strong>Session principale (haute liquidité) :</strong> De 15h30 à 22h00 CET (ouverture US). Il faut une chute d'au moins <strong>60 points</strong> pour valider une tension suffisante. La volatilité normale étant élevée, un mouvement de 40 points est souvent un simple bruit de marché.</li><li><strong>Session nocturne/européenne (basse liquidité) :</strong> Il y a moins d'acheteurs pour freiner la chute. Un mouvement rapide de <strong>40 points</strong> suffit à créer un vide et une panique justifiant une extension valide.</li></ul>",
+                "id": "c1",
+                "type": "text"
+              },
+              {
+                "content": "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"400\" height=\"300\" fill=\"#f8fafc\" rx=\"8\"/><text x=\"200\" y=\"40\" font-family=\"sans-serif\" font-size=\"18\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#1e293b\">Seuils d'Extension (Nasdaq)</text><path d=\"M 100,250 L 100,80\" stroke=\"#cbd5e1\" stroke-width=\"2\" stroke-dasharray=\"4,4\"/><path d=\"M 300,250 L 300,80\" stroke=\"#cbd5e1\" stroke-width=\"2\" stroke-dasharray=\"4,4\"/><text x=\"100\" y=\"270\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"middle\" fill=\"#475569\">Haute Liquidité</text><text x=\"100\" y=\"290\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#94a3b8\">(15h30 - 22h00)</text><rect x=\"70\" y=\"100\" width=\"60\" height=\"130\" fill=\"#ef4444\" rx=\"4\" opacity=\"0.8\"/><text x=\"100\" y=\"170\" font-family=\"sans-serif\" font-size=\"16\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#ffffff\">≥ 60 pts</text><text x=\"300\" y=\"270\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"middle\" fill=\"#475569\">Basse Liquidité</text><text x=\"300\" y=\"290\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#94a3b8\">(Nuit / Europe)</text><rect x=\"270\" y=\"150\" width=\"60\" height=\"80\" fill=\"#f59e0b\" rx=\"4\" opacity=\"0.8\"/><text x=\"300\" y=\"195\" font-family=\"sans-serif\" font-size=\"16\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#ffffff\">≥ 40 pts</text></svg>",
+                "id": "c2",
+                "objectFit": "contain",
+                "type": "svg"
+              }
+            ],
+            "id": "r1"
+          }
+        ]
+      },
+      "id": "01426f10-08ea-472e-bc1b-3cbb28d6ec3d",
+      "type": "content"
+    },
+    {
+      "data": {
+        "cards": [
+          {
+            "back": "<div style=\"font-size: 1.25rem\"><p><strong>Au moins 60 points de chute.</strong><br>La haute liquidité absorbe facilement les petits chocs. Il faut un mouvement massif pour créer une vraie tension.</p></div>",
+            "backBgColor": "#f5f0eb",
+            "backPadding": 10,
+            "front": "<h1>Session US (15h30 - 22h00)</h1>",
+            "frontBgImage": "/api/media/file/pbc_694363012/bhl3ohnql0xje7k/ai_generated_1778962015871_raa9mmcc85.webp",
+            "id": "fc1"
+          },
+          {
+            "back": "<div style=\"font-size: 1.25rem\"><p><strong>Au moins 40 points de chute.</strong><br>La faible liquidité (carnets d'ordres fins) rend le marché plus sensible. Un mouvement de 40 points est suffisant pour signer un excès.</p></div>",
+            "backBgColor": "#f5f0eb",
+            "backPadding": 10,
+            "front": "<h1>Session Globex (Nuit & Europe)</h1>",
+            "frontBgImage": "/api/media/file/pbc_694363012/sthghczawf57o96/ai_generated_1778962014782_dc14oyxnkj.webp",
+            "id": "fc2"
+          }
+        ]
+      },
+      "id": "1017751c-63c7-4ede-9196-e3d1c361a31d",
+      "type": "flashcard"
+    },
+    {
+      "data": {
+        "rows": [
+          {
+            "cells": [
+              {
+                "content": "<h3>Attention au \"Lent Drift\" (Glissement Progressif)</h3><p>Beaucoup confondent une baisse de 60 points avec une <em>extension</em> de 60 points. Si le marché perd 70 points de manière constante sur 2 heures, en faisant des petites pauses et des rebonds réguliers, ce n'est <strong>pas</strong> une extension.</p><p>C'est ce qu'on appelle un <em>lent drift</em>. Le marché trouve simplement son équilibre plus bas, sans créer de panique. Les vendeurs dominent tranquillement et les acheteurs ne sont pas piégés. Essayer de contrer un lent drift, c'est comme essayer d'arrêter un train de marchandises à mains nues. L'élastique n'est pas tendu, il a juste été déplacé.</p><p>Une véritable extension doit être <strong>rapide, verticale et effrayante</strong>.</p>",
+                "id": "drift_c1",
+                "type": "text"
+              }
+            ],
+            "id": "drift_r1"
+          }
+        ]
+      },
+      "id": "6c3f3e17-6ebb-416c-927f-25deb2f80078",
+      "padding": {
+        "bottom": 0
+      },
+      "type": "content"
+    },
+    {
+      "data": {
+        "continueAfterFail": false,
+        "failureMessage": "Ce n'est pas tout à fait ça. Souvenez-vous qu'une extension doit être violente et verticale, pas progressive.",
+        "hotspots": [
+          {
+            "color": "#f59e0b",
+            "filled": true,
+            "height": 8,
+            "id": "hs_drift",
+            "label": "Lent Drift",
+            "opacity": 50,
+            "shape": "rectangle",
+            "visible": true,
+            "width": 8,
+            "x": 20,
+            "y": 40
+          },
+          {
+            "color": "#10b981",
+            "filled": true,
+            "height": 8,
+            "id": "hs_ext",
+            "label": "Vraie Extension",
+            "opacity": 50,
+            "shape": "rectangle",
+            "visible": true,
+            "width": 8,
+            "x": 75,
+            "y": 60
+          }
+        ],
+        "identifyTasks": [
+          {
+            "correctHotspotId": "hs_drift",
+            "id": "task1",
+            "prompt": "Cliquez sur la zone qui représente un 'Lent Drift' mortel à contrer."
+          },
+          {
+            "correctHotspotId": "hs_ext",
+            "id": "task2",
+            "prompt": "Cliquez sur la zone qui représente une véritable Extension valide pour la méthode EPB."
+          }
+        ],
+        "imageAlt": "",
+        "imageUrl": "/api/media/file/pbc_694363012/idb8ye7a5lebxrf/ai_generated_1778962014770_396dncffav.webp",
+        "maxAttempts": 2,
+        "mode": "identify",
+        "overlays": [],
+        "successMessage": "Excellent ! Vous savez distinguer une panique (l'opportunité) d'une tendance baissière lente (le piège).",
+        "taskPrompt": "Cliquez sur la zone qui représente un 'Lent Drift' mortel à contrer."
+      },
+      "id": "803eaa4e-df4e-4c0e-8299-e2abf2256b4a",
+      "name": "Exercice Visuel",
+      "type": "hotspot_image"
+    },
+    {
+      "background": {
+        "color": "#7f1d1d"
+      },
+      "data": {
+        "html": "<h2 style=\"color:#ffffff; text-align:center;\">Chapitre 2 — L'Extension n'est PAS un Signal d'Achat</h2><p style=\"color:#fecaca; text-align:center; max-width:800px; margin:0 auto;\">C'est la leçon la plus douloureuse que Marc a dû apprendre. Voir l'élastique tendu ne signifie pas qu'on doit sauter devant.</p>"
+      },
+      "id": "40cab0c4-48ad-47ce-a8ca-e2570423ac1d",
+      "name": "Chapitre 2 : La Règle d'Or",
+      "padding": {
+        "bottom": 64,
+        "left": 0,
+        "right": 0,
+        "top": 64
+      },
+      "type": "content",
+      "width": "full"
+    },
+    {
+      "data": {
+        "html": "<p>Il est 16h15. Le Nasdaq vient de dévisser de 68 points en l'espace de 4 minutes. La volatilité explose. Marc a bien mémorisé la leçon : il s'agit de la session principale, le mouvement dépasse les 60 points requis et la baisse est extrêmement verticale.</p><p>Son cœur s'accélère. Son doigt tremble sur le clic gauche de sa souris. L'extension est validée. Mais s'il clique maintenant, il enfreint la règle la plus importante de toute la stratégie.</p><p>Aidez Marc à garder son sang-froid et expliquez-lui pourquoi il doit absolument retenir sa main.</p>",
+        "paddingBottom": 0
+      },
+      "id": "44af5e54-b015-4bed-951b-2537629f4887",
+      "type": "content"
+    },
+    {
+      "data": {
+        "backgroundImage": "/api/media/file/pbc_694363012/4rte7uq6a1ntgi7/ai_generated_1778962029856_3ccztony0e.webp",
+        "characterPose": "sitting",
+        "characters": [
+          {
+            "id": "marc_fomo",
+            "name": "Marc",
+            "role": "Un trader indépendant impulsif et sujet au FOMO (peur de rater une opportunité). Il vient de voir une baisse de 68 points, sait que la règle d'Extension est validée, et est convaincu qu'il doit acheter MAINTENANT avant que le marché ne remonte. Il argumente que l'élastique est tendu et qu'attendre risque de lui faire rater le trade. Ne cède que si on lui explique que sans preuve d'essoufflement au carnet d'ordres, l'élastique peut encore casser et descendre de 50 points supplémentaires.",
+            "speechBubbleTailX": 50,
+            "speechBubbleTailY": 22,
+            "speechBubbleX": 70,
+            "speechBubbleY": 8,
+            "width": 28,
+            "x": 50,
+            "y": 100
+          },
+          {
+            "id": "learner",
+            "isLearner": true,
+            "name": "Vous",
+            "role": "Mentor de trading, rigoureux et discipliné."
+          }
+        ],
+        "enableAudioInput": false,
+        "enableTTS": false,
+        "initialMessage": "Le Nasdaq vient de chuter de 68 points. L'étape 'E' (Extension) est validée. Marc est prêt à cliquer sur 'Achat' immédiatement. Convainquez-le d'attendre les étapes suivantes (Poussée et Blocage) en lui expliquant le danger d'acheter une simple extension.",
+        "learningOutcomes": [
+          "Reconnaît que l'extension est bien valide (étape 1 franchie)",
+          "Empêche l'achat impulsif",
+          "Explique que l'extension seule indique un contexte, pas un signal d'arrêt"
+        ],
+        "maxTurns": 4,
+        "passingThreshold": 75,
+        "presentation": "scene",
+        "sceneEmotionImages": {
+          "angry": "/api/media/file/pbc_694363012/9bf1ij9z10djzfg/ai_generated_1778962055156_fplftws080.webp",
+          "confused": "/api/media/file/pbc_694363012/yaeidkmrew9m5ip/ai_generated_1778962105338_kp9ajglmrj.webp",
+          "excited": "/api/media/file/pbc_694363012/explyycylh5ddag/ai_generated_1778962117327_20u1ntbfoc.webp",
+          "happy": "/api/media/file/pbc_694363012/quolnj20d57rpd7/ai_generated_1778962042509_445hcgt55t.webp",
+          "neutral": "/api/media/file/pbc_694363012/4rte7uq6a1ntgi7/ai_generated_1778962029856_3ccztony0e.webp",
+          "sad": "/api/media/file/pbc_694363012/tzb1iummd3qsed2/ai_generated_1778962068418_hr68o4od4q.webp",
+          "surprised": "/api/media/file/pbc_694363012/lcmp8p9qv915qth/ai_generated_1778962092596_pl9h474h8w.webp",
+          "thinking": "/api/media/file/pbc_694363012/4q70vsqj0pabene/ai_generated_1778962081778_h6q2ydl5x8.webp"
+        },
+        "setting": "Session de trading en direct sur le Nasdaq",
+        "showSuggestedResponses": true,
+        "skipEvaluation": true
+      },
+      "id": "d3817a8d-515d-4dc1-95bb-4302a37e316c",
+      "name": "Coaching de Marc",
+      "type": "ai_dialogue"
+    },
+    {
+      "data": {
+        "html": "<h3>L'Étape Suivante : L'Œil Clinique</h3><p>Comme vous l'avez expliqué à Marc, une Extension (E) valide uniquement le <strong>contexte</strong>. Elle nous dit simplement : <em>\"Le marché est dans un état d'anomalie statistique, prépare-toi.\"</em></p><p>Acheter sur une simple extension revient à essayer d'attraper un couteau qui tombe. Pour savoir si le couteau a touché le sol, il faut des preuves tangibles que les vendeurs agressifs s'épuisent. C'est tout l'objet des leçons à venir sur la Poussée (P) et le Blocage (B).</p><p>Avant d'avancer, mettez vos compétences d'analyse à l'épreuve dans la simulation ci-dessous.</p>",
+        "paddingBottom": 0
+      },
+      "id": "d86b0956-26b9-4325-ae76-9f25b6ffdf02",
+      "type": "content"
+    },
+    {
+      "data": {
+        "settings": {
+          "cornerRadius": 8,
+          "height": 450,
+          "maxScore": 3,
+          "navigationMode": "guided",
+          "passingScore": 66,
+          "scoreVariableId": "cd5a5c9c-592f-4eaa-bad5-466504408af8",
+          "showNavigation": false,
+          "showSlideIndicator": true,
+          "transitionDuration": 300,
+          "transitionType": "fade",
+          "width": 800
+        },
+        "slides": [
+          {
+            "backgroundColor": "#0f172a",
+            "backgroundImage": "/api/media/file/pbc_694363012/w2360203bk1c9a1/ai_generated_1778962203818_48svh9cykc.webp",
+            "backgroundSize": "cover",
+            "elements": [
+              {
+                "defaultValue": 0,
+                "id": "cd5a5c9c-592f-4eaa-bad5-466504408af8",
+                "interactions": [],
+                "name": "Score Variable",
+                "position": {
+                  "height": 20,
+                  "width": 20,
+                  "x": 0,
+                  "y": 0
+                },
+                "type": "variable",
+                "variableType": "number",
+                "visible": false,
+                "zIndex": 0
+              },
+              {
+                "borderRadius": 12,
+                "fillColor": "#1e293b",
+                "fillOpacity": 0.95,
+                "fontSize": 16,
+                "id": "c41254ac-a311-4c1f-8b4e-c799b6803fd8",
+                "interactions": [],
+                "name": "Welcome Card",
+                "padding": 24,
+                "position": {
+                  "height": 240,
+                  "width": 600,
+                  "x": 100,
+                  "y": 80
+                },
+                "shapeType": "rectangle",
+                "strokeColor": "#334155",
+                "strokeWidth": 2,
+                "textAlign": "center",
+                "textColor": "#ffffff",
+                "textContent": "<strong>Simulateur de Trading : Règle des 60/40</strong><br><br>Bienvenue sur le terminal. Vous allez analyser 3 mouvements de prix sur les Futures Nasdaq.<br><br>Votre objectif est de distinguer une <em>chute de panique</em> d'une <em>dérive lente</em>. Pour chaque scénario, décidez si vous devez <strong>Valider l'Extension</strong> ou <strong>Rejeter</strong> l'opportunité selon la règle des 60/40.",
+                "type": "shape",
+                "verticalAlign": "middle",
+                "visible": true,
+                "zIndex": 1
+              },
+              {
+                "borderRadius": 8,
+                "color": "#3b82f6",
+                "fontSize": 15,
+                "icon": "lucide:arrow-right",
+                "iconPosition": "right",
+                "id": "a96e9f15-2649-4f74-9257-d4a490c42b7b",
+                "interactions": [
+                  {
+                    "actions": [
+                      {
+                        "id": "5565872c-ca2c-4db9-96ee-4d56f9af3ef0",
+                        "targetSlideId": "bc61e0fc-d921-4483-89fc-d33521e91e1d",
+                        "type": "go_to_slide"
+                      }
+                    ],
+                    "trigger": "click"
+                  }
+                ],
+                "name": "Start Button",
+                "position": {
+                  "height": 50,
+                  "width": 200,
+                  "x": 300,
+                  "y": 350
+                },
+                "textAlign": "center",
+                "textColor": "#ffffff",
+                "textContent": "Démarrer la session",
+                "type": "button",
+                "variant": "solid",
+                "verticalAlign": "middle",
+                "visible": true,
+                "zIndex": 2
+              }
+            ],
+            "id": "3ab3ea41-f363-46b1-a919-66c1037529ed",
+            "name": "Introduction"
+          },
+          {
+            "backgroundColor": "#0f172a",
+            "backgroundImage": "/api/media/file/pbc_694363012/cuk2o9xb4ddnihi/ai_generated_1778962214491_4ra2mpl1g9.webp",
+            "backgroundSize": "cover",
+            "elements": [
+              {
+                "borderRadius": 8,
+                "fillColor": "#1e293b",
+                "fillOpacity": 0.9,
+                "fontSize": 18,
+                "id": "cb7f99ae-8201-4714-8752-25d59e5764f1",
+                "interactions": [],
+                "name": "Header",
+                "padding": 16,
+                "position": {
+                  "height": 60,
+                  "width": 760,
+                  "x": 20,
+                  "y": 20
+                },
+                "shapeType": "rectangle",
+                "strokeColor": "#334155",
+                "strokeWidth": 1,
+                "textAlign": "left",
+                "textColor": "#94a3b8",
+                "textContent": "<strong>Scénario 1 / 3 : Ouverture US</strong>",
+                "type": "shape",
+                "verticalAlign": "middle",
+                "visible": true,
+                "zIndex": 1
+              },
+              {
+                "borderRadius": 8,
+                "fillColor": "#0f172a",
+                "fillOpacity": 0.95,
+                "fontSize": 18,
+                "id": "0e98d44b-b492-48ba-b106-f94b285b82fb",
+                "interactions": [],
+                "name": "Data Card",
+                "padding": 20,
+                "position": {
+                  "height": 140,
+                  "width": 760,
+                  "x": 20,
+                  "y": 100
+                },
+                "shapeType": "rectangle",
+                "strokeColor": "#475569",
+                "strokeWidth": 2,
+                "textAlign": "left",
+                "textColor": "#ffffff",
+                "textContent": "<span style='color:#94a3b8;'>Heure :</span> <strong>15:35 CET</strong><br><br><span style='color:#ef4444;'>Mouvement détecté :</span><br><strong>Baisse violente de 65 points en 3 minutes.</strong> Les volumes sont en forte hausse et le carnet d'ordres se vide rapidement.",
+                "type": "shape",
+                "verticalAlign": "middle",
+                "visible": true,
+                "zIndex": 1
+              },
+              {
+                "borderRadius": 6,
+                "color": "#334155",
+                "fontSize": 14,
+                "id": "f649c8b8-56ee-4ce7-a2a9-93057ff98c68",
+                "interactions": [
+                  {
+                    "actions": [
+                      {
+                        "id": "633624c9-3a79-4b41-82ec-e3b7f0c80415",
+                        "targetElementId": "f649c8b8-56ee-4ce7-a2a9-93057ff98c68",
+                        "type": "hide_element"
+                      },
+                      {
+                        "id": "1b8483ff-b669-4b64-a242-938d7f727ceb",
+                        "targetElementId": "639de9a9-bc6e-42b9-89b0-ecacc6affba6",
+                        "type": "hide_element"
+                      },
+                      {
+                        "id": "9ce57dac-352b-445b-8a37-39624f89bc11",
+                        "targetElementId": "4204c545-ee55-4765-b0de-e6faaa975f4f",
+                        "type": "show_element"
+                      },
+                      {
+                        "id": "658fc105-aadb-425d-ab6d-2d44aae39b5e",
+                        "targetElementId": "91a8305f-5235-4fdd-8f32-925f53e58e43",
+                        "type": "show_element"
+                      },
+                      {
+                        "id": "55c2001f-f66b-4584-a36a-dee047baeff6",
+                        "targetElementId": "cd5a5c9c-592f-4eaa-bad5-466504408af8",
+                        "type": "increment_variable",
+                        "variableValue": 1
+                      }
+                    ],
+                    "trigger": "click"
+                  }
+                ],
+                "name": "Valider",
+                "position": {
+                  "height": 45,
+                  "width": 180,
+                  "x": 200,
+                  "y": 270
+                },
+                "textAlign": "center",
+                "textColor": "#ffffff",
+                "textContent": "Valider Extension",
+                "type": "button",
+                "variant": "solid",
+                "verticalAlign": "middle",
+                "visible": true,
+                "zIndex": 2
+              },
+              {
+                "borderRadius": 6,
+                "color": "#334155",
+                "fontSize": 14,
+                "id": "639de9a9-bc6e-42b9-89b0-ecacc6affba6",
+                "interactions": [
+                  {
+                    "actions": [
+                      {
+                        "id": "081c7b85-a437-40a8-b77a-7e32576d35b4",
+                        "targetElementId": "f649c8b8-56ee-4ce7-a2a9-93057ff98c68",
+                        "type": "hide_element"
+                      },
+                      {
+                        "id": "9bb921e3-4314-430a-b024-b153152ec355",
+                        "targetElementId": "639de9a9-bc6e-42b9-89b0-ecacc6affba6",
+                        "type": "hide_element"
+                      },
+                      {
+                        "id": "ab4dc4d0-da81-4744-9fc2-6b2e55b64e7e",
+                        "targetElementId": "4b58f4b1-5757-4e2e-a08b-ee9c3e7a2100",
+                        "type": "show_element"
+                      },
+                      {
+                        "id": "aa4c51f1-1c07-4fb3-995a-e3dd1f08cb71",
+                        "targetElementId": "91a8305f-5235-4fdd-8f32-925f53e58e43",
+                        "type": "show_element"
+                      }
+                    ],
+                    "trigger": "click"
+                  }
+                ],
+                "name": "Rejeter",
+                "position": {
+                  "height": 45,
+                  "width": 180,
+                  "x": 420,
+                  "y": 270
+                },
+                "textAlign": "center",
+                "textColor": "#ffffff",
+                "textContent": "Rejeter",
+                "type": "button",
+                "variant": "solid",
+                "verticalAlign": "middle",
+                "visible": true,
+                "zIndex": 2
+              },
+              {
+                "borderRadius": 8,
+                "fillColor": "#064e3b",
+                "fillOpacity": 0.95,
+                "fontSize": 14,
+                "id": "4204c545-ee55-4765-b0de-e6faaa975f4f",
+                "interactions": [],
+                "name": "Feedback Correct",
+                "padding": 16,
+                "position": {
+                  "height": 90,
+                  "width": 560,
+                  "x": 20,
+                  "y": 340
+                },
+                "shapeType": "rectangle",
+                "strokeColor": "#10b981",
+                "strokeWidth": 2,
+                "textAlign": "left",
+                "textColor": "#ffffff",
+                "textContent": "<strong>Correct !</strong><br>Une chute violente et soudaine (65 pts en 3 min) indique une véritable panique (capitulation). C'est le setup idéal pour valider une extension selon la règle des 60/40.",
+                "type": "shape",
+                "verticalAlign": "middle",
+                "visible": false,
+                "zIndex": 1
+              },
+              {
+                "borderRadius": 8,
+                "fillColor": "#7f1d1d",
+                "fillOpacity": 0.95,
+                "fontSize": 14,
+                "id": "4b58f4b1-5757-4e2e-a08b-ee9c3e7a2100",
+                "interactions": [],
+                "name": "Feedback Incorrect",
+                "padding": 16,
+                "position": {
+                  "height": 90,
+                  "width": 560,
+                  "x": 20,
+                  "y": 340
+                },
+                "shapeType": "rectangle",
+                "strokeColor": "#ef4444",
+                "strokeWidth": 2,
+                "textAlign": "left",
+                "textColor": "#ffffff",
+                "textContent": "<strong>Incorrect.</strong><br>Cette chute très rapide au moment de l'open US est typique d'une capitulation de panique. Dans ces conditions extrêmes, l'extension 60/40 est très probable.",
+                "type": "shape",
+                "verticalAlign": "middle",
+                "visible": false,
+                "zIndex": 1
+              },
+              {
+                "borderRadius": 6,
+                "color": "#3b82f6",
+                "fontSize": 14,
+                "icon": "lucide:arrow-right",
+                "iconPosition": "right",
+                "id": "91a8305f-5235-4fdd-8f32-925f53e58e43",
+                "interactions": [
+                  {
+                    "actions": [
+                      {
+                        "id": "c5759e3d-2eb6-418a-9499-3c8e59703866",
+                        "targetSlideId": "66331d44-ccec-471f-bd2f-d9edb8fe7bbf",
+                        "type": "go_to_slide"
+                      }
+                    ],
+                    "trigger": "click"
+                  }
+                ],
+                "name": "Next Slide",
+                "position": {
+                  "height": 45,
+                  "width": 180,
+                  "x": 600,
+                  "y": 362
+                },
+                "textAlign": "center",
+                "textColor": "#ffffff",
+                "textContent": "Scénario Suivant",
+                "type": "button",
+                "variant": "solid",
+                "verticalAlign": "middle",
+                "visible": false,
+                "zIndex": 2
+              }
+            ],
+            "id": "bc61e0fc-d921-4483-89fc-d33521e91e1d",
+            "name": "Scenario 1"
+          },
+          {
+            "backgroundColor": "#0f172a",
+            "backgroundImage": "/api/media/file/pbc_694363012/ahorb1i46gpjikv/ai_generated_1778962226914_a6gsh3n1di.webp",
+            "backgroundSize": "cover",
+            "elements": [
+              {
+                "borderRadius": 8,
+                "fillColor": "#1e293b",
+                "fillOpacity": 0.9,
+                "fontSize": 18,
+                "id": "b88aa881-c20a-4492-8885-d6f29a554662",
+                "interactions": [],
+                "name": "Header",
+                "padding": 16,
+                "position": {
+                  "height": 60,
+                  "width": 760,
+                  "x": 20,
+                  "y": 20
+                },
+                "shapeType": "rectangle",
+                "strokeColor": "#334155",
+                "strokeWidth": 1,
+                "textAlign": "left",
+                "textColor": "#94a3b8",
+                "textContent": "<strong>Scénario 2 / 3 : Session Matinale</strong>",
+                "type": "shape",
+                "verticalAlign": "middle",
+                "visible": true,
+                "zIndex": 1
+              },
+              {
+                "borderRadius": 8,
+                "fillColor": "#0f172a",
+                "fillOpacity": 0.95,
+                "fontSize": 18,
+                "id": "5cb72221-eb34-4702-8710-fd2b426af02d",
+                "interactions": [],
+                "name": "Data Card",
+                "padding": 20,
+                "position": {
+                  "height": 140,
+                  "width": 760,
+                  "x": 20,
+                  "y": 100
+                },
+                "shapeType": "rectangle",
+                "strokeColor": "#475569",
+                "strokeWidth": 2,
+                "textAlign": "left",
+                "textColor": "#ffffff",
+                "textContent": "<span style='color:#94a3b8;'>Heure :</span> <strong>11:00 CET</strong><br><br><span style='color:#ef4444;'>Mouvement détecté :</span><br><strong>Baisse régulière de 75 points sur les 3 dernières heures.</strong> Le prix fait des plus bas de plus en plus bas sans accélération majeure.",
+                "type": "shape",
+                "verticalAlign": "middle",
+                "visible": true,
+                "zIndex": 1
+              },
+              {
+                "borderRadius": 6,
+                "color": "#334155",
+                "fontSize": 14,
+                "id": "6eb0bb36-0f7f-47dd-9b95-eda57cef03c5",
+                "interactions": [
+                  {
+                    "actions": [
+                      {
+                        "id": "cd528aed-2307-463f-9297-c346b6241a00",
+                        "targetElementId": "6eb0bb36-0f7f-47dd-9b95-eda57cef03c5",
+                        "type": "hide_element"
+                      },
+                      {
+                        "id": "248417ed-4673-46b6-93a6-32ae62a49542",
+                        "targetElementId": "cf8a4b86-a60f-4642-9058-6b441f55f8f1",
+                        "type": "hide_element"
+                      },
+                      {
+                        "id": "3954ca7a-6be2-499e-b745-2e7246ef8760",
+                        "targetElementId": "e13dcdb9-f06b-43e5-a4b8-9e2c94ef0f23",
+                        "type": "show_element"
+                      },
+                      {
+                        "id": "e6befb8f-fa4d-44c5-bba5-d581e8c24936",
+                        "targetElementId": "ca9229bb-4fd6-4763-8671-00b4caa921a4",
+                        "type": "show_element"
+                      }
+                    ],
+                    "trigger": "click"
+                  }
+                ],
+                "name": "Valider",
+                "position": {
+                  "height": 45,
+                  "width": 180,
+                  "x": 200,
+                  "y": 270
+                },
+                "textAlign": "center",
+                "textColor": "#ffffff",
+                "textContent": "Valider Extension",
+                "type": "button",
+                "variant": "solid",
+                "verticalAlign": "middle",
+                "visible": true,
+                "zIndex": 2
+              },
+              {
+                "borderRadius": 6,
+                "color": "#334155",
+                "fontSize": 14,
+                "id": "cf8a4b86-a60f-4642-9058-6b441f55f8f1",
+                "interactions": [
+                  {
+                    "actions": [
+                      {
+                        "id": "36eeaeca-70aa-4bf3-9e9e-a8ae7001d752",
+                        "targetElementId": "6eb0bb36-0f7f-47dd-9b95-eda57cef03c5",
+                        "type": "hide_element"
+                      },
+                      {
+                        "id": "fa751187-17cf-437a-897a-d57ec8decea3",
+                        "targetElementId": "cf8a4b86-a60f-4642-9058-6b441f55f8f1",
+                        "type": "hide_element"
+                      },
+                      {
+                        "id": "2d994acb-791c-4e71-b6c7-7aed44b8a3b2",
+                        "targetElementId": "70cb71c8-b705-4020-a8eb-94c64eae5977",
+                        "type": "show_element"
+                      },
+                      {
+                        "id": "59f55f13-e130-45f0-ae57-9a8ca473cc3f",
+                        "targetElementId": "ca9229bb-4fd6-4763-8671-00b4caa921a4",
+                        "type": "show_element"
+                      },
+                      {
+                        "id": "7db4a354-4159-448e-b68f-e173a30f9b0c",
+                        "targetElementId": "cd5a5c9c-592f-4eaa-bad5-466504408af8",
+                        "type": "increment_variable",
+                        "variableValue": 1
+                      }
+                    ],
+                    "trigger": "click"
+                  }
+                ],
+                "name": "Rejeter",
+                "position": {
+                  "height": 45,
+                  "width": 180,
+                  "x": 420,
+                  "y": 270
+                },
+                "textAlign": "center",
+                "textColor": "#ffffff",
+                "textContent": "Rejeter",
+                "type": "button",
+                "variant": "solid",
+                "verticalAlign": "middle",
+                "visible": true,
+                "zIndex": 2
+              },
+              {
+                "borderRadius": 8,
+                "fillColor": "#064e3b",
+                "fillOpacity": 0.95,
+                "fontSize": 14,
+                "id": "70cb71c8-b705-4020-a8eb-94c64eae5977",
+                "interactions": [],
+                "name": "Feedback Correct",
+                "padding": 16,
+                "position": {
+                  "height": 90,
+                  "width": 560,
+                  "x": 20,
+                  "y": 340
+                },
+                "shapeType": "rectangle",
+                "strokeColor": "#10b981",
+                "strokeWidth": 2,
+                "textAlign": "left",
+                "textColor": "#ffffff",
+                "textContent": "<strong>Correct !</strong><br>C'est une dérive lente typique (\"slow drift\"). Les vendeurs ont le contrôle de manière ordonnée, sans panique. Ce n'est pas un scénario valide pour l'extension.",
+                "type": "shape",
+                "verticalAlign": "middle",
+                "visible": false,
+                "zIndex": 1
+              },
+              {
+                "borderRadius": 8,
+                "fillColor": "#7f1d1d",
+                "fillOpacity": 0.95,
+                "fontSize": 14,
+                "id": "e13dcdb9-f06b-43e5-a4b8-9e2c94ef0f23",
+                "interactions": [],
+                "name": "Feedback Incorrect",
+                "padding": 16,
+                "position": {
+                  "height": 90,
+                  "width": 560,
+                  "x": 20,
+                  "y": 340
+                },
+                "shapeType": "rectangle",
+                "strokeColor": "#ef4444",
+                "strokeWidth": 2,
+                "textAlign": "left",
+                "textColor": "#ffffff",
+                "textContent": "<strong>Incorrect.</strong><br>Il s'agit d'une dérive lente sur 3 heures. Sans pic de volume ni effondrement rapide (panique), le setup 60/40 ne s'applique pas. Il fallait rejeter.",
+                "type": "shape",
+                "verticalAlign": "middle",
+                "visible": false,
+                "zIndex": 1
+              },
+              {
+                "borderRadius": 6,
+                "color": "#3b82f6",
+                "fontSize": 14,
+                "icon": "lucide:arrow-right",
+                "iconPosition": "right",
+                "id": "ca9229bb-4fd6-4763-8671-00b4caa921a4",
+                "interactions": [
+                  {
+                    "actions": [
+                      {
+                        "id": "d95e8628-5416-430e-92cf-220abd87fd39",
+                        "targetSlideId": "2f8aa9d7-a79b-47f1-bf25-d0d426b5a335",
+                        "type": "go_to_slide"
+                      }
+                    ],
+                    "trigger": "click"
+                  }
+                ],
+                "name": "Next Slide",
+                "position": {
+                  "height": 45,
+                  "width": 180,
+                  "x": 600,
+                  "y": 362
+                },
+                "textAlign": "center",
+                "textColor": "#ffffff",
+                "textContent": "Scénario Suivant",
+                "type": "button",
+                "variant": "solid",
+                "verticalAlign": "middle",
+                "visible": false,
+                "zIndex": 2
+              }
+            ],
+            "id": "66331d44-ccec-471f-bd2f-d9edb8fe7bbf",
+            "name": "Scenario 2"
+          },
+          {
+            "backgroundColor": "#0f172a",
+            "backgroundImage": "/api/media/file/pbc_694363012/2vha7hjggvadiwr/ai_generated_1778962239619_7zhm51grel.webp",
+            "backgroundSize": "cover",
+            "elements": [
+              {
+                "borderRadius": 8,
+                "fillColor": "#1e293b",
+                "fillOpacity": 0.9,
+                "fontSize": 18,
+                "id": "13806da4-0c3f-468a-933f-22ce199bdfbf",
+                "interactions": [],
+                "name": "Header",
+                "padding": 16,
+                "position": {
+                  "height": 60,
+                  "width": 760,
+                  "x": 20,
+                  "y": 20
+                },
+                "shapeType": "rectangle",
+                "strokeColor": "#334155",
+                "strokeWidth": 1,
+                "textAlign": "left",
+                "textColor": "#94a3b8",
+                "textContent": "<strong>Scénario 3 / 3 : Milieu de Session US</strong>",
+                "type": "shape",
+                "verticalAlign": "middle",
+                "visible": true,
+                "zIndex": 1
+              },
+              {
+                "borderRadius": 8,
+                "fillColor": "#0f172a",
+                "fillOpacity": 0.95,
+                "fontSize": 18,
+                "id": "2a8151c0-3a62-429b-b2c3-4a65e951e0af",
+                "interactions": [],
+                "name": "Data Card",
+                "padding": 20,
+                "position": {
+                  "height": 140,
+                  "width": 760,
+                  "x": 20,
+                  "y": 100
+                },
+                "shapeType": "rectangle",
+                "strokeColor": "#475569",
+                "strokeWidth": 2,
+                "textAlign": "left",
+                "textColor": "#ffffff",
+                "textContent": "<span style='color:#94a3b8;'>Heure :</span> <strong>17:30 CET</strong><br><br><span style='color:#ef4444;'>Mouvement détecté :</span><br><strong>Baisse de 45 points en 45 minutes.</strong> Le mouvement est haché avec de nombreux retours (pullbacks) intermédiaires.",
+                "type": "shape",
+                "verticalAlign": "middle",
+                "visible": true,
+                "zIndex": 1
+              },
+              {
+                "borderRadius": 6,
+                "color": "#334155",
+                "fontSize": 14,
+                "id": "5f9124eb-caee-47ae-bac3-519ee27d2ddb",
+                "interactions": [
+                  {
+                    "actions": [
+                      {
+                        "id": "5b87a28b-06ba-4506-83d4-3ecf54a1aa09",
+                        "targetElementId": "5f9124eb-caee-47ae-bac3-519ee27d2ddb",
+                        "type": "hide_element"
+                      },
+                      {
+                        "id": "69da50dd-67d7-4c08-a264-eb439c81f8bb",
+                        "targetElementId": "bab996cc-0f24-4dbd-b23f-3035d8a39048",
+                        "type": "hide_element"
+                      },
+                      {
+                        "id": "55414d0c-adb6-4f2e-be5b-a60c26830ebc",
+                        "targetElementId": "00b55f9a-dddc-4c28-99c5-89b3ed518402",
+                        "type": "show_element"
+                      },
+                      {
+                        "id": "806d47ba-8063-40bf-9e60-3890d35a17b2",
+                        "targetElementId": "b99cb691-34c6-4d2f-863b-9dcdbf5f0c5e",
+                        "type": "show_element"
+                      }
+                    ],
+                    "trigger": "click"
+                  }
+                ],
+                "name": "Valider",
+                "position": {
+                  "height": 45,
+                  "width": 180,
+                  "x": 200,
+                  "y": 270
+                },
+                "textAlign": "center",
+                "textColor": "#ffffff",
+                "textContent": "Valider Extension",
+                "type": "button",
+                "variant": "solid",
+                "verticalAlign": "middle",
+                "visible": true,
+                "zIndex": 2
+              },
+              {
+                "borderRadius": 6,
+                "color": "#334155",
+                "fontSize": 14,
+                "id": "bab996cc-0f24-4dbd-b23f-3035d8a39048",
+                "interactions": [
+                  {
+                    "actions": [
+                      {
+                        "id": "a01f1291-c9f6-44ad-9bfd-350b64c96092",
+                        "targetElementId": "5f9124eb-caee-47ae-bac3-519ee27d2ddb",
+                        "type": "hide_element"
+                      },
+                      {
+                        "id": "097c6a15-9fd0-44ad-9aa5-05322f06f276",
+                        "targetElementId": "bab996cc-0f24-4dbd-b23f-3035d8a39048",
+                        "type": "hide_element"
+                      },
+                      {
+                        "id": "9c47cf2f-caa4-4289-8ef8-97dd26f69bd1",
+                        "targetElementId": "0c8b8e24-28a3-4a5d-ba93-0d64542c3d61",
+                        "type": "show_element"
+                      },
+                      {
+                        "id": "55a3b729-8b16-42cb-a079-d6435dfd57d3",
+                        "targetElementId": "b99cb691-34c6-4d2f-863b-9dcdbf5f0c5e",
+                        "type": "show_element"
+                      },
+                      {
+                        "id": "e91cd573-b9d2-4afb-9f2a-29ca583f2457",
+                        "targetElementId": "cd5a5c9c-592f-4eaa-bad5-466504408af8",
+                        "type": "increment_variable",
+                        "variableValue": 1
+                      }
+                    ],
+                    "trigger": "click"
+                  }
+                ],
+                "name": "Rejeter",
+                "position": {
+                  "height": 45,
+                  "width": 180,
+                  "x": 420,
+                  "y": 270
+                },
+                "textAlign": "center",
+                "textColor": "#ffffff",
+                "textContent": "Rejeter",
+                "type": "button",
+                "variant": "solid",
+                "verticalAlign": "middle",
+                "visible": true,
+                "zIndex": 2
+              },
+              {
+                "borderRadius": 8,
+                "fillColor": "#064e3b",
+                "fillOpacity": 0.95,
+                "fontSize": 14,
+                "id": "0c8b8e24-28a3-4a5d-ba93-0d64542c3d61",
+                "interactions": [],
+                "name": "Feedback Correct",
+                "padding": 16,
+                "position": {
+                  "height": 90,
+                  "width": 560,
+                  "x": 20,
+                  "y": 340
+                },
+                "shapeType": "rectangle",
+                "strokeColor": "#10b981",
+                "strokeWidth": 2,
+                "textAlign": "left",
+                "textColor": "#ffffff",
+                "textContent": "<strong>Correct !</strong><br>Une baisse en escalier de 45 points sur 45 minutes manque de la volatilité explosive requise. Ce n'est pas un mouvement de capitulation, la règle des 60/40 est invalidée.",
+                "type": "shape",
+                "verticalAlign": "middle",
+                "visible": false,
+                "zIndex": 1
+              },
+              {
+                "borderRadius": 8,
+                "fillColor": "#7f1d1d",
+                "fillOpacity": 0.95,
+                "fontSize": 14,
+                "id": "00b55f9a-dddc-4c28-99c5-89b3ed518402",
+                "interactions": [],
+                "name": "Feedback Incorrect",
+                "padding": 16,
+                "position": {
+                  "height": 90,
+                  "width": 560,
+                  "x": 20,
+                  "y": 340
+                },
+                "shapeType": "rectangle",
+                "strokeColor": "#ef4444",
+                "strokeWidth": 2,
+                "textAlign": "left",
+                "textColor": "#ffffff",
+                "textContent": "<strong>Incorrect.</strong><br>Le mouvement est trop lent et haché. Pour valider l'extension 60/40, il faut un événement de panique clair, pas une baisse de 1 point par minute de moyenne.",
+                "type": "shape",
+                "verticalAlign": "middle",
+                "visible": false,
+                "zIndex": 1
+              },
+              {
+                "borderRadius": 6,
+                "color": "#3b82f6",
+                "fontSize": 14,
+                "icon": "lucide:check-circle",
+                "iconPosition": "right",
+                "id": "b99cb691-34c6-4d2f-863b-9dcdbf5f0c5e",
+                "interactions": [
+                  {
+                    "actions": [
+                      {
+                        "id": "13deb228-1e5d-4b26-a45c-c6ddcd3dae79",
+                        "targetSlideId": "49f319c0-9ed1-451b-99da-44e3e5004232",
+                        "type": "go_to_slide"
+                      }
+                    ],
+                    "trigger": "click"
+                  }
+                ],
+                "name": "Finish",
+                "position": {
+                  "height": 45,
+                  "width": 180,
+                  "x": 600,
+                  "y": 362
+                },
+                "textAlign": "center",
+                "textColor": "#ffffff",
+                "textContent": "Voir les résultats",
+                "type": "button",
+                "variant": "solid",
+                "verticalAlign": "middle",
+                "visible": false,
+                "zIndex": 2
+              }
+            ],
+            "id": "2f8aa9d7-a79b-47f1-bf25-d0d426b5a335",
+            "name": "Scenario 3"
+          },
+          {
+            "backgroundColor": "#0f172a",
+            "backgroundImage": "/api/media/file/pbc_694363012/z56x8n8e3ybcicp/ai_generated_1778962252360_cg37n65zui.webp",
+            "backgroundSize": "cover",
+            "elements": [
+              {
+                "borderRadius": 12,
+                "fillColor": "#1e293b",
+                "fillOpacity": 0.95,
+                "fontSize": 16,
+                "id": "f4182795-4b76-45dd-8060-0c8dd7fe5323",
+                "interactions": [],
+                "name": "Conclusion Card",
+                "padding": 24,
+                "position": {
+                  "height": 200,
+                  "width": 600,
+                  "x": 100,
+                  "y": 100
+                },
+                "shapeType": "rectangle",
+                "strokeColor": "#334155",
+                "strokeWidth": 2,
+                "textAlign": "center",
+                "textColor": "#ffffff",
+                "textContent": "<strong>Simulation Terminée !</strong><br><br>Vous avez analysé les trois scénarios Nasdaq. En trading réel, savoir faire la distinction entre une véritable capitulation de panique et une dérive lente est crucial pour appliquer correctement la règle des 60/40.<br><br>Cliquez sur le bouton ci-dessous pour enregistrer votre score.",
+                "type": "shape",
+                "verticalAlign": "middle",
+                "visible": true,
+                "zIndex": 1
+              },
+              {
+                "borderRadius": 8,
+                "color": "#22c55e",
+                "fontSize": 15,
+                "icon": "lucide:flag",
+                "iconPosition": "right",
+                "id": "177f5084-d2e5-40bc-a5df-435cd51ce268",
+                "interactions": [
+                  {
+                    "actions": [
+                      {
+                        "id": "c6596d42-4835-46d1-bb2d-150bd0483807",
+                        "type": "complete_slideshow"
+                      }
+                    ],
+                    "trigger": "click"
+                  }
+                ],
+                "name": "Complete Simulator",
+                "position": {
+                  "height": 50,
+                  "width": 200,
+                  "x": 300,
+                  "y": 340
+                },
+                "textAlign": "center",
+                "textColor": "#ffffff",
+                "textContent": "Terminer l'exercice",
+                "type": "button",
+                "variant": "solid",
+                "verticalAlign": "middle",
+                "visible": true,
+                "zIndex": 2
+              }
+            ],
+            "id": "49f319c0-9ed1-451b-99da-44e3e5004232",
+            "name": "Conclusion"
+          }
+        ]
+      },
+      "id": "feb6fcda-aaee-415e-aecb-1c3551f8cd76",
+      "name": "Simulation : Analyse d'Extensions",
+      "type": "interactive_slideshow"
+    },
+    {
+      "data": {
+        "html": "<h3>Résumé Avant le Test</h3><p>Vous avez maintenant les outils pour juger la première lettre de la méthode EPB de manière chirurgicale. Rappelez-vous :</p><ul><li><p><strong>La liquidité dicte la règle :</strong> 60 points en session US, 40 points hors session US.</p></li><li><p><strong>La forme compte autant que le fond :</strong> Un mouvement vertical crée une tension. Un lent drift glissant ne crée qu'un faux espoir.</p></li><li><p><strong>Zéro achat anticipé :</strong> L'extension ne sert qu'à armer le radar, jamais à presser la détente.</p></li></ul>",
+        "rows": [
+          {
+            "cells": [
+              {
+                "content": "<h3>Résumé Avant le Test</h3><p>Vous avez maintenant les outils pour juger la première lettre de la méthode EPB de manière chirurgicale. Rappelez-vous :</p><ul><li><p><strong>La liquidité dicte la règle :</strong> 60 points en session US, 40 points hors session US.</p></li><li><p><strong>La forme compte autant que le fond :</strong> Un mouvement vertical crée une tension. Un lent drift glissant ne crée qu'un faux espoir.</p></li><li><p><strong>Zéro achat anticipé :</strong> L'extension ne sert qu'à armer le radar, jamais à presser la détente.</p></li></ul>",
+                "id": "1uetnxhw",
+                "type": "text"
+              }
+            ],
+            "id": "dtax859w"
+          }
+        ]
+      },
+      "id": "b8c8f6d9-e79b-461c-bece-da2341419d2f",
+      "name": "Vérification des Connaissances",
+      "type": "content"
+    },
+    {
+      "data": {
+        "questions": [
+          {
+            "explanation": "Une extension ne fait que créer le contexte. Sans preuve d'essoufflement (le Blocage), le marché peut continuer de chuter indéfiniment. Les 75 points satisfont bien la règle des ≥60 points de la session US, mais ne donnent pas le signal de départ.",
+            "id": "q1",
+            "options": [
+              {
+                "id": "a",
+                "is_correct": true,
+                "text": "Parce qu'une chute sans preuve de blocage acheteur peut très bien continuer sur 50 points supplémentaires."
+              },
+              {
+                "id": "b",
+                "is_correct": false,
+                "text": "Parce qu'il faut toujours moyenner à la baisse pour compenser le risque d'une entrée précoce."
+              },
+              {
+                "id": "c",
+                "is_correct": false,
+                "text": "Parce que le mouvement de 75 points est insuffisant en session US, il faudrait au moins 100 points."
+              },
+              {
+                "id": "d",
+                "is_correct": false,
+                "text": "Parce qu'une baisse aussi violente correspond toujours à un 'lent drift' qui ne permet pas de rebond."
+              }
+            ],
+            "question": "Il est 17h30 (Session US). Le Nasdaq vient de chuter violemment de 75 points. Pourquoi cette extension seule ne justifie-t-elle PAS une prise de position immédiate à l'achat ?",
+            "type": "multiple_choice"
+          },
+          {
+            "blanks": [
+              {
+                "accepted_answers": [
+                  "60",
+                  "soixante"
+                ],
+                "id": "blank1",
+                "position": 0
+              },
+              {
+                "accepted_answers": [
+                  "40",
+                  "quarante"
+                ],
+                "id": "blank2",
+                "position": 1
+              }
+            ],
+            "explanation": "La règle est stricte : 60 points lorsque le marché est très liquide (US) pour filtrer le bruit, et 40 points lorsque la liquidité est plus faible.",
+            "id": "q2",
+            "question": "Complétez les règles mathématiques d'une extension valide selon la période de la journée :",
+            "text_with_blanks": "En session principale à haute liquidité, il faut un minimum de [blank1] points. En session européenne ou nocturne, un minimum de [blank2] points suffit pour valider une extension.",
+            "type": "fill_blank"
+          },
+          {
+            "ai_grading": {
+              "mode": "rubric",
+              "passing_score": 75,
+              "rubric": "Doit mentionner : La vitesse ou la violence du mouvement. Le lent drift est lent/progressif, la vraie extension est rapide/verticale/panique."
+            },
+            "id": "q3",
+            "max_length": 200,
+            "question": "En une ou deux phrases, expliquez la différence fondamentale entre une vraie 'Extension' et un 'Lent drift'.",
+            "type": "short_answer"
+          }
+        ],
+        "settings": {
+          "passing_score": 70,
+          "show_feedback_mode": "immediate"
+        },
+        "version": 2
+      },
+      "id": "6b6cff87-0e99-44e9-b96b-185d538385c5",
+      "type": "quiz"
+    },
+    {
+      "data": {
+        "displayMode": "all",
+        "feedbackTiming": "end",
+        "questions": [
+          {
+            "id": "f1",
+            "maxValue": 5,
+            "question": "Dans quelle mesure vous sentez-vous capable d'évaluer objectivement une extension de marché ?",
+            "required": true,
+            "type": "star_rating"
+          },
+          {
+            "id": "f2",
+            "maxLength": 1000,
+            "placeholder": "Partagez vos impressions...",
+            "question": "Quel a été le déclic ou le point le plus utile de cette leçon pour vous ?",
+            "required": false,
+            "type": "free_text"
+          }
+        ]
+      },
+      "id": "5a4d3409-c922-4971-a667-ed666b6f4eee",
+      "name": "Votre avis",
+      "type": "feedback"
+    }
+  ],
+  "require_sequential": false
+}

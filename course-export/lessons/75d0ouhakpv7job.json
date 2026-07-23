@@ -1,0 +1,544 @@
+{
+  "title": "Leçon 4 : Règle 3 (B) - Le Blocage et la Règle du 'Zéro Débat'",
+  "order": 4,
+  "performance_outcome": "<ul><li>Identifier les signes d'absorption et de ralentissement du flux au carnet d'ordres.</li><li>Évaluer la solidité d'un blocage face aux dernières attaques des acheteurs ou vendeurs.</li><li>Appliquer la règle de sortie d'urgence immédiate ('sans débat') si la contrepartie replonge violemment et invalide le blocage.</li><li>Contraster un véritable essoufflement avec une simple pause temporaire du marché.</li></ul>",
+  "content_json": [
+    {
+      "background": {
+        "color": "#0f172a"
+      },
+      "data": {
+        "rows": [
+          {
+            "cells": [
+              {
+                "content": "<h2 style=\"color:#f8fafc; text-align:center;\">Leçon 4 : Règle 3 (B) - Le Blocage</h2><p style=\"color:#cbd5e1; text-align:center; max-width:800px; margin:0 auto;\">L'art de l'absorption et la règle de survie ultime du trader : le « Zéro Débat ».</p>",
+                "id": "intro_c1",
+                "type": "text"
+              }
+            ],
+            "id": "intro_r1"
+          }
+        ]
+      },
+      "id": "3a925cb6-b611-44bb-a33e-6e76220744c3",
+      "name": "Introduction",
+      "padding": {
+        "bottom": 64,
+        "left": 0,
+        "right": 0,
+        "top": 64
+      },
+      "type": "content",
+      "width": "full"
+    },
+    {
+      "data": {
+        "rows": [
+          {
+            "cells": [
+              {
+                "content": "<h3>Le Dernier Rempart Avant le Clic</h3><p>Marc a fait de grands progrès. Il sait désormais attendre une véritable <strong>Extension (E)</strong> de 60 points et scruter la panique de la <strong>Poussée (P)</strong>. Pourtant, son capital continue de faire les montagnes russes.</p><p>Son nouveau problème ? Dès qu'il voit la panique, il anticipe la fin du mouvement. Il se dit <em>« ça y est, le marché a tout donné »</em> et clique sur 'Achat' en pleine chute libre. Il attrape ce que les traders appellent un « couteau qui tombe ».</p><p>Il lui manque le troisième et dernier pilier de la méthode EPB : le <strong>Blocage (B)</strong>. Dans cette leçon, nous allons apprendre à repérer ce moment précis où le marché se fige, encaisse le choc, et nous donne enfin le feu vert pour entrer.</p>",
+                "id": "context_c1",
+                "type": "text"
+              }
+            ],
+            "id": "context_r1"
+          }
+        ]
+      },
+      "id": "9ec8ef23-0da6-4ebf-ac0a-7ae54821cc6f",
+      "paddingBottom": 0,
+      "type": "content"
+    },
+    {
+      "data": {
+        "cuepoints": [],
+        "source": "local",
+        "talkingVideoScene": "in a modern home office setting with trading monitors glowing in the background, slightly dim lighting",
+        "talkingVideoScript": "Salut. J'ai l'Extension, je vois la Poussée de panique au carnet... et là, je clique. Et bam, le prix continue de chuter et m'écrase. J'ai l'impression d'avoir raison trop tôt. Mon problème, c'est que j'anticipe le point bas au lieu d'attendre que le marché me montre qu'il s'est réellement arrêté. Comment faire la différence entre une simple pause et un vrai blocage ?",
+        "talkingVideoVoice": "Charlie"
+      },
+      "id": "57e80e69-3588-42fd-8016-f0ddea3dda22",
+      "name": "Le problème de Marc",
+      "type": "video"
+    },
+    {
+      "data": {
+        "rows": [
+          {
+            "cells": [
+              {
+                "content": "<h3>Qu'est-ce qu'un Blocage (Absorption) ?</h3><p>Un blocage n'est pas une simple ligne de support sur votre graphique. C'est un événement dynamique et visible en temps réel sur le carnet d'ordres (le DOM) et le flux (la <em>tape</em>).</p><p>Lorsqu'une Poussée de panique atteint son paroxysme, les derniers vendeurs agressifs jettent leurs ordres au marché. Le Blocage se produit quand ces ordres vendeurs s'écrasent contre un mur d'<strong>ordres limités acheteurs</strong>. Les acheteurs absorbent toute l'agressivité restante sans que le prix ne recule d'un centime supplémentaire.</p><ul><li><strong>La Tape ralentit :</strong> Le défilement frénétique des transactions s'arrête brusquement.</li><li><strong>Le prix « cale » :</strong> Malgré les attaques répétées, le marché refuse de faire un nouveau plus bas.</li><li><strong>Rechargement :</strong> Les ordres limités sont exécutés, mais de nouveaux ordres apparaissent immédiatement pour maintenir le niveau.</li></ul>",
+                "id": "absorption_c1",
+                "type": "text"
+              },
+              {
+                "content": "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"400\" height=\"300\" fill=\"#f8fafc\" rx=\"8\"/><path d=\"M50 50 Q 150 200 200 250\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"4\" marker-end=\"url(#arrow)\"/><rect x=\"180\" y=\"250\" width=\"150\" height=\"30\" fill=\"#3b82f6\" opacity=\"0.8\" rx=\"4\"/><path d=\"M220 250 Q 250 180 350 120\" fill=\"none\" stroke=\"#10b981\" stroke-width=\"4\" stroke-dasharray=\"6,6\" marker-end=\"url(#arrow-green)\"/><defs><marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#ef4444\"/></marker><marker id=\"arrow-green\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#10b981\"/></marker></defs><text x=\"60\" y=\"120\" font-family=\"sans-serif\" font-size=\"14\" fill=\"#ef4444\" font-weight=\"bold\">Ordres Vendeurs (Panique)</text><text x=\"200\" y=\"270\" font-family=\"sans-serif\" font-size=\"14\" fill=\"#ffffff\" font-weight=\"bold\">Mur d'Ordres (Absorption)</text><text x=\"250\" y=\"160\" font-family=\"sans-serif\" font-size=\"14\" fill=\"#10b981\" font-weight=\"bold\">Rejet et Retournement</text></svg>",
+                "id": "absorption_c2",
+                "objectFit": "contain",
+                "type": "svg"
+              }
+            ],
+            "id": "absorption_r1"
+          }
+        ]
+      },
+      "id": "93f383f5-1290-468c-95f5-edf46321c731",
+      "name": "Concept d'Absorption",
+      "type": "content"
+    },
+    {
+      "data": {
+        "rows": [
+          {
+            "cells": [
+              {
+                "content": "<p>Explorez les éléments visuels ci-dessous pour identifier les signes d'un véritable blocage par rapport à une simple faiblesse temporaire.</p>",
+                "id": "hotspot_intro_c1",
+                "type": "text"
+              }
+            ],
+            "id": "hotspot_intro_r1"
+          }
+        ]
+      },
+      "id": "4edca73b-69dc-404c-b898-3cec574e214d",
+      "paddingBottom": 0,
+      "type": "content"
+    },
+    {
+      "data": {
+        "hotspots": [
+          {
+            "color": "#3b82f6",
+            "content": "<p><strong>La taille bloquante</strong></p><p>Un gros ordre limité apparaît et ne diminue pas malgré les exécutions. C'est souvent le signe d'un ordre 'iceberg' institutionnel qui absorbe tout le flux sans se révéler entièrement.</p>",
+            "filled": true,
+            "height": 8,
+            "id": "h1",
+            "label": "Taille Bloquante (Iceberg)",
+            "opacity": 50,
+            "shape": "rectangle",
+            "showLabel": true,
+            "visible": true,
+            "width": 8,
+            "x": 20,
+            "y": 40
+          },
+          {
+            "color": "#f59e0b",
+            "content": "<p><strong>La décélération du flux</strong></p><p>Le défilement ultra-rapide typique de la Poussée de panique s'arrête brusquement. Le marché prend une respiration et le temps s'écoule sans nouvelle transaction majeure.</p>",
+            "filled": true,
+            "height": 8,
+            "id": "h2",
+            "label": "Décélération de la Tape",
+            "opacity": 50,
+            "shape": "rectangle",
+            "showLabel": true,
+            "visible": true,
+            "width": 8,
+            "x": 65,
+            "y": 30
+          },
+          {
+            "color": "#10b981",
+            "content": "<p><strong>Le Rejet Agressif</strong></p><p>Juste après l'absorption, on observe l'apparition immédiate de transactions dans le sens inverse (achats au marché). Les contre-attaquants prennent le contrôle.</p>",
+            "filled": true,
+            "height": 8,
+            "id": "h3",
+            "label": "Rejet Agressif",
+            "opacity": 50,
+            "shape": "rectangle",
+            "showLabel": true,
+            "visible": true,
+            "width": 8,
+            "x": 45,
+            "y": 70
+          }
+        ],
+        "imageUrl": "/api/media/file/pbc_694363012/ga7u3xvrbltzjjl/ai_generated_1778963724100_8g66omwil9.webp",
+        "mode": "discovery"
+      },
+      "id": "890170f2-7e5b-475d-813b-44790c6b649c",
+      "name": "Signes du carnet",
+      "type": "hotspot_image"
+    },
+    {
+      "data": {
+        "rows": [
+          {
+            "cells": [
+              {
+                "content": "<h3>L'Erreur Fatale : Confondre une Pause et un Essoufflement</h3><p>Une des erreurs les plus coûteuses de Marc est de prendre position lors d'une <strong>simple pause temporaire</strong> du marché. Lors d'une forte extension baissière, le prix ne tombe jamais en ligne parfaitement droite ; il marque des micro-pauses de quelques secondes pour reprendre son souffle avant de plonger à nouveau.</p><div style=\"background-color: #fee2e2; padding: 16px; border-left: 4px solid #ef4444; margin-top: 16px;\"><strong>Le Piège :</strong> Une pause temporaire se caractérise par une absence totale d'absorption. Le prix s'arrête simplement parce que les vendeurs rechargent. Si vous entrez à ce moment, vous servirez de liquidité pour la prochaine vague de baisse.</div><p>Un <strong>véritable essoufflement (Blocage)</strong> exige un combat. Vous devez voir les vendeurs frapper le niveau et échouer. Pas de combat ? Pas de blocage.</p>",
+                "id": "pause_c1",
+                "type": "text"
+              }
+            ],
+            "id": "pause_r1"
+          }
+        ]
+      },
+      "id": "cdd1a864-d14e-42ef-882a-09912c191799",
+      "name": "Essoufflement vs Pause",
+      "type": "content"
+    },
+    {
+      "data": {
+        "rows": [
+          {
+            "cells": [
+              {
+                "content": "<p>Classez ces comportements du marché dans la bonne catégorie pour aider Marc à filtrer ses entrées.</p>",
+                "id": "drag_intro_c1",
+                "type": "text"
+              }
+            ],
+            "id": "drag_intro_r1"
+          }
+        ]
+      },
+      "id": "3477ed73-9558-43e3-8132-8c2b28257a64",
+      "paddingBottom": 0,
+      "type": "content"
+    },
+    {
+      "data": {
+        "backgroundImage": "/api/media/file/pbc_694363012/mvm0a29sf0br18c/ai_generated_1778963726615_3vnbb6ewcy.webp",
+        "dragItems": [
+          {
+            "content": "<p>Des dizaines d'ordres vendeurs s'exécutent au même niveau sans faire bouger le prix.</p>",
+            "correctTargets": [
+              "t1"
+            ],
+            "id": "i1"
+          },
+          {
+            "content": "<p>Le carnet est anormalement vide et le prix flotte lentement.</p>",
+            "correctTargets": [
+              "t2"
+            ],
+            "id": "i2"
+          },
+          {
+            "content": "<p>Les ordres limités se rechargent instantanément après chaque attaque.</p>",
+            "correctTargets": [
+              "t1"
+            ],
+            "id": "i3"
+          },
+          {
+            "content": "<p>Le flux s'arrête 3 secondes puis une nouvelle avalanche d'ordres rouges apparaît en dessous du prix actuel.</p>",
+            "correctTargets": [
+              "t2"
+            ],
+            "id": "i4"
+          }
+        ],
+        "dropTargets": [
+          {
+            "height": 70,
+            "id": "t1",
+            "label": "Véritable Blocage (Absorption)",
+            "labelPosition": "top",
+            "width": 35,
+            "x": 25,
+            "y": 50
+          },
+          {
+            "height": 70,
+            "id": "t2",
+            "label": "Simple Pause (Danger)",
+            "labelPosition": "top",
+            "width": 35,
+            "x": 75,
+            "y": 50
+          }
+        ],
+        "feedbackMode": "immediate",
+        "itemLayout": "stacked",
+        "shuffleItems": true
+      },
+      "id": "ba1d1bd7-e1e0-4981-a3a1-8ae4f5ec68d5",
+      "name": "Filtrer les faux signaux",
+      "type": "drag_drop"
+    },
+    {
+      "data": {
+        "rows": [
+          {
+            "cells": [
+              {
+                "content": "<h3>La Sortie d'Urgence : La Règle du 'Zéro Débat'</h3><p>Vous avez identifié l'Extension, validé la Poussée, et le carnet affiche un Blocage parfait. Vous entrez en position. Que se passe-t-il si la seconde d'après, un volume massif fracasse le blocage et le prix plonge ?</p><p>C'est ici qu'intervient la règle la plus stricte de la méthode EPB : <strong>Le Zéro Débat</strong>.</p><ul><li>Si le blocage qui a justifié votre entrée est cassé avec violence (le marché traverse votre mur d'ordres), <strong>le setup est instantanément invalidé</strong>.</li><li>Il n'y a pas de <em>« je vais laisser un peu de marge »</em>, pas de <em>« il y a un support juste en dessous »</em>, et surtout, <strong>on ne moyenne JAMAIS à la baisse</strong> dans cette situation.</li><li>Vous cliquez sur fermer. C'est une sortie d'urgence réflexe. <strong>Zéro débat.</strong></li></ul>",
+                "id": "zerodebat_c1",
+                "type": "text"
+              },
+              {
+                "content": "/api/media/file/pbc_694363012/t8a5mpcys76szd6/ai_generated_1778963726712_mxnkpo9ut2.webp",
+                "id": "zerodebat_c2",
+                "objectFit": "contain",
+                "type": "image"
+              }
+            ],
+            "id": "zerodebat_r1"
+          }
+        ]
+      },
+      "id": "a3b00530-ea45-4639-be0e-95bc6293cde4",
+      "name": "Règle du Zéro Débat",
+      "type": "content"
+    },
+    {
+      "data": {
+        "rows": [
+          {
+            "cells": [
+              {
+                "content": "<p>Marc vient juste de prendre un trade. Il était sûr de son Blocage, mais le marché vient de s'effondrer à travers son niveau. Voyons comment il réagit.</p>",
+                "id": "dialogue_intro_c1",
+                "type": "text"
+              }
+            ],
+            "id": "dialogue_intro_r1"
+          }
+        ]
+      },
+      "id": "42262a63-fcb0-4380-aa54-8942189ff5ec",
+      "paddingBottom": 0,
+      "type": "content"
+    },
+    {
+      "data": {
+        "backgroundImage": "/api/media/file/pbc_694363012/uqygmw5aq5v76yk/ai_generated_1778963739186_ry6kzajtci.webp",
+        "characterPose": "sitting",
+        "characters": [
+          {
+            "id": "marc",
+            "name": "Marc",
+            "role": "Un trader indépendant en plein déni. Il vient de voir son blocage se faire détruire par le marché, mais il refuse de couper sa position en perte. Il va utiliser des excuses techniques (le RSI est survendu, il y a un gros niveau rond juste en dessous à 10 points) pour justifier de garder le trade. Il ne cédera et ne fermera le trade que si l'apprenant le confronte fermement avec la règle du 'Zéro Débat' et lui rappelle que le setup EPB est totalement invalidé.",
+            "speechBubbleTailX": 50,
+            "speechBubbleTailY": 22,
+            "speechBubbleX": 70,
+            "speechBubbleY": 8,
+            "width": 28,
+            "x": 50,
+            "y": 100
+          },
+          {
+            "id": "learner",
+            "isLearner": true,
+            "name": "Vous",
+            "role": "Le mentor de trading de Marc, garant de la discipline"
+          }
+        ],
+        "initialMessage": "Marc est en position acheteuse. Le Blocage initial vient d'être pulvérisé par une violente attaque vendeuse. Il hésite à couper son trade et cherche des excuses pour rester en position. Convainquez-le d'appliquer la règle du 'Zéro Débat' immédiatement.",
+        "learningOutcomes": [
+          "Identifier l'invalidation du setup initial",
+          "Rejeter les excuses basées sur d'autres indicateurs techniques",
+          "Faire appliquer la sortie d'urgence Zéro Débat"
+        ],
+        "maxTurns": 8,
+        "passingThreshold": 75,
+        "presentation": "scene",
+        "sceneEmotionImages": {
+          "angry": "/api/media/file/pbc_694363012/oe60hhu5ug63rpz/ai_generated_1778963765447_hj7c05fyxq.webp",
+          "confused": "/api/media/file/pbc_694363012/4uwimcllfo8iz4q/ai_generated_1778963818182_soaxeesi5n.webp",
+          "excited": "/api/media/file/pbc_694363012/m2sbw3hh5yn5ggd/ai_generated_1778963830264_vbtcqlm0i4.webp",
+          "happy": "/api/media/file/pbc_694363012/mpmd5g4hlh0o05q/ai_generated_1778963752017_ozplbtxtj7.webp",
+          "neutral": "/api/media/file/pbc_694363012/uqygmw5aq5v76yk/ai_generated_1778963739186_ry6kzajtci.webp",
+          "sad": "/api/media/file/pbc_694363012/y6nsb99jc35x9pr/ai_generated_1778963778103_y3e6b4c9ff.webp",
+          "surprised": "/api/media/file/pbc_694363012/u7hni2f62wwtenh/ai_generated_1778963804867_1yk2lmwb68.webp",
+          "thinking": "/api/media/file/pbc_694363012/yt537d2zoralda5/ai_generated_1778963793125_8nkeu0cuqw.webp"
+        },
+        "setting": "Face aux écrans de trading"
+      },
+      "id": "48afe05f-c19d-4d2b-85bb-5a67c71afd57",
+      "name": "Sauvez le capital de Marc",
+      "type": "ai_dialogue"
+    },
+    {
+      "data": {
+        "rows": [
+          {
+            "cells": [
+              {
+                "content": "<h3>Entraînement au Carnet d'Ordres</h3><p>La théorie est maîtrisée, place à la pratique. Dans cette simulation, vous allez analyser des séquences de marché reconstituées pour décider en une fraction de seconde de la bonne action à mener : entrer, attendre, ou fuir sans débattre.</p>",
+                "id": "sim_intro_c1",
+                "type": "text"
+              }
+            ],
+            "id": "sim_intro_r1"
+          }
+        ]
+      },
+      "id": "f5d0be07-4b69-438d-9564-0ad6b8d95f8a",
+      "paddingBottom": 0,
+      "type": "content"
+    },
+    {
+      "data": {
+        "settings": {
+          "height": 450,
+          "navigationMode": "guided",
+          "showNavigation": true,
+          "showSlideIndicator": true,
+          "transitionDuration": 300,
+          "transitionType": "fade",
+          "width": 800
+        },
+        "slides": [
+          {
+            "backgroundColor": "#1e293b",
+            "backgroundSize": "cover",
+            "elements": [],
+            "id": "slide1",
+            "name": "Slide 1"
+          }
+        ]
+      },
+      "id": "48082e5d-0842-4fab-ac91-80b601cd395e",
+      "name": "Simulation de Flux",
+      "suggestion": "A simulated trading screen showing 3 different short scenarios of an order book (DOM) and tape reacting after a price drop. Scenario 1: A brief pause where limit orders don't replenish (learner must click 'Attendre / Simple Pause'). Scenario 2: Huge market sell orders failing to break a large limit buy wall that keeps refilling (learner must click 'Entrer / Blocage Validé'). Scenario 3: Learner is 'in a trade' based on a block, but suddenly a massive red market order wipes out the bid size completely (learner must click 'Sortie d'urgence / Zéro Débat'). Score is based on choosing the correct immediate action for all 3 scenarios.",
+      "type": "interactive_slideshow"
+    },
+    {
+      "background": {
+        "color": "#f1f5f9"
+      },
+      "data": {
+        "rows": [
+          {
+            "cells": [
+              {
+                "content": "<h3 style=\"text-align:center;\">Vérification des Connaissances</h3><p style=\"text-align:center; max-width:600px; margin:0 auto;\">Assurez-vous de maîtriser les nuances du Blocage et l'exécution de la sortie d'urgence avant de passer à l'assemblage complet du setup EPB.</p>",
+                "id": "quiz_intro_c1",
+                "type": "text"
+              }
+            ],
+            "id": "quiz_intro_r1"
+          }
+        ]
+      },
+      "id": "9b55bd28-9d80-489a-813f-c67816d17822",
+      "padding": {
+        "bottom": 48,
+        "left": 0,
+        "right": 0,
+        "top": 48
+      },
+      "type": "content",
+      "width": "full"
+    },
+    {
+      "data": {
+        "questions": [
+          {
+            "explanation": "C'est l'essence même de la règle du Zéro Débat. Si le mur d'absorption qui justifiait votre entrée disparaît, votre setup est invalide. Espérer un rebond ou regarder d'autres indicateurs vous expose à des pertes catastrophiques.",
+            "id": "q1",
+            "options": [
+              {
+                "id": "q1_a",
+                "is_correct": true,
+                "text": "Couper immédiatement la position au marché, sans aucune réflexion supplémentaire."
+              },
+              {
+                "id": "q1_b",
+                "is_correct": false,
+                "text": "Attendre un léger rebond technique pour fermer la position à l'équilibre."
+              },
+              {
+                "id": "q1_c",
+                "is_correct": false,
+                "text": "Doubler la taille de la position puisque l'extension est maintenant encore plus forte."
+              },
+              {
+                "id": "q1_d",
+                "is_correct": false,
+                "text": "Vérifier l'indicateur RSI pour confirmer si le marché est officiellement survendu."
+              }
+            ],
+            "question": "Vous entrez en position après un Blocage parfait. Une seconde plus tard, un ordre vendeur institutionnel fracasse le niveau et le prix chute de 5 points supplémentaires. Quelle est la seule action acceptable selon la méthode EPB ?",
+            "type": "multiple_choice"
+          },
+          {
+            "explanation": "Le blocage nécessite un 'combat'. Il faut qu'il y ait des ordres agressifs (vendeurs) qui tentent de pousser le prix, mais qui soient complètement absorbés par des ordres limités (acheteurs) solides. L'absence de volume indique généralement une simple pause.",
+            "id": "q2",
+            "options": [
+              {
+                "id": "q2_a",
+                "is_correct": true,
+                "text": "Les ordres limités acheteurs absorbent des ordres de vente au marché agressifs sans reculer."
+              },
+              {
+                "id": "q2_b",
+                "is_correct": false,
+                "text": "Le flux des transactions s'arrête complètement pendant plusieurs secondes sans aucun volume."
+              },
+              {
+                "id": "q2_c",
+                "is_correct": false,
+                "text": "Le prix rebondit lentement avec des petits ordres d'achat sporadiques."
+              },
+              {
+                "id": "q2_d",
+                "is_correct": false,
+                "text": "La taille des ordres dans les deux colonnes du carnet devient soudainement très faible."
+              }
+            ],
+            "question": "Lequel de ces comportements au carnet d'ordres confirme un véritable essoufflement (Blocage) plutôt qu'une simple pause ?",
+            "type": "multiple_choice"
+          },
+          {
+            "ai_grading": {
+              "mode": "rubric",
+              "passing_score": 70,
+              "rubric": "Doit mentionner que la pause n'indique pas un changement de dynamique (pas d'absorption/blocage), que les vendeurs reprennent simplement leur souffle, et que le prix a de fortes chances de continuer à baisser (servir de liquidité)."
+            },
+            "id": "q3",
+            "max_length": 200,
+            "question": "Expliquez brièvement pourquoi acheter lors d'une 'simple pause' du marché sans absorption est dangereux lors d'une forte baisse.",
+            "type": "short_answer"
+          }
+        ],
+        "settings": {
+          "passing_score": 70,
+          "show_feedback_mode": "immediate"
+        },
+        "version": 2
+      },
+      "id": "a1bcd924-7577-4a0b-aaf1-24fec5eef119",
+      "name": "Quiz de validation",
+      "type": "quiz"
+    },
+    {
+      "data": {
+        "displayMode": "all",
+        "feedbackTiming": "end",
+        "questions": [
+          {
+            "id": "f1",
+            "labels": {
+              "high": "Totalement confiant",
+              "low": "Très difficile"
+            },
+            "maxValue": 10,
+            "question": "À quel point vous sentez-vous capable d'appliquer la règle du 'Zéro Débat' sans hésitation ?",
+            "required": true,
+            "type": "scale"
+          },
+          {
+            "id": "f2",
+            "maxLength": 1000,
+            "placeholder": "Je me dis souvent que le prix va rebondir car...",
+            "question": "Quelle excuse mentale utilisez-vous le plus souvent pour éviter de couper une perte, et comment cette leçon vous aide-t-elle à la surmonter ?",
+            "required": false,
+            "type": "free_text"
+          }
+        ]
+      },
+      "id": "fd3a5bce-3473-4043-9fdf-5a71d3ad7d5d",
+      "name": "Bilan de la leçon",
+      "type": "feedback"
+    }
+  ],
+  "require_sequential": false
+}

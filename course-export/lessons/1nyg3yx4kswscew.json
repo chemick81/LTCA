@@ -1,0 +1,452 @@
+{
+  "title": "Leçon 3 : Règle 2 (P) - La Poussée, Preuve de la Panique",
+  "order": 3,
+  "performance_outcome": "<ul><li>Analyser le carnet d'ordres pour détecter une accélération agressive et rapide de l'exécution.</li><li>Identifier visuellement les phases d'euphorie et de panique précédant l'essoufflement d'un mouvement.</li><li>Différencier une véritable poussée d'un mouvement directionnel sans agressivité au carnet.</li><li>Évaluer le contexte émotionnel du marché (le 'dernier push') pour valider le deuxième pilier du setup.</li></ul>",
+  "content_json": [
+    {
+      "background": {
+        "color": "#0f172a"
+      },
+      "data": {
+        "html": "<h2 style=\"color:#ffffff\">Leçon 3 : La Poussée, Preuve de la Panique</h2><p style=\"color:#94a3b8\">Dans la leçon précédente, Marc a appris à patienter pour obtenir une véritable <strong>Extension</strong>. Mais l'extension seule est un piège. Le Nasdaq peut s'étirer pendant des heures sans jamais se retourner. Pour agir, il nous faut un catalyseur : la <strong>Poussée</strong>.</p>"
+      },
+      "id": "ed741d72-c733-4674-98f9-a80e7caf62bb",
+      "name": "Introduction",
+      "padding": {
+        "bottom": 64,
+        "left": 0,
+        "right": 0,
+        "top": 64
+      },
+      "type": "content",
+      "width": "full"
+    },
+    {
+      "data": {
+        "characterId": "marc",
+        "outfitPrompt": "wearing a crisp dark blue button-down shirt with the collar unbuttoned, looking focused",
+        "source": "local",
+        "talkingVideoScene": "in a modern, dimly lit trading room with multiple glowing monitors displaying charts and order books in the background",
+        "talkingVideoScript": "Avant, dès que je voyais le prix baisser de 60 points, mon doigt me démangeait. Je cliquais sur 'Achat' en me disant que ça ne pouvait pas descendre plus bas. Et le marché continuait de glisser, doucement, m'arrachant mon capital point par point. J'ai compris à mes dépens qu'une extension sans panique, c'est comme un élastique qu'on tire doucement : il ne lâche pas. Aujourd'hui, je vous montre ce que je cherche vraiment : l'accélération violente, le moment exact où les autres traders craquent.",
+        "talkingVideoVoice": "Daniel"
+      },
+      "id": "4d036331-c544-4e3b-9d1d-b7d95060a7e8",
+      "name": "Le déclic de Marc",
+      "type": "video"
+    },
+    {
+      "data": {
+        "rows": [
+          {
+            "cells": [
+              {
+                "content": "<h3>L'Anatomie d'une Poussée</h3><p>La Poussée (le 'P' de notre méthode EPB) est la <strong>traduction visuelle et mécanique de l'émotion</strong> sur le marché. C'est le stade final d'un mouvement, le fameux 'dernier push'.</p><p>Pourquoi cette phase est-elle cruciale ? Parce que les marchés ne se retournent que rarement sur un mouvement calme. Ils se retournent lorsque l'émotion atteint son paroxysme : l'euphorie à la hausse (FOMO), ou la panique à la baisse (capitulation).</p><ul><li><strong>Visuellement :</strong> Les bougies s'agrandissent soudainement, la vitesse de cotation explose.</li><li><strong>Psychologiquement :</strong> Les derniers vendeurs à découvert (shorts) se font liquider, ou les derniers acheteurs cèdent à la panique et vendent au marché.</li></ul>",
+                "id": "c1",
+                "type": "text"
+              },
+              {
+                "content": "/api/media/file/pbc_694363012/1hwljvxhfeexxux/ai_generated_1778963528625_25zqorbhhw.webp",
+                "id": "c2",
+                "objectFit": "contain",
+                "type": "image"
+              }
+            ],
+            "id": "r1"
+          }
+        ]
+      },
+      "id": "12c163d0-d820-4e8e-aef8-45c24d14e093",
+      "type": "content"
+    },
+    {
+      "data": {
+        "html": "<p>Explorez l'image ci-dessous pour comprendre la différence visuelle entre un mouvement lent et une véritable poussée (climax) sur un graphique.</p>",
+        "paddingBottom": 0
+      },
+      "id": "a12c465d-25ad-4c5d-8f45-58243273aa7f",
+      "type": "content"
+    },
+    {
+      "data": {
+        "continueAfterFail": false,
+        "failureMessage": "",
+        "hotspots": [
+          {
+            "color": "#f59e0b",
+            "content": "<p><strong>Le Piège :</strong> Les bougies sont petites, le mouvement est directionnel mais sans violence. Le carnet d'ordres est calme. Essayer d'acheter ici, c'est se placer devant un rouleau compresseur très lent. Il n'y a aucune panique, donc aucune raison pour que le flux s'arrête brutalement.</p>",
+            "filled": true,
+            "height": 29,
+            "id": "h1",
+            "label": "Le Glissement (Lent drift)",
+            "opacity": 50,
+            "shape": "rectangle",
+            "showLabel": true,
+            "visible": true,
+            "width": 50,
+            "x": 29,
+            "y": 48
+          },
+          {
+            "color": "#ef4444",
+            "content": "<p><strong>La Validation :</strong> L'amplitude de la bougie explose. Le prix décroche violemment. C'est la panique. Les stops sautent, déclenchant des ordres au marché en cascade. C'est exactement cette tension extrême que nous recherchons pour valider le deuxième pilier de la méthode EPB.</p>",
+            "filled": true,
+            "height": 42,
+            "id": "h2",
+            "label": "L'Accélération (La Poussée)",
+            "opacity": 50,
+            "shape": "rectangle",
+            "showLabel": true,
+            "visible": true,
+            "width": 12,
+            "x": 69,
+            "y": 33
+          },
+          {
+            "color": "#3b82f6",
+            "content": "<p><strong>L'Empreinte :</strong> La poussée s'accompagne toujours d'une augmentation drastique des volumes échangés en un minimum de temps. Le carnet d'ordres s'affole.</p>",
+            "filled": true,
+            "height": 50,
+            "id": "h3",
+            "label": "Pic de Volume",
+            "opacity": 50,
+            "shape": "rectangle",
+            "showLabel": true,
+            "visible": true,
+            "width": 17,
+            "x": 77,
+            "y": 67
+          }
+        ],
+        "identifyTasks": [],
+        "imageAlt": "",
+        "imageUrl": "/api/media/file/pbc_694363012/z7rcnvqj6dey7i3/ai_generated_1778963528478_nfkullzyyb.webp",
+        "maxAttempts": 3,
+        "mode": "discovery",
+        "overlays": [],
+        "successMessage": "",
+        "taskPrompt": ""
+      },
+      "id": "67fdc75b-4596-44fc-bfde-e786e56ee90a",
+      "name": "Graphique : Glissement vs Poussée",
+      "type": "hotspot_image"
+    },
+    {
+      "data": {
+        "rows": [
+          {
+            "cells": [
+              {
+                "content": "<h3>L'Agressivité au Carnet d'Ordres</h3><p>Une erreur commune est de croire qu'une longue bougie suffit. Cependant, l'apparence graphique peut être trompeuse, surtout sur un marché aussi erratique que le Nasdaq.</p><p>La vraie confirmation d'une poussée se lit dans l'exécution, c'est-à-dire au <strong>carnet d'ordres (Tape / DOM)</strong> :</p><ul><li><strong>Exécution agressive :</strong> Vous devez observer des <em>ordres au marché</em> (market orders) massifs qui avalent littéralement la liquidité disponible.</li><li><strong>Vitesse :</strong> Les chiffres défilent à une vitesse folle. Le marché semble 'glisser' d'un prix à l'autre sans résistance intermédiaire.</li><li><strong>Absence de fausse liquidité :</strong> Une poussée ne se caractérise pas par l'apparition de gros blocs en attente (ordres limites), mais par des acteurs qui <em>frappent</em> le marché de manière impitoyable.</li></ul>",
+                "id": "c3",
+                "type": "text"
+              }
+            ],
+            "id": "r2"
+          }
+        ]
+      },
+      "id": "356ba3b8-c473-4a75-adc6-2a24ea2361ff",
+      "type": "content"
+    },
+    {
+      "data": {
+        "html": "<p>Mettez-vous dans la peau de Marc. Observez la dynamique d'exécution et identifiez si le contexte justifie la validation de la Poussée.</p>",
+        "paddingBottom": 0
+      },
+      "id": "217f033d-089c-4565-a0fa-bd3713e1719f",
+      "type": "content"
+    },
+    {
+      "data": {
+        "settings": {
+          "height": 500,
+          "navigationMode": "guided",
+          "showNavigation": true,
+          "showSlideIndicator": true,
+          "transitionDuration": 300,
+          "transitionType": "fade",
+          "width": 800
+        },
+        "slides": [
+          {
+            "backgroundColor": "#0f172a",
+            "backgroundSize": "cover",
+            "elements": [],
+            "id": "slide1",
+            "name": "Analyse du Tape"
+          }
+        ]
+      },
+      "id": "3b8657c0-af45-4d37-942c-093c3a7f9f79",
+      "name": "Simulateur de Poussée",
+      "suggestion": "A simulated trading interface showing a Level 2 Order Book (DOM) and a fast-updating tape of executed orders. The learner is presented with 3 brief scenarios. Scenario 1: Slow, steady red prints on the tape (drift). Scenario 2: Large limit orders appearing but no fast execution (spoofing). Scenario 3: A sudden avalanche of large market sell orders with the price dropping 15 points in 3 seconds. The learner must interact by clicking 'Ignorer' for scenarios 1 and 2, and 'Valider la Poussée' for scenario 3. Provide feedback explaining that only aggressive market execution validates the Poussée.",
+      "type": "interactive_slideshow"
+    },
+    {
+      "background": {
+        "color": "#7f1d1d"
+      },
+      "data": {
+        "html": "<h2 style=\"color:#ffffff\">L'Ennemi N°1 : Le Lent Drift (Glissement)</h2><p style=\"color:#fecaca\">Beaucoup de débutants confondent un marché qui a <em>beaucoup baissé</em> avec un marché qui <em>capitule</em>. Un 'lent drift' est un mouvement directionnel mou, souvent dicté par des algorithmes qui exécutent passivement des ordres institutionnels. Il n'y a pas d'émotion. Il n'y a pas de climax. <strong>Un marché qui glisse lentement peut continuer ainsi pendant des heures.</strong> Ne cherchez jamais à attraper un couteau qui tombe... surtout s'il tombe au ralenti.</p>"
+      },
+      "id": "252a2c92-9aa2-4f0a-a2d4-c9b4fbd1b6a6",
+      "name": "Le Piège du Glissement",
+      "padding": {
+        "bottom": 48,
+        "left": 0,
+        "right": 0,
+        "top": 48
+      },
+      "type": "content",
+      "width": "full"
+    },
+    {
+      "data": {
+        "html": "<p>Vérifions si vous savez distinguer les caractéristiques d'une véritable panique de celles d'un simple mouvement prolongé.</p>",
+        "paddingBottom": 0
+      },
+      "id": "d2d314de-519a-492e-93df-7acba0b287c5",
+      "type": "content"
+    },
+    {
+      "data": {
+        "backgroundImage": "/api/media/file/pbc_694363012/mqa5nry0srh9lpm/ai_generated_1778963535239_yvdc6eqgzi.webp",
+        "dragItems": [
+          {
+            "content": "<p>Bougies de faible amplitude mais continues</p>",
+            "correctTargets": [
+              "t2"
+            ],
+            "id": "i1"
+          },
+          {
+            "content": "<p>Accélération fulgurante de l'exécution (Tape rapide)</p>",
+            "correctTargets": [
+              "t1"
+            ],
+            "id": "i2"
+          },
+          {
+            "content": "<p>Liquidation agressive des stops (Ordres au marché)</p>",
+            "correctTargets": [
+              "t1"
+            ],
+            "id": "i3"
+          },
+          {
+            "content": "<p>Mouvement qui dure depuis plus d'une heure sans rebond</p>",
+            "correctTargets": [
+              "t2"
+            ],
+            "id": "i4"
+          },
+          {
+            "content": "<p>Explosion soudaine des volumes échangés</p>",
+            "correctTargets": [
+              "t1"
+            ],
+            "id": "i5"
+          }
+        ],
+        "dropTargets": [
+          {
+            "height": 70,
+            "id": "t1",
+            "label": "Véritable Poussée (Panique)",
+            "labelPosition": "top",
+            "width": 40,
+            "x": 28,
+            "y": 50
+          },
+          {
+            "height": 70,
+            "id": "t2",
+            "label": "Simple Glissement (Drift)",
+            "labelPosition": "top",
+            "width": 40,
+            "x": 72,
+            "y": 50
+          }
+        ],
+        "feedbackMode": "immediate",
+        "itemLayout": "stacked",
+        "shuffleItems": true
+      },
+      "id": "86f888b2-1778-48c8-9831-40d75f723add",
+      "type": "drag_drop"
+    },
+    {
+      "data": {
+        "html": "<p>Il est 15h30, le Nasdaq vient d'ouvrir. Marc est devant ses écrans. Une extension baissière vient d'être validée. La tentation est forte de cliquer sur le bouton d'achat. C'est à vous de le coacher en temps réel.</p>",
+        "paddingBottom": 0
+      },
+      "id": "4870def3-6ccb-4080-ad01-2ca3e584a72d",
+      "type": "content"
+    },
+    {
+      "data": {
+        "backgroundImage": "/api/media/file/pbc_694363012/fv9pulpglfpft73/ai_generated_1778963543041_kao0iy6114.webp",
+        "characterPose": "sitting",
+        "characters": [
+          {
+            "id": "c1",
+            "name": "Marc",
+            "role": "Trader impulsif et impatient qui vient de voir son critère d'Extension (60 points de baisse) se valider. Il est convaincu qu'il faut acheter maintenant parce que 'le prix est trop bas' et qu'il 'ne veut pas rater le rebond'. Il minimise l'importance d'attendre une vraie Poussée au carnet, arguant que le mouvement a déjà été assez long. Ne cèdera que si l'apprenant lui explique concrètement le risque d'un 'lent drift' et l'importance d'attendre la panique (accélération des ordres).",
+            "speechBubbleTailX": 50,
+            "speechBubbleTailY": 22,
+            "speechBubbleX": 70,
+            "speechBubbleY": 8,
+            "width": 28,
+            "x": 50,
+            "y": 100
+          },
+          {
+            "baseImage": "/api/media/file/pbc_694363012/f0ic5milq4ip7ca/boss_contrarien_academy_discord_e7shopiaag.webp",
+            "id": "learner",
+            "isLearner": true,
+            "name": "You",
+            "role": "Mentor en trading appliquant la méthode EPB avec rigueur"
+          }
+        ],
+        "enableAudioInput": false,
+        "enableTTS": false,
+        "initialMessage": "L'Extension vient d'être atteinte. Marc est sur le point d'acheter, mais le mouvement est lent et saccadé (pas de Poussée). Convainquez-le d'attendre l'accélération agressive au carnet d'ordres avant de chercher un Blocage.",
+        "learningOutcomes": [
+          "Identifier le manque de poussée actuelle",
+          "Expliquer le danger d'acheter un simple glissement directionnel",
+          "Définir clairement l'accélération au carnet que Marc doit attendre"
+        ],
+        "maxTurns": 6,
+        "passingThreshold": 75,
+        "presentation": "scene",
+        "sceneEmotionImages": {
+          "angry": "/api/media/file/pbc_694363012/kp13qo36ix6tz6w/ai_generated_1778963570613_yfkvp97o7f.webp",
+          "confused": "/api/media/file/pbc_694363012/58tp9v38s0aeu18/ai_generated_1778963629517_syjsdvb6n1.webp",
+          "excited": "/api/media/file/pbc_694363012/zmewlgw4jtl2enq/ai_generated_1778963644241_1qgusexk8s.webp",
+          "happy": "/api/media/file/pbc_694363012/v5cf40mione05le/ai_generated_1778963557311_dl4qedrstx.webp",
+          "neutral": "/api/media/file/pbc_694363012/fv9pulpglfpft73/ai_generated_1778963543041_kao0iy6114.webp",
+          "sad": "/api/media/file/pbc_694363012/l7twyefo5hozets/ai_generated_1778963585367_dbl9afqv9b.webp",
+          "surprised": "/api/media/file/pbc_694363012/y7srr8e5afjnlth/ai_generated_1778963612605_cw025qg46n.webp",
+          "thinking": "/api/media/file/pbc_694363012/37b0xxqps21jbe1/ai_generated_1778963598677_pp4yltbzzc.webp"
+        },
+        "setting": "Session de trading en direct au bureau de Marc",
+        "showSuggestedResponses": true
+      },
+      "id": "bd5cbab7-e992-45df-a9f5-5608ea27ad83",
+      "name": "Coaching de Marc",
+      "type": "ai_dialogue"
+    },
+    {
+      "data": {
+        "html": "<h3>Testez vos réflexes d'analyse</h3><p>Assurez-vous de bien maîtriser les subtilités de la Poussée avant de passer au Blocage.</p>",
+        "paddingBottom": 0
+      },
+      "id": "ce9eb898-9580-4b9d-9592-c62a022e960b",
+      "type": "content"
+    },
+    {
+      "data": {
+        "questions": [
+          {
+            "explanation": "La poussée est définie par l'agressivité des participants. Ce sont les ordres au marché (market orders), exécutés de façon rapide et violente, qui créent le climax. L'apparition d'ordres limites sans exécution peut être du 'spoofing' (manipulation), et un ralentissement indique plutôt une pause qu'une panique.",
+            "id": "q1",
+            "options": [
+              {
+                "id": "a",
+                "is_correct": false,
+                "text": "L'apparition soudaine de très gros ordres limites (en attente) pour freiner le prix."
+              },
+              {
+                "id": "b",
+                "is_correct": true,
+                "text": "Une exécution agressive et massive d'ordres au marché qui absorbe la liquidité."
+              },
+              {
+                "id": "c",
+                "is_correct": false,
+                "text": "Un ralentissement progressif de la vitesse de cotation indiquant une hésitation."
+              },
+              {
+                "id": "d",
+                "is_correct": false,
+                "text": "Un mouvement directionnel fluide et constant sur plus de 15 minutes."
+              }
+            ],
+            "question": "Lequel de ces comportements au carnet d'ordres valide de manière fiable une véritable « Poussée » ?",
+            "type": "multiple_choice"
+          },
+          {
+            "blanks": [
+              {
+                "accepted_answers": [
+                  "capitulation",
+                  "capitulation ",
+                  "liquidation"
+                ],
+                "id": "b1",
+                "position": 0
+              }
+            ],
+            "explanation": "La capitulation est le moment où les traders abandonnent tout espoir et ferment leurs positions perdantes au prix du marché, créant cette fameuse accélération violente.",
+            "id": "q2",
+            "question": "Complétez la phrase suivante concernant la psychologie du marché :",
+            "text_with_blanks": "La poussée baissière représente la phase de [blank] finale des derniers acheteurs qui liquident leurs positions dans la panique.",
+            "type": "fill_blank"
+          },
+          {
+            "ai_grading": {
+              "mode": "rubric",
+              "passing_score": 75,
+              "rubric": "Doit mentionner : l'absence d'émotion/panique, le fait que le mouvement peut continuer très longtemps, ou l'absence de climax/d'accélération pour justifier un retournement brutal."
+            },
+            "id": "q3",
+            "max_length": 200,
+            "question": "Pourquoi est-il extrêmement dangereux d'acheter un marché qui effectue un 'lent drift' (glissement), même si l'exigence d'Extension (ex: 60 points) est déjà remplie ?",
+            "type": "short_answer"
+          }
+        ],
+        "settings": {
+          "passing_score": 70,
+          "show_feedback_mode": "immediate"
+        },
+        "version": 2
+      },
+      "id": "2c5f9425-8963-44c0-b83e-4ab631516af5",
+      "name": "Validation des Connaissances",
+      "type": "quiz"
+    },
+    {
+      "data": {
+        "html": "<h3>En Résumé</h3><p>Vous avez maintenant deux des trois clés en main :</p><ol><li><strong>L'Extension :</strong> Elle vous donne la <em>zone d'intervention</em> potentielle.</li><li><strong>La Poussée :</strong> Elle vous donne le <em>timing émotionnel</em> (le climax).</li></ol><p>Cependant, même au cœur de la pire panique, on n'attrape pas un couteau qui tombe sans s'être assuré qu'il a touché le sol. C'est le rôle du troisième pilier : <strong>le Blocage</strong>. C'est ce que nous découvrirons dans la Leçon 4.</p>"
+      },
+      "id": "8e97a8f8-3bc1-4ead-9b56-a72d63fa7de0",
+      "type": "content"
+    },
+    {
+      "data": {
+        "displayMode": "all",
+        "feedbackTiming": "end",
+        "questions": [
+          {
+            "id": "f1",
+            "maxValue": 5,
+            "question": "À quel point vous sentez-vous capable de différencier une poussée violente d'un simple glissement (drift) sur un graphique ?",
+            "required": true,
+            "type": "star_rating"
+          },
+          {
+            "id": "f2",
+            "maxLength": 500,
+            "placeholder": "Je réalise que je...",
+            "question": "Quelle erreur liée à l'impatience (comme celle de Marc) reconnaissez-vous le plus dans votre propre approche ?",
+            "required": false,
+            "type": "free_text"
+          }
+        ]
+      },
+      "id": "002563a1-6495-403b-9b7a-8d7b951b62bd",
+      "type": "feedback"
+    }
+  ],
+  "require_sequential": false
+}
