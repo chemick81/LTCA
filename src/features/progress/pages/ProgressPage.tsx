@@ -1,9 +1,23 @@
 import { useQuery } from '@tanstack/react-query';
+import type { ReactNode } from 'react';
 import { CheckCircle2, Circle, PlayCircle } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 import { supabase } from '@/lib/supabase';
+import type { ProgressRow, ProgressStatus } from '@/types/database.types';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Spinner } from '@/components/ui/spinner';
+
+interface ProgressItem extends ProgressRow {
+  lessons: {
+    title: string;
+    module_id: string;
+    modules: {
+      title: string;
+      course_id: string;
+      courses: { title: string } | null;
+    } | null;
+  } | null;
+}
 
 async function getAllProgress(userId: string) {
   const { data, error } = await supabase
@@ -12,16 +26,16 @@ async function getAllProgress(userId: string) {
     .eq('user_id', userId)
     .order('updated_at', { ascending: false });
   if (error) throw error;
-  return data;
+  return data as unknown as ProgressItem[];
 }
 
-const statusIcon = {
+const statusIcon: Record<ProgressStatus, ReactNode> = {
   completed: <CheckCircle2 className="h-4 w-4 text-success" />,
   in_progress: <PlayCircle className="h-4 w-4 text-primary" />,
   not_started: <Circle className="h-4 w-4 text-muted-foreground" />,
 };
 
-const statusLabel: Record<string, string> = {
+const statusLabel: Record<ProgressStatus, string> = {
   completed: 'Terminée',
   in_progress: 'En cours',
   not_started: 'Non commencée',

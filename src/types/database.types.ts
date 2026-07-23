@@ -122,12 +122,19 @@ export interface SettingRow extends Timestamps {
   value: unknown;
 }
 
-// Le type Database générique minimal utilisé par le client supabase-js typé.
-// Simplifié: Insert = Row sans id/created_at/updated_at (optionnels), Update = Partial.
-type TableDef<Row> = {
+// Le type Database utilisé par le client supabase-js typé.
+// IMPORTANT: la forme exacte ci-dessous (Row/Insert/Update/Relationships pour
+// chaque table, + Views/Functions/Enums/CompositeTypes au niveau du schema)
+// est requise par les génériques internes de @supabase/supabase-js — s'en
+// écarter fait silencieusement retomber l'inférence sur `never` partout.
+type NullableKeys<Row> = { [K in keyof Row]: null extends Row[K] ? K : never }[keyof Row];
+
+type TableDef<Row, InsertOmitKeys extends keyof Row = 'id' | 'created_at' | 'updated_at'> = {
   Row: Row;
-  Insert: Partial<Row> & Omit<Row, 'id' | 'created_at' | 'updated_at'>;
+  Insert: Partial<Pick<Row, InsertOmitKeys | NullableKeys<Row>>> &
+    Omit<Row, InsertOmitKeys | NullableKeys<Row>>;
   Update: Partial<Row>;
+  Relationships: [];
 };
 
 export interface Database {
@@ -147,5 +154,14 @@ export interface Database {
       settings: TableDef<SettingRow>;
       feedback_responses: TableDef<FeedbackResponseRow>;
     };
+    Views: Record<string, never>;
+    Functions: Record<string, never>;
+    Enums: {
+      user_role: UserRole;
+      progress_status: ProgressStatus;
+      lesson_block_type: LessonBlockType;
+      quiz_question_type: 'multiple_choice' | 'fill_blank';
+    };
+    CompositeTypes: Record<string, never>;
   };
 }

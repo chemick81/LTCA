@@ -1,4 +1,9 @@
 import { supabase } from '@/lib/supabase';
+import type { ProgressRow } from '@/types/database.types';
+
+interface InProgressLessonItem extends ProgressRow {
+  lessons: { id: string; title: string; module_id: string } | null;
+}
 
 export const dashboardService = {
   async getAnnouncements(limit = 5) {
@@ -20,7 +25,7 @@ export const dashboardService = {
       .order('updated_at', { ascending: false })
       .limit(3);
     if (error) throw error;
-    return data;
+    return data as unknown as InProgressLessonItem[];
   },
 
   async getOverallProgress(userId: string) {
