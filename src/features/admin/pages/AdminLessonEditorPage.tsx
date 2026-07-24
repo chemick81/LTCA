@@ -155,6 +155,7 @@ function BlockCard({
   onMove: (direction: 'up' | 'down') => void;
 }) {
   const [title, setTitle] = useState(block.title ?? '');
+  const [type, setType] = useState<LessonBlockType>(block.type);
   const [content, setContent] = useState<unknown>(block.content);
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [showJson, setShowJson] = useState(!FRIENDLY_TYPES.includes(block.type));
@@ -163,7 +164,15 @@ function BlockCard({
   const [isSaving, setIsSaving] = useState(false);
   const [isDirty, setIsDirty] = useState(false);
 
-  const Icon = BLOCK_ICONS[block.type];
+  const Icon = BLOCK_ICONS[type];
+
+  function handleTypeChange(newType: LessonBlockType) {
+    if (newType === type) return;
+    if (!confirm(`Changer le type vers « ${BLOCK_LABELS[newType]} » ? Le contenu actuel du bloc sera remplacé.`)) return;
+    setType(newType);
+    handleContentChange(CONTENT_TEMPLATES[newType]);
+    setShowJson(!FRIENDLY_TYPES.includes(newType));
+  }
 
   function handleContentChange(newContent: unknown) {
     setContent(newContent);
@@ -189,7 +198,7 @@ function BlockCard({
     }
     setIsSaving(true);
     try {
-      await adminContentService.updateBlock(block.id, { title: title || null, content });
+      await adminContentService.updateBlock(block.id, { type, title: title || null, content });
       toast.success('Bloc enregistré');
       setIsDirty(false);
       onSaved();
@@ -201,7 +210,7 @@ function BlockCard({
   }
 
   function renderFriendlyForm() {
-    switch (block.type) {
+    switch (type) {
       case 'content':
         return <ContentForm data={content as ContentBlockData} onChange={handleContentChange} />;
       case 'embed':
@@ -222,20 +231,32 @@ function BlockCard({
   return (
     <div className="overflow-hidden rounded-lg border border-border bg-card">
       <div className="flex items-center justify-between gap-2 border-b border-border bg-muted/40 px-3 py-2">
-        <div className="flex min-w-0 items-center gap-2">
+        <div className="flex min-w-0 flex-1 items-center gap-2">
           <Icon className="h-4 w-4 shrink-0 text-primary" />
           <EditableTitle
             value={title}
-            placeholder={BLOCK_LABELS[block.type]}
+            placeholder={BLOCK_LABELS[type]}
             onSave={(v) => {
               setTitle(v);
               setIsDirty(true);
             }}
-            className="truncate text-sm font-medium text-foreground"
+            className="min-w-0 flex-1 truncate text-sm font-medium text-foreground"
           />
+          <select
+            value={type}
+            onChange={(e) => handleTypeChange(e.target.value as LessonBlockType)}
+            className="h-7 shrink-0 rounded-md border border-border bg-muted px-1.5 text-xs text-muted-foreground"
+            title="Changer le type de bloc"
+          >
+            {BLOCK_TYPES.map((t) => (
+              <option key={t} value={t}>
+                {BLOCK_LABELS[t]}
+              </option>
+            ))}
+          </select>
         </div>
         <div className="flex shrink-0 items-center gap-1">
-          {FRIENDLY_TYPES.includes(block.type) && (
+          {FRIENDLY_TYPES.includes(type) && (
             <Button
               variant="ghost"
               size="sm"
@@ -262,7 +283,7 @@ function BlockCard({
 
       {!isCollapsed && (
         <div className="space-y-3 p-4">
-          {showJson || !FRIENDLY_TYPES.includes(block.type) ? (
+          {showJson || !FRIENDLY_TYPES.includes(type) ? (
             <div className="space-y-1.5">
               <textarea
                 value={jsonText}
