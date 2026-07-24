@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { getErrorMessage } from '@/lib/utils';
 import { Link, useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -26,7 +27,7 @@ export function LoginPage() {
       await authService.signIn(values);
       navigate('/dashboard', { replace: true });
     } catch (error) {
-      toast.error(error instanceof Error ? error.message : 'Connexion impossible');
+      toast.error(getErrorMessage(error));
     } finally {
       setIsSubmitting(false);
     }

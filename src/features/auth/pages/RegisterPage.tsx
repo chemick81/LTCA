@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { getErrorMessage } from '@/lib/utils';
 import { Link, useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -27,7 +28,7 @@ export function RegisterPage() {
       toast.success('Compte créé ! Vérifiez votre boîte mail pour confirmer votre inscription.');
       navigate('/login', { replace: true });
     } catch (error) {
-      toast.error(error instanceof Error ? error.message : 'Inscription impossible');
+      toast.error(getErrorMessage(error));
     } finally {
       setIsSubmitting(false);
     }

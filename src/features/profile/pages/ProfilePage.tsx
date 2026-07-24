@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { getErrorMessage } from '@/lib/utils';
 import { useForm } from 'react-hook-form';
 import { toast } from 'sonner';
 import { useAuth } from '@/hooks/useAuth';
@@ -28,7 +29,7 @@ export function ProfilePage() {
       toast.success('Mot de passe mis à jour');
       reset();
     } catch (error) {
-      toast.error(error instanceof Error ? error.message : 'Erreur');
+      toast.error(getErrorMessage(error));
     } finally {
       setIsSubmitting(false);
     }

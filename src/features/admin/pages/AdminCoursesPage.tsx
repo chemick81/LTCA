@@ -1,4 +1,5 @@
 import { useRef, useState, type ChangeEvent } from 'react';
+import { getErrorMessage } from '@/lib/utils';
 import { Link } from 'react-router-dom';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { toast } from 'sonner';
@@ -33,7 +34,7 @@ function CourseEditForm({ course, onDone }: { course: CourseRow; onDone: () => v
       toast.success('Parcours mis à jour');
       onDone();
     },
-    onError: (error) => toast.error(error instanceof Error ? error.message : 'Erreur'),
+    onError: (error) => toast.error(getErrorMessage(error)),
   });
 
   async function handleFileChange(e: ChangeEvent<HTMLInputElement>) {
@@ -45,7 +46,7 @@ function CourseEditForm({ course, onDone }: { course: CourseRow; onDone: () => v
       setCoverUrl(url);
       toast.success('Image envoyée');
     } catch (error) {
-      toast.error(error instanceof Error ? error.message : 'Échec de l\'envoi');
+      toast.error(getErrorMessage(error));
     } finally {
       setIsUploading(false);
     }
@@ -131,7 +132,7 @@ export function AdminCoursesPage() {
       setEditingId(created.id);
       toast.success('Parcours créé — complète les infos ci-dessous');
     },
-    onError: (error) => toast.error(error instanceof Error ? error.message : 'Erreur'),
+    onError: (error) => toast.error(getErrorMessage(error)),
   });
 
   const togglePublishMutation = useMutation({
@@ -146,7 +147,7 @@ export function AdminCoursesPage() {
       void queryClient.invalidateQueries({ queryKey: ['admin', 'courses'] });
       toast.success('Parcours supprimé');
     },
-    onError: (error) => toast.error(error instanceof Error ? error.message : 'Erreur'),
+    onError: (error) => toast.error(getErrorMessage(error)),
   });
 
   return (

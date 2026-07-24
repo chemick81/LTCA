@@ -3,7 +3,7 @@ import { Bold, Italic, Underline, Heading2, List, Link2, Image as ImageIcon, Loa
 import { adminContentService } from '@/features/admin/services/adminContentService';
 import { sanitizeHtml } from '@/utils/sanitizeHtml';
 import { toast } from 'sonner';
-import { cn } from '@/lib/utils';
+import { cn, getErrorMessage } from '@/lib/utils';
 
 function ToolbarButton({
   onClick,
@@ -72,7 +72,7 @@ export function RichTextEditor({
       const url = await adminContentService.uploadImage(file);
       exec('insertImage', url);
     } catch (error) {
-      toast.error(error instanceof Error ? error.message : 'Échec de l\'envoi de l\'image');
+      toast.error(getErrorMessage(error));
     } finally {
       setIsUploading(false);
     }

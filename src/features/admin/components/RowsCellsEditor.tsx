@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import { getErrorMessage } from '@/lib/utils';
 import { Plus, Trash2, Image as ImageIcon, Type, Upload } from 'lucide-react';
 import type { ContentBlockData, ContentRow, ContentCell } from '@/features/lesson/types';
 import { adminContentService } from '@/features/admin/services/adminContentService';
@@ -14,7 +15,7 @@ function CellEditor({ cell, onChange, onDelete }: { cell: ContentCell; onChange:
       const url = await adminContentService.uploadImage(file);
       onChange({ ...cell, content: url });
     } catch (error) {
-      toast.error(error instanceof Error ? error.message : 'Échec de l\'envoi');
+      toast.error(getErrorMessage(error));
     }
   }
 

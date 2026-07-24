@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { getErrorMessage } from '@/lib/utils';
 import { Link, useParams } from 'react-router-dom';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { toast } from 'sonner';
@@ -61,7 +62,7 @@ function ModuleCard({ module, onDeleted }: { module: ModuleRow; onDeleted: () =>
   const renameModuleMutation = useMutation({
     mutationFn: (title: string) => adminContentService.updateModule(moduleId, { title }),
     onSuccess: () => void queryClient.invalidateQueries({ queryKey: ['admin', 'modules'] }),
-    onError: (error) => toast.error(error instanceof Error ? error.message : 'Erreur'),
+    onError: (error) => toast.error(getErrorMessage(error)),
   });
 
   const createLessonMutation = useMutation({
@@ -70,13 +71,13 @@ function ModuleCard({ module, onDeleted }: { module: ModuleRow; onDeleted: () =>
       invalidateLessons();
       setNewLessonTitle('');
     },
-    onError: (error) => toast.error(error instanceof Error ? error.message : 'Erreur'),
+    onError: (error) => toast.error(getErrorMessage(error)),
   });
 
   const renameLessonMutation = useMutation({
     mutationFn: ({ id, title }: { id: string; title: string }) => adminContentService.updateLesson(id, { title }),
     onSuccess: invalidateLessons,
-    onError: (error) => toast.error(error instanceof Error ? error.message : 'Erreur'),
+    onError: (error) => toast.error(getErrorMessage(error)),
   });
 
   const deleteLessonMutation = useMutation({
@@ -169,7 +170,7 @@ export function AdminCourseDetailPage() {
       invalidateModules();
       setNewModuleTitle('');
     },
-    onError: (error) => toast.error(error instanceof Error ? error.message : 'Erreur'),
+    onError: (error) => toast.error(getErrorMessage(error)),
   });
 
   const deleteModuleMutation = useMutation({
@@ -178,7 +179,7 @@ export function AdminCourseDetailPage() {
       invalidateModules();
       toast.success('Module supprimé');
     },
-    onError: (error) => toast.error(error instanceof Error ? error.message : 'Erreur'),
+    onError: (error) => toast.error(getErrorMessage(error)),
   });
 
   return (

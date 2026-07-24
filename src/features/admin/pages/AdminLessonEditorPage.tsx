@@ -37,7 +37,7 @@ import type {
 } from '@/features/lesson/types';
 import { Button } from '@/components/ui/button';
 import { Spinner } from '@/components/ui/spinner';
-import { cn } from '@/lib/utils';
+import { cn, getErrorMessage } from '@/lib/utils';
 
 const BLOCK_TYPES: LessonBlockType[] = [
   'content',
@@ -177,6 +177,7 @@ function BlockCard({
   function handleContentChange(newContent: unknown) {
     setContent(newContent);
     setJsonText(JSON.stringify(newContent, null, 2));
+    setJsonError(null);
     setIsDirty(true);
   }
 
@@ -203,7 +204,7 @@ function BlockCard({
       setIsDirty(false);
       onSaved();
     } catch (error) {
-      toast.error(error instanceof Error ? error.message : 'Erreur');
+      toast.error(getErrorMessage(error));
     } finally {
       setIsSaving(false);
     }
@@ -337,7 +338,7 @@ export function AdminLessonEditorPage() {
     mutationFn: ({ index, type }: { index: number; type: LessonBlockType }) =>
       adminContentService.insertBlockAt(lessonId!, sortedBlocks, index, type, CONTENT_TEMPLATES[type]),
     onSuccess: invalidate,
-    onError: (error) => toast.error(error instanceof Error ? error.message : 'Erreur'),
+    onError: (error) => toast.error(getErrorMessage(error)),
   });
 
   const deleteBlockMutation = useMutation({

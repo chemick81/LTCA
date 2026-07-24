@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { getErrorMessage } from '@/lib/utils';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { toast } from 'sonner';
 import { Plus, Trash2 } from 'lucide-react';
@@ -28,7 +29,7 @@ export function AdminAnnouncementsPage() {
       setContent('');
       toast.success('Annonce publiée');
     },
-    onError: (error) => toast.error(error instanceof Error ? error.message : 'Erreur'),
+    onError: (error) => toast.error(getErrorMessage(error)),
   });
 
   const deleteMutation = useMutation({

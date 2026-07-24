@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { getErrorMessage } from '@/lib/utils';
 import { Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -25,7 +26,7 @@ export function ForgotPasswordPage() {
       await authService.sendPasswordReset(values.email);
       setIsSent(true);
     } catch (error) {
-      toast.error(error instanceof Error ? error.message : 'Envoi impossible');
+      toast.error(getErrorMessage(error));
     } finally {
       setIsSubmitting(false);
     }

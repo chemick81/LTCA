@@ -5,7 +5,7 @@ import { useAuth } from '@/hooks/useAuth';
 import { lessonService } from '@/features/lesson/services/lessonService';
 import type { FeedbackBlockData } from '@/features/lesson/types';
 import { Button } from '@/components/ui/button';
-import { cn } from '@/lib/utils';
+import { cn, getErrorMessage } from '@/lib/utils';
 
 export function FeedbackBlockView({ data, blockId }: { data: FeedbackBlockData; blockId: string }) {
   const { session } = useAuth();
@@ -31,7 +31,7 @@ export function FeedbackBlockView({ data, blockId }: { data: FeedbackBlockData; 
       setIsSubmitted(true);
       toast.success('Merci pour votre retour !');
     } catch (error) {
-      toast.error(error instanceof Error ? error.message : 'Envoi impossible');
+      toast.error(getErrorMessage(error));
     } finally {
       setIsSubmitting(false);
     }

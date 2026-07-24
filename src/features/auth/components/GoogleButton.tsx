@@ -1,4 +1,5 @@
 import { toast } from 'sonner';
+import { getErrorMessage } from '@/lib/utils';
 import { authService } from '@/features/auth/services/authService';
 import { Button } from '@/components/ui/button';
 
@@ -7,7 +8,7 @@ export function GoogleButton() {
     try {
       await authService.signInWithGoogle();
     } catch (error) {
-      toast.error(error instanceof Error ? error.message : 'Connexion Google impossible');
+      toast.error(getErrorMessage(error));
     }
   }
 
