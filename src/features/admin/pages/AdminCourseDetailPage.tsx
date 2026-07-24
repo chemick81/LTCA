@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { toast } from 'sonner';
-import { ArrowLeft, Plus, Trash2, FileEdit, GripVertical, Check, X } from 'lucide-react';
+import { ArrowLeft, Plus, Trash2, FileEdit, GripVertical, Check } from 'lucide-react';
 import { adminContentService } from '@/features/admin/services/adminContentService';
 import { EditableTitle } from '@/features/admin/components/EditableTitle';
 import type { ModuleRow, LessonRow } from '@/types/database.types';
