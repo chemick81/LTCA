@@ -33,15 +33,22 @@ export function ContentForm({
   return <RowsCellsEditor data={{ rows }} onChange={onChange} />;
 }
 
+// Extrait l'URL du src si l'utilisateur colle le code d'embed complet (ex: <iframe src="...">)
+// plutôt que de le forcer à extraire l'URL lui-même.
+function extractEmbedUrl(pasted: string): string {
+  const match = pasted.match(/src=["']([^"']+)["']/);
+  return match ? match[1]! : pasted.trim();
+}
+
 // ---------- embed (Genially ou autre iframe) ----------
 export function EmbedForm({ data, onChange }: { data: EmbedBlockData; onChange: (data: EmbedBlockData) => void }) {
   return (
     <div className="space-y-3">
       <div className="space-y-1.5">
-        <Label>URL Genially (ou autre iframe)</Label>
+        <Label>URL Genially (colle l'URL seule, ou le code d'embed complet — on extrait l'URL automatiquement)</Label>
         <Input
           value={data.url}
-          onChange={(e) => onChange({ ...data, url: e.target.value })}
+          onChange={(e) => onChange({ ...data, url: extractEmbedUrl(e.target.value) })}
           placeholder="https://view.genially.com/..."
         />
       </div>
