@@ -40,6 +40,16 @@ export const adminService = {
     return data as AnnouncementRow;
   },
 
+  async uploadCourseCover(courseId: string, file: File) {
+    const path = `covers/${courseId}-${Date.now()}.${file.name.split('.').pop()}`;
+    const { error: uploadError } = await supabase.storage
+      .from('course-covers')
+      .upload(path, file, { upsert: true });
+    if (uploadError) throw uploadError;
+    const { data } = supabase.storage.from('course-covers').getPublicUrl(path);
+    return data.publicUrl;
+  },
+
   async deleteAnnouncement(id: string) {
     const { error } = await supabase.from('announcements').delete().eq('id', id);
     if (error) throw error;
