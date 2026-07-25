@@ -1,12 +1,17 @@
 import { NavLink, Outlet } from 'react-router-dom';
+import { useAuth } from '@/hooks/useAuth';
 import { cn } from '@/lib/utils';
 
-const tabs = [
+const baseTabs = [
   { to: '/admin', label: 'Parcours', end: true },
+  { to: '/admin/students', label: 'Étudiants' },
   { to: '/admin/announcements', label: 'Annonces' },
 ];
 
 export function AdminLayout() {
+  const { isAdmin } = useAuth();
+  const tabs = isAdmin ? [...baseTabs, { to: '/admin/users', label: 'Utilisateurs', end: false }] : baseTabs;
+
   return (
     <div className="space-y-6">
       <div>

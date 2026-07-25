@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type ReactNode } from 'react';
+import { useEffect, useRef, useState, type ReactNode, type ClipboardEvent } from 'react';
 import { Bold, Italic, Underline, Heading2, List, Link2, Image as ImageIcon, Loader2 } from 'lucide-react';
 import { adminContentService } from '@/features/admin/services/adminContentService';
 import { sanitizeHtml } from '@/utils/sanitizeHtml';
@@ -83,6 +83,15 @@ export function RichTextEditor({
     if (url) exec('createLink', url);
   }
 
+  async function handlePaste(e: ClipboardEvent<HTMLDivElement>) {
+    const items = Array.from(e.clipboardData.items);
+    const imageItem = items.find((item) => item.type.startsWith('image/'));
+    const imageFile = imageItem?.getAsFile() ?? Array.from(e.clipboardData.files).find((f) => f.type.startsWith('image/'));
+    if (!imageFile) return; // laisse le comportement par défaut pour du texte collé
+    e.preventDefault();
+    void handleImageFile(imageFile);
+  }
+
   return (
     <div className="overflow-hidden rounded-md border border-border">
       <div className="flex items-center gap-0.5 border-b border-border bg-muted px-1.5 py-1">
@@ -122,6 +131,7 @@ export function RichTextEditor({
         ref={editorRef}
         contentEditable
         onInput={emitChange}
+        onPaste={handlePaste}
         onBlur={emitChange}
         data-placeholder={placeholder}
         className={cn(

@@ -28,10 +28,17 @@ npm run dev
 2. Dans l'éditeur SQL du dashboard Supabase, exécuter **dans l'ordre** :
    - `supabase/migrations/0001_init.sql` (schéma complet, triggers, RLS)
    - `supabase/migrations/0002_storage_buckets.sql` (buckets Storage + policies)
+   - `supabase/migrations/0003_add_embed_block_type.sql` (bloc `embed` pour intégrer des modules Genially)
+   - `supabase/migrations/0004_add_coach_role.sql` (rôle COACH)
 3. Récupérer `Project URL` et `anon public key` dans Project Settings → API, et les mettre dans `.env`
 4. Le premier compte créé aura le rôle `STUDENT` par défaut. Pour le passer `ADMIN` :
    ```sql
    update profiles set role = 'ADMIN' where email = 'vous@exemple.com';
+   ```
+   Un rôle `COACH` existe aussi : accès complet à l'édition de contenu (cours/modules/leçons/blocs/annonces)
+   et à la progression de tous les étudiants, mais sans gestion des comptes/rôles (réservée à `ADMIN`).
+   ```sql
+   update profiles set role = 'COACH' where email = 'coach@exemple.com';
    ```
 
 ⚠️ **Les policies RLS livrées sont un premier jet pragmatique**, pas encore validées avec l'équipe produit

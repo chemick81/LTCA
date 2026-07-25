@@ -1,7 +1,7 @@
 // Types manuels reflétant le schéma supabase/migrations/0001_init.sql
 // À terme, régénérer avec: supabase gen types typescript --local > src/types/database.types.ts
 
-export type UserRole = 'ADMIN' | 'STUDENT';
+export type UserRole = 'ADMIN' | 'COACH' | 'STUDENT';
 export type ProgressStatus = 'not_started' | 'in_progress' | 'completed';
 export type LessonBlockType =
   | 'content'

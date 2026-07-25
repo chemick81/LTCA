@@ -5,10 +5,7 @@ export function AuthLayout({ title, subtitle, children }: { title: string; subti
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
       <div className="w-full max-w-md space-y-8">
         <div className="text-center">
-          <h1 className="text-2xl font-bold tracking-tight text-primary">LTCA</h1>
-          <p className="mt-1 text-xs uppercase tracking-widest text-muted-foreground">
-            Le Trading Contrarien Academy
-          </p>
+          <img src="/logo.png" alt="LTCA" className="mx-auto h-24 w-24 rounded-full" />
         </div>
         <div className="rounded-lg border border-border bg-card p-8 shadow-sm">
           <h2 className="text-xl font-semibold text-foreground">{title}</h2>

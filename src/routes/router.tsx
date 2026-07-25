@@ -2,6 +2,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import { MainLayout } from '@/layouts/MainLayout';
 import { RequireAuth } from '@/routes/RequireAuth';
 import { RequireAdmin } from '@/routes/RequireAdmin';
+import { RequireSuperAdmin } from '@/routes/RequireSuperAdmin';
 import { LoginPage } from '@/features/auth/pages/LoginPage';
 import { RegisterPage } from '@/features/auth/pages/RegisterPage';
 import { ForgotPasswordPage } from '@/features/auth/pages/ForgotPasswordPage';
@@ -15,6 +16,8 @@ import { ProfilePage } from '@/features/profile/pages/ProfilePage';
 import { AdminLayout } from '@/features/admin/components/AdminLayout';
 import { AdminCoursesPage } from '@/features/admin/pages/AdminCoursesPage';
 import { AdminAnnouncementsPage } from '@/features/admin/pages/AdminAnnouncementsPage';
+import { AdminStudentsPage } from '@/features/admin/pages/AdminStudentsPage';
+import { AdminUsersPage } from '@/features/admin/pages/AdminUsersPage';
 import { AdminCourseDetailPage } from '@/features/admin/pages/AdminCourseDetailPage';
 import { AdminLessonEditorPage } from '@/features/admin/pages/AdminLessonEditorPage';
 import { NotFoundPage } from '@/app/pages/NotFoundPage';
@@ -45,7 +48,12 @@ export const router = createBrowserRouter([
                 element: <AdminLayout />,
                 children: [
                   { index: true, element: <AdminCoursesPage /> },
+                  { path: 'students', element: <AdminStudentsPage /> },
                   { path: 'announcements', element: <AdminAnnouncementsPage /> },
+                  {
+                    element: <RequireSuperAdmin />,
+                    children: [{ path: 'users', element: <AdminUsersPage /> }],
+                  },
                 ],
               },
               { path: '/admin/courses/:courseId', element: <AdminCourseDetailPage /> },

@@ -2,9 +2,9 @@ import { Navigate, Outlet } from 'react-router-dom';
 import { useAuth } from '@/hooks/useAuth';
 import { Spinner } from '@/components/ui/spinner';
 
-/** Protège /admin — accessible à ADMIN et COACH (édition de contenu), pas aux STUDENT. */
-export function RequireAdmin() {
-  const { canEditContent, isLoading } = useAuth();
+/** Protège les pages réservées strictement à ADMIN (gestion des comptes/rôles) — COACH est exclu. */
+export function RequireSuperAdmin() {
+  const { isAdmin, isLoading } = useAuth();
 
   if (isLoading) {
     return (
@@ -14,8 +14,8 @@ export function RequireAdmin() {
     );
   }
 
-  if (!canEditContent) {
-    return <Navigate to="/dashboard" replace />;
+  if (!isAdmin) {
+    return <Navigate to="/admin" replace />;
   }
 
   return <Outlet />;

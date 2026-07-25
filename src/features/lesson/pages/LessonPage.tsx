@@ -4,6 +4,7 @@ import { useQuery } from '@tanstack/react-query';
 import { ArrowLeft, CheckCircle2 } from 'lucide-react';
 import { lessonService } from '@/features/lesson/services/lessonService';
 import { BlockRenderer } from '@/features/lesson/components/BlockRenderer';
+import { LessonNotes } from '@/features/lesson/components/LessonNotes';
 import { useAuth } from '@/hooks/useAuth';
 import { Button } from '@/components/ui/button';
 import { Spinner } from '@/components/ui/spinner';
@@ -74,6 +75,8 @@ export function LessonPage() {
           ))}
         </div>
       )}
+
+      <LessonNotes lessonId={lessonId!} />
 
       <div className="border-t border-border pt-6">
         <Button onClick={handleMarkComplete}>

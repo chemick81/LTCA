@@ -1,5 +1,5 @@
 import { supabase } from '@/lib/supabase';
-import type { ProgressStatus, LessonRow, LessonBlockRow } from '@/types/database.types';
+import type { ProgressStatus, LessonRow, LessonBlockRow, NoteRow } from '@/types/database.types';
 
 export const lessonService = {
   async getLessonWithBlocks(lessonId: string) {
@@ -18,6 +18,27 @@ export const lessonService = {
     if (blocksError) throw blocksError;
 
     return { lesson: lesson as LessonRow, blocks: blocks as LessonBlockRow[] };
+  },
+
+  async getNote(userId: string, lessonId: string) {
+    const { data, error } = await supabase
+      .from('notes')
+      .select('*')
+      .eq('user_id', userId)
+      .eq('lesson_id', lessonId)
+      .maybeSingle();
+    if (error) throw error;
+    return data as NoteRow | null;
+  },
+
+  async upsertNote(userId: string, lessonId: string, existingNoteId: string | null, content: string) {
+    if (existingNoteId) {
+      const { error } = await supabase.from('notes').update({ content }).eq('id', existingNoteId);
+      if (error) throw error;
+    } else {
+      const { error } = await supabase.from('notes').insert({ user_id: userId, lesson_id: lessonId, content });
+      if (error) throw error;
+    }
   },
 
   async upsertProgress(userId: string, lessonId: string, status: ProgressStatus, progressPercent: number) {

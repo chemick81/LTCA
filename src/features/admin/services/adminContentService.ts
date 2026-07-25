@@ -1,5 +1,5 @@
 import { supabase } from '@/lib/supabase';
-import type { ModuleRow, LessonRow, LessonBlockRow, LessonBlockType } from '@/types/database.types';
+import type { ModuleRow, LessonRow, LessonBlockRow, LessonBlockType, ProfileRow, UserRole } from '@/types/database.types';
 
 export interface LessonBreadcrumb {
   courseId: string;
@@ -8,7 +8,63 @@ export interface LessonBreadcrumb {
   lessonTitle: string;
 }
 
+export interface StudentProgressSummary {
+  userId: string;
+  fullName: string | null;
+  email: string;
+  totalLessons: number;
+  completedLessons: number;
+  inProgressLessons: number;
+  lastActivityAt: string | null;
+}
+
 export const adminContentService = {
+  async listAllProfiles() {
+    const { data, error } = await supabase
+      .from('profiles')
+      .select('id, email, full_name, role, created_at')
+      .order('created_at', { ascending: false });
+    if (error) throw error;
+    return data as Pick<ProfileRow, 'id' | 'email' | 'full_name' | 'role' | 'created_at'>[];
+  },
+
+  async updateUserRole(userId: string, role: UserRole) {
+    const { error } = await supabase.from('profiles').update({ role }).eq('id', userId);
+    if (error) throw error;
+  },
+
+  async listStudentsProgress(): Promise<StudentProgressSummary[]> {
+    const { data: profiles, error: profilesError } = await supabase
+      .from('profiles')
+      .select('id, full_name, email, role')
+      .eq('role', 'STUDENT');
+    if (profilesError) throw profilesError;
+
+    const { data: progressRows, error: progressError } = await supabase
+      .from('progress')
+      .select('user_id, status, updated_at');
+    if (progressError) throw progressError;
+
+    return (profiles as { id: string; full_name: string | null; email: string }[]).map((p) => {
+      const rows = (progressRows as { user_id: string; status: string; updated_at: string }[]).filter(
+        (r) => r.user_id === p.id,
+      );
+      const lastActivityAt = rows.reduce<string | null>(
+        (latest, r) => (!latest || r.updated_at > latest ? r.updated_at : latest),
+        null,
+      );
+      return {
+        userId: p.id,
+        fullName: p.full_name,
+        email: p.email,
+        totalLessons: rows.length,
+        completedLessons: rows.filter((r) => r.status === 'completed').length,
+        inProgressLessons: rows.filter((r) => r.status === 'in_progress').length,
+        lastActivityAt,
+      };
+    });
+  },
+
   async uploadImage(file: File) {
     const path = `content/${Date.now()}-${file.name.replace(/[^a-zA-Z0-9.]+/g, '-')}`;
     const { error } = await supabase.storage.from('images').upload(path, file, { upsert: true });
