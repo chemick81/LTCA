@@ -3,7 +3,7 @@ import { getErrorMessage } from '@/lib/utils';
 import { Link, useParams } from 'react-router-dom';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { toast } from 'sonner';
-import { ArrowLeft, Plus, Trash2, FileEdit, GripVertical, Check } from 'lucide-react';
+import { ArrowLeft, Plus, Trash2, FileEdit, GripVertical, Check, Lock } from 'lucide-react';
 import { adminContentService } from '@/features/admin/services/adminContentService';
 import { EditableTitle } from '@/features/admin/components/EditableTitle';
 import type { ModuleRow, LessonRow } from '@/types/database.types';
@@ -17,11 +17,13 @@ function LessonListItem({
   lesson,
   onRenamed,
   onTogglePublish,
+  onToggleSequential,
   onDeleted,
 }: {
   lesson: LessonRow;
   onRenamed: (title: string) => void;
   onTogglePublish: () => void;
+  onToggleSequential: () => void;
   onDeleted: () => void;
 }) {
   return (
@@ -29,6 +31,16 @@ function LessonListItem({
       <GripVertical className="h-4 w-4 shrink-0 text-muted-foreground" />
       <span className="w-6 shrink-0 text-xs text-muted-foreground">{lesson.position}.</span>
       <EditableTitle value={lesson.title} onSave={onRenamed} className="flex-1 text-sm text-foreground" />
+      <Button
+        variant="ghost"
+        size="sm"
+        onClick={onToggleSequential}
+        title="Si activé, cette leçon est verrouillée tant que la précédente n'est pas terminée"
+        className={lesson.require_sequential ? 'text-primary' : 'text-muted-foreground'}
+      >
+        <Lock className="mr-1 h-3.5 w-3.5" />
+        Séquentiel {lesson.require_sequential ? 'ON' : 'OFF'}
+      </Button>
       <Button variant="ghost" size="sm" onClick={onTogglePublish}>
         {lesson.published ? 'Publiée' : 'Brouillon'}
       </Button>
@@ -91,6 +103,12 @@ function ModuleCard({ module, onDeleted }: { module: ModuleRow; onDeleted: () =>
     onSuccess: invalidateLessons,
   });
 
+  const toggleSequentialMutation = useMutation({
+    mutationFn: ({ id, require_sequential }: { id: string; require_sequential: boolean }) =>
+      adminContentService.updateLesson(id, { require_sequential }),
+    onSuccess: invalidateLessons,
+  });
+
   return (
     <Card>
       <CardHeader className="flex-row items-center justify-between space-y-0">
@@ -119,6 +137,9 @@ function ModuleCard({ module, onDeleted }: { module: ModuleRow; onDeleted: () =>
               lesson={lesson}
               onRenamed={(title) => renameLessonMutation.mutate({ id: lesson.id, title })}
               onTogglePublish={() => togglePublishMutation.mutate({ id: lesson.id, published: !lesson.published })}
+              onToggleSequential={() =>
+                toggleSequentialMutation.mutate({ id: lesson.id, require_sequential: !lesson.require_sequential })
+              }
               onDeleted={() => {
                 if (confirm(`Supprimer "${lesson.title}" ?`)) deleteLessonMutation.mutate(lesson.id);
               }}

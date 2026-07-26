@@ -6,6 +6,7 @@ import { RequireSuperAdmin } from '@/routes/RequireSuperAdmin';
 import { LoginPage } from '@/features/auth/pages/LoginPage';
 import { RegisterPage } from '@/features/auth/pages/RegisterPage';
 import { ForgotPasswordPage } from '@/features/auth/pages/ForgotPasswordPage';
+import { ResetPasswordPage } from '@/features/auth/pages/ResetPasswordPage';
 import { DashboardPage } from '@/features/dashboard/pages/DashboardPage';
 import { AcademyPage } from '@/features/academy/pages/AcademyPage';
 import { CourseDetailPage } from '@/features/academy/pages/CourseDetailPage';
@@ -26,6 +27,7 @@ export const router = createBrowserRouter([
   { path: '/login', element: <LoginPage /> },
   { path: '/register', element: <RegisterPage /> },
   { path: '/forgot-password', element: <ForgotPasswordPage /> },
+  { path: '/reset-password', element: <ResetPasswordPage /> },
   {
     element: <RequireAuth />,
     children: [

@@ -163,7 +163,7 @@ export const adminContentService = {
 
   async updateLesson(
     id: string,
-    input: Partial<Pick<LessonRow, 'title' | 'performance_outcome' | 'position' | 'published'>>,
+    input: Partial<Pick<LessonRow, 'title' | 'performance_outcome' | 'position' | 'published' | 'require_sequential'>>,
   ) {
     const { error } = await supabase.from('lessons').update(input).eq('id', id);
     if (error) throw error;

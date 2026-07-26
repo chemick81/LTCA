@@ -2,8 +2,10 @@ import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useQuery, useQueryClient } from '@tanstack/react-query';
 import { toast } from 'sonner';
-import { ArrowLeft, CheckCircle2 } from 'lucide-react';
+import { ArrowLeft, CheckCircle2, Lock } from 'lucide-react';
 import { lessonService } from '@/features/lesson/services/lessonService';
+import { academyService } from '@/features/academy/services/academyService';
+import { adminContentService } from '@/features/admin/services/adminContentService';
 import { BlockRenderer } from '@/features/lesson/components/BlockRenderer';
 import { LessonNotes } from '@/features/lesson/components/LessonNotes';
 import { useAuth } from '@/hooks/useAuth';
@@ -30,15 +32,32 @@ export function LessonPage() {
     enabled: !!userId && !!lessonId,
   });
 
-  // Marque la leçon comme "in_progress" dès l'ouverture (sauf si déjà terminée).
+  // Garde-fou : re-vérifie le verrouillage séquentiel côté client, au cas où
+  // l'étudiant accèderait directement par URL sans passer par CourseDetailPage.
+  const { data: breadcrumb } = useQuery({
+    queryKey: ['lesson-breadcrumb', lessonId],
+    queryFn: () => adminContentService.getBreadcrumb(lessonId!),
+    enabled: !!lessonId,
+    retry: false,
+  });
+
+  const { data: lockData, isLoading: isLockLoading } = useQuery({
+    queryKey: ['lesson-lock', breadcrumb?.courseId, userId],
+    queryFn: () => academyService.getCourseWithLockStatus(breadcrumb!.courseId, userId),
+    enabled: !!breadcrumb?.courseId,
+  });
+
+  const isLocked = !!lessonId && lockData?.lockMap.get(lessonId) === true;
+
+  // Marque la leçon comme "in_progress" dès l'ouverture (sauf si déjà terminée ou verrouillée).
   useEffect(() => {
-    if (session && lessonId && progress?.status !== 'completed') {
+    if (session && lessonId && progress?.status !== 'completed' && !isLocked) {
       lessonService.upsertProgress(session.user.id, lessonId, 'in_progress', 10).catch((err) => {
         console.error('Erreur lors du marquage in_progress', err);
       });
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [session, lessonId]);
+  }, [session, lessonId, isLocked]);
 
   function invalidateProgressQueries() {
     void queryClient.invalidateQueries({ queryKey: ['lesson-progress', lessonId] });
@@ -63,7 +82,7 @@ export function LessonPage() {
     }
   }
 
-  if (isLoading) {
+  if (isLoading || isLockLoading) {
     return (
       <div className="flex h-full items-center justify-center">
         <Spinner />
@@ -73,6 +92,24 @@ export function LessonPage() {
 
   if (error || !data) {
     return <p className="text-sm text-destructive">Impossible de charger cette leçon.</p>;
+  }
+
+  if (isLocked) {
+    return (
+      <div className="mx-auto max-w-md space-y-4 py-12 text-center">
+        <Lock className="mx-auto h-10 w-10 text-muted-foreground" />
+        <p className="text-lg font-semibold text-foreground">Cette leçon est verrouillée</p>
+        <p className="text-sm text-muted-foreground">
+          Termine la leçon précédente du parcours pour la débloquer.
+        </p>
+        <Button asChild variant="outline" size="sm">
+          <Link to="/academy">
+            <ArrowLeft className="mr-2 h-4 w-4" />
+            Retour à l'Academy
+          </Link>
+        </Button>
+      </div>
+    );
   }
 
   const { lesson, blocks } = data;

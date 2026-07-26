@@ -178,6 +178,7 @@ async function main() {
         title: lessonData.title,
         position: lessonData.order,
         performance_outcome: lessonData.performance_outcome ?? null,
+        require_sequential: lessonData.require_sequential ?? false,
         published: hasContent, // leçons sans contenu (5-8 dans l'export d'origine) restent non publiées
       })
       .select()

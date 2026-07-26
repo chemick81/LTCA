@@ -52,6 +52,7 @@ export interface LessonRow extends Timestamps {
   title: string;
   position: number;
   performance_outcome: string | null;
+  require_sequential: boolean;
   published: boolean;
 }
 
