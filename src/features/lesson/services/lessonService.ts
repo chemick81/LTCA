@@ -1,5 +1,5 @@
 import { supabase } from '@/lib/supabase';
-import type { ProgressStatus, LessonRow, LessonBlockRow, NoteRow } from '@/types/database.types';
+import type { ProgressStatus, LessonRow, LessonBlockRow, NoteRow, ProgressRow } from '@/types/database.types';
 
 export const lessonService = {
   async getLessonWithBlocks(lessonId: string) {
@@ -18,6 +18,17 @@ export const lessonService = {
     if (blocksError) throw blocksError;
 
     return { lesson: lesson as LessonRow, blocks: blocks as LessonBlockRow[] };
+  },
+
+  async getProgress(userId: string, lessonId: string) {
+    const { data, error } = await supabase
+      .from('progress')
+      .select('*')
+      .eq('user_id', userId)
+      .eq('lesson_id', lessonId)
+      .maybeSingle();
+    if (error) throw error;
+    return data as ProgressRow | null;
   },
 
   async getNote(userId: string, lessonId: string) {
